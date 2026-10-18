@@ -1,0 +1,271 @@
+/* Infinity case study: make the original product stage feel intentional and premium. */
+.infinity-detail-page .infinity-before-showcase {
+  position: relative;
+  isolation: isolate;
+  grid-template-columns: minmax(20rem, 0.92fr) minmax(0, 1.08fr) !important;
+  min-height: clamp(34rem, 48vw, 44rem);
+  gap: clamp(2rem, 5vw, 5.5rem);
+  margin-block: clamp(2.5rem, 5vw, 4.5rem);
+  padding: clamp(1.35rem, 3.5vw, 3.6rem);
+  border-color: rgba(138, 91, 255, 0.58);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 78% 36%, rgba(133, 70, 255, 0.2), transparent 32%),
+    radial-gradient(circle at 16% 78%, rgba(15, 188, 255, 0.13), transparent 31%),
+    linear-gradient(125deg, rgba(18, 8, 48, 0.98), rgba(5, 17, 48, 0.97));
+  box-shadow:
+    0 32px 90px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 0 36px rgba(108, 57, 255, 0.1);
+}
+
+.infinity-detail-page .infinity-before-showcase::before,
+.infinity-detail-page .infinity-before-showcase::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.infinity-detail-page .infinity-before-showcase::before {
+  inset: 0;
+  opacity: 0.24;
+  background-image:
+    linear-gradient(rgba(121, 95, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(121, 95, 255, 0.12) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(90deg, transparent 38%, #000 100%);
+}
+
+.infinity-detail-page .infinity-before-showcase::after {
+  inset-inline-end: clamp(1.5rem, 4vw, 4rem);
+  bottom: clamp(1.5rem, 4vw, 3.5rem);
+  width: clamp(5rem, 9vw, 8.5rem);
+  aspect-ratio: 1;
+  border: 1px solid rgba(107, 210, 255, 0.2);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 18px rgba(118, 73, 255, 0.035),
+    0 0 60px rgba(51, 178, 255, 0.12);
+}
+
+.infinity-detail-page .infinity-before-copy {
+  position: relative;
+  z-index: 2;
+  align-content: center;
+  justify-items: start;
+  gap: clamp(1rem, 1.8vw, 1.35rem);
+  max-width: 43rem;
+  padding-inline: clamp(0rem, 2vw, 1.5rem);
+}
+
+.infinity-detail-page .infinity-before-copy .mini-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.62rem;
+  min-height: 2.25rem;
+  padding: 0.48rem 0.9rem;
+  border: 1px solid rgba(164, 103, 255, 0.58);
+  border-radius: 999px;
+  color: #d6b6ff;
+  background: linear-gradient(110deg, rgba(131, 56, 255, 0.22), rgba(14, 132, 255, 0.12));
+  box-shadow: 0 0 24px rgba(116, 60, 255, 0.16);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.infinity-detail-page .infinity-before-copy .mini-title::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #5fdcff;
+  box-shadow: 0 0 0 4px rgba(83, 192, 255, 0.13), 0 0 14px #688dff;
+}
+
+.infinity-detail-page .infinity-before-copy h2 {
+  max-width: 13ch;
+  margin: 0;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(2.05rem, 4vw, 4.15rem);
+  font-weight: 800;
+  line-height: 1.23;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+  text-shadow: 0 12px 36px rgba(0, 0, 0, 0.28);
+}
+
+.infinity-detail-page .infinity-before-copy h2 strong {
+  display: block;
+  color: transparent;
+  background: linear-gradient(92deg, #bd6bff 0%, #7d70ff 48%, #2acbff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font: inherit;
+  filter: drop-shadow(0 8px 20px rgba(97, 75, 255, 0.2));
+}
+
+.infinity-detail-page .infinity-before-copy p {
+  max-width: 37rem;
+  margin: 0;
+  padding: 0.2rem 1rem 0.2rem 0;
+  border-inline-start: 3px solid transparent;
+  border-image: linear-gradient(#a661ff, #25cfff) 1;
+  color: rgba(239, 236, 255, 0.82);
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(1rem, 1.35vw, 1.17rem);
+  font-weight: 500;
+  line-height: 2;
+}
+
+.infinity-detail-page .infinity-before-media {
+  position: relative;
+  isolation: isolate;
+  justify-self: center !important;
+  width: min(100%, 31rem) !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 4 / 5 !important;
+  overflow: hidden;
+  border: 1px solid rgba(84, 208, 255, 0.58);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 50% 48%, rgba(107, 63, 255, 0.38) 0%, rgba(22, 44, 92, 0.22) 34%, transparent 65%),
+    linear-gradient(155deg, #060616 0%, #070b20 52%, #09132c 100%) !important;
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(139, 91, 255, 0.13),
+    inset 0 0 70px rgba(72, 54, 180, 0.12);
+}
+
+.infinity-detail-page .infinity-before-media::before,
+.infinity-detail-page .infinity-before-media::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.infinity-detail-page .infinity-before-media::before {
+  inset: 11% 10% 16%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(118, 83, 255, 0.3), transparent 67%);
+  filter: blur(16px);
+}
+
+.infinity-detail-page .infinity-before-media::after {
+  inset-inline: 12%;
+  bottom: 12%;
+  height: 8%;
+  border-radius: 50%;
+  background: rgba(28, 184, 255, 0.28);
+  filter: blur(22px);
+}
+
+.infinity-detail-page .infinity-before-media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  background: transparent !important;
+  mix-blend-mode: screen;
+  transform: scale(1.16);
+  transition: transform 420ms ease, filter 420ms ease;
+  filter: drop-shadow(0 24px 26px rgba(0, 0, 0, 0.34));
+}
+
+.infinity-detail-page .infinity-before-showcase:hover .infinity-before-media img {
+  transform: scale(1.2) translateY(-0.35%);
+  filter: drop-shadow(0 30px 32px rgba(0, 0, 0, 0.42)) brightness(1.045);
+}
+
+.infinity-detail-page .infinity-before-media figcaption {
+  z-index: 3;
+  inset-inline: 50% auto;
+  bottom: 1rem;
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  margin: 0;
+  padding: 0.58rem 0.9rem;
+  transform: translateX(-50%);
+  border-color: rgba(127, 206, 255, 0.4);
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(4, 8, 25, 0.76);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  text-align: center;
+  white-space: normal;
+}
+
+@media (max-width: 900px) {
+  .infinity-detail-page .infinity-before-showcase {
+    grid-template-columns: 1fr !important;
+    min-height: 0;
+    gap: 2.25rem;
+  }
+
+  .infinity-detail-page .infinity-before-copy {
+    grid-row: 1;
+    max-width: 42rem;
+    margin-inline: auto;
+    padding-block: 0.5rem;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .infinity-detail-page .infinity-before-copy h2,
+  .infinity-detail-page .infinity-before-copy p {
+    max-width: 100%;
+  }
+
+  .infinity-detail-page .infinity-before-copy p {
+    padding: 0;
+    border: 0;
+  }
+
+  .infinity-detail-page .infinity-before-media {
+    grid-row: 2;
+    width: min(100%, 29rem) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .infinity-detail-page .infinity-before-showcase {
+    margin-block: 1.75rem;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .infinity-detail-page .infinity-before-copy {
+    padding-inline: 0.35rem;
+  }
+
+  .infinity-detail-page .infinity-before-copy h2 {
+    font-size: clamp(1.75rem, 9vw, 2.45rem);
+    line-height: 1.3;
+  }
+
+  .infinity-detail-page .infinity-before-media {
+    width: 100% !important;
+    border-radius: 18px;
+  }
+
+  .infinity-detail-page .infinity-before-media figcaption {
+    bottom: 0.75rem;
+    font-size: 0.65rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .infinity-detail-page .infinity-before-media img {
+    transition: none;
+  }
+}

@@ -1,0 +1,110 @@
+/* Section headings — slightly smaller with a sharper visual hook */
+:where(
+  .services-panel,
+  .reels,
+  .portfolio,
+  .identity,
+  .ai-videos,
+  .case-studies,
+  .reviews,
+  .contact
+) h2 {
+  position: relative;
+  font-size: clamp(1.9rem, 3.25vw, 2.5rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.035em !important;
+  text-wrap: balance;
+  text-shadow: 0 3px 18px rgba(2, 3, 24, .72), 0 0 22px rgba(141, 78, 255, .2);
+}
+
+:where(
+  .services-panel,
+  .reels,
+  .portfolio,
+  .identity,
+  .ai-videos,
+  .case-studies,
+  .reviews,
+  .contact
+) h2 strong {
+  background: linear-gradient(100deg, #d77aff 0%, #9f62ff 42%, #24c7ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  filter: drop-shadow(0 0 13px rgba(135, 79, 255, .28));
+}
+
+:where(
+  .services-panel,
+  .reels,
+  .portfolio,
+  .identity,
+  .ai-videos,
+  .case-studies,
+  .reviews,
+  .contact
+) h2::after {
+  content: "";
+  display: block;
+  width: clamp(3.6rem, 7vw, 5.1rem);
+  height: 2px;
+  margin: .72rem auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #b65cff 20%, #6578ff 55%, #25caff 82%, transparent);
+  box-shadow: 0 0 10px rgba(139, 89, 255, .72), 0 0 20px rgba(37, 202, 255, .25);
+}
+
+/* Keep split-layout headings visually anchored to their copy column. */
+:where(.identity, .contact) h2::after {
+  margin-inline: 0 auto;
+}
+
+/* The toolbox title is intentionally larger; reduce it without flattening its hierarchy. */
+#skills.creative-toolbox .toolbox-copy h2#skills-title {
+  max-width: 8.8ch !important;
+  font-size: clamp(2.75rem, 4.2vw, 4.1rem) !important;
+  line-height: .98 !important;
+  letter-spacing: -.04em !important;
+  text-shadow: 0 4px 22px rgba(2, 3, 24, .7), 0 0 24px rgba(141, 78, 255, .18);
+}
+
+#skills.creative-toolbox .toolbox-copy h2#skills-title strong {
+  background: linear-gradient(100deg, #d77aff 0%, #9f62ff 42%, #24c7ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  filter: drop-shadow(0 0 13px rgba(135, 79, 255, .28));
+}
+
+#skills.creative-toolbox .toolbox-copy h2#skills-title::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 2px;
+  margin: .8rem auto 0 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b65cff, #6578ff 55%, #25caff, transparent);
+  box-shadow: 0 0 10px rgba(139, 89, 255, .68), 0 0 20px rgba(37, 202, 255, .22);
+}
+
+@media (max-width: 620px) {
+  :where(
+    .services-panel,
+    .reels,
+    .portfolio,
+    .identity,
+    .ai-videos,
+    .case-studies,
+    .reviews,
+    .contact
+  ) h2 {
+    font-size: clamp(1.72rem, 7.5vw, 2.15rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  #skills.creative-toolbox .toolbox-copy h2#skills-title {
+    max-width: 10ch !important;
+    font-size: clamp(2.15rem, 10.5vw, 2.85rem) !important;
+    line-height: 1 !important;
+  }
+}

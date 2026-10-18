@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Egypt with Ali | Ahmed Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400..900&amp;family=Sora:wght@400..800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.min.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon-ahmed.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon-ahmed.png" />
+    <link rel="apple-touch-icon" href="./assets/favicon-ahmed.png" />
+    <link rel="stylesheet" href="./arabic-font-overrides.css" />
+      <link rel="stylesheet" href="./portfolio-visual-polish.css?v=20260912-1" />
+</head>
+  <body class="detail-body ai-video-detail-page">
+    <main class="detail-shell ai-video-detail-shell">
+      <div class="detail-topbar">
+        <a class="detail-back" href="./index.html#ai-videos">Back to AI Videos</a>
+        <span class="mini-title">AI VIDEO 01</span>
+      </div>
+
+      <article class="detail-card detail-rich ai-video-hero-detail">
+        <div class="detail-media ai-video-frame">
+          <div class="reel-scene-badge" aria-hidden="true"><span></span>AI Learning Video</div>
+          <video src="./assets/ai-listening-reading.mp4" poster="./assets/ai-listening-reading-thumb-opt.webp" controls playsinline preload="none"></video>
+          <button class="reel-watch-center" type="button" aria-label="Play video"><span>▶</span> Watch Video</button>
+        </div>
+        <div class="detail-copy" dir="rtl">
+          <span class="card-number">AI</span>
+          <h1>Explore Egypt with Ali</h1>
+          <p>فيديو تعليمي مدعوم بالذكاء الاصطناعي لدرس Listening and Reading، بيقدم محادثة بين Ali المرشد السياحي وJohn السائح عند الأهرامات، مع أسلوب بصري جذاب يساعد الطالب يسمع ويقرأ ويفهم الأماكن السياحية في مصر.</p>
+          <div class="detail-meta-grid">
+            <span><b>Type</b>AI Educational Video</span>
+            <span><b>Lesson</b>Listening and Reading</span>
+            <span><b>Topic</b>Exploring Egypt with Ali</span>
+          </div>
+        </div>
+      </article>
+
+      <section class="reel-creative-strip ai-video-strip" dir="rtl" aria-label="AI video structure">
+        <article><span>01</span><h2>تمهيد الدرس</h2><p>افتتاح يوجه الطالب للجزء المهم: Listening and Reading، مع تجهيز واضح للحوار قبل عرضه.</p></article>
+        <article><span>02</span><h2>قصة تعليمية</h2><p>المحادثة تدور بين علي المرشد السياحي وجون السائح عند الأهرامات، وبتقدم مفردات سهلة عن الأماكن في مصر.</p></article>
+        <article><span>03</span><h2>تجربة بصرية</h2><p>الصورة المصغرة والشخصيات والبيئة المصرية بتدي الفيديو شكل ممتع مناسب للأطفال والتعلم التفاعلي.</p></article>
+      </section>
+
+      <section class="detail-analysis-grid reel-script-grid ai-video-script-grid" dir="rtl">
+        <article class="detail-analysis-card">
+          <h2>هدف الفيديو</h2>
+          <p>تعليم الطالب جزء الاستماع والقراءة من خلال محادثة سهلة وواضحة بعنوان <strong>Exploring Egypt with Ali</strong>، مع ربط اللغة بسياق بصري مألوف عن مصر.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>فكرة السكريبت</h2>
+          <p>السكريبت يبدأ بجملة انتقالية: <strong>It's time for Listening and Reading</strong> ثم يعرف الطالب بالشخصيات: Ali المرشد السياحي وJohn السائح.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>المحتوى التعليمي</h2>
+          <p>الحوار يمر على الأهرامات، ركوب الجمال، المتحف المصري، وخان الخليلي، مع جمل قصيرة مناسبة للاستماع والتكرار.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>الأسلوب البصري</h2>
+          <p>استخدام شخصيات AI وبيئة مصرية مبهجة يخلي الدرس أقرب لفيديو قصصي، مش مجرد قراءة نص، وده يساعد على الانتباه والحفظ.</p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      (() => {
+        const video = document.querySelector(".ai-video-frame video");
+        const button = document.querySelector(".ai-video-frame .reel-watch-center");
+        if (!video || !button) return;
+
+        const hideButton = () => button.classList.add("is-hidden");
+        const showButton = () => {
+          if (video.paused) button.classList.remove("is-hidden");
+        };
+
+        button.addEventListener("click", () => {
+          video.play();
+          hideButton();
+        });
+
+        video.addEventListener("play", hideButton);
+        video.addEventListener("pause", showButton);
+        video.addEventListener("ended", showButton);
+      })();
+    </script>
+    <script src="./detail-return.js?v=20260829-1"></script>
+</body>
+</html>
+
+
+
+
+
+
+

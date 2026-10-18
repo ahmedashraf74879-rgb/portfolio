@@ -1,0 +1,100 @@
+/* Unified bilingual type system: Sora for Latin text, Cairo for Arabic. */
+:root {
+  --portfolio-latin-font: "Sora", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --portfolio-arabic-font: "Cairo", Tahoma, Arial, sans-serif;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--portfolio-latin-font) !important;
+}
+
+.loading-screen::after {
+  font-family: var(--portfolio-latin-font) !important;
+  font-weight: 600 !important;
+}
+
+h1,
+h2,
+.intro-title,
+.about-name,
+.detail-copy > h1,
+.reel-title-only > h1 {
+  font-family: var(--portfolio-latin-font) !important;
+  font-weight: 800 !important;
+}
+
+h1 strong,
+h2 strong,
+.intro-title strong {
+  font-weight: inherit !important;
+}
+
+h3,
+h4,
+h5,
+h6,
+.mini-title,
+.eyebrow,
+.intro-label,
+.detail-kicker,
+.case-study-detail-kicker,
+.loading-greeting-caption {
+  font-family: var(--portfolio-latin-font) !important;
+  font-weight: 600 !important;
+}
+
+.topbar .nav a,
+.footer-quick-links a,
+.primary-btn,
+.secondary-btn,
+.watch-link,
+.talk-btn,
+button,
+label {
+  font-weight: 600 !important;
+}
+
+p,
+li,
+dd,
+dt,
+input,
+textarea,
+select {
+  font-weight: 400;
+}
+
+:lang(ar),
+[lang="ar"],
+[dir="rtl"],
+[dir="rtl"] *,
+.arabic-copy,
+.arabic-copy * {
+  font-family: var(--portfolio-arabic-font) !important;
+}
+
+:lang(ar),
+[lang="ar"],
+[dir="rtl"],
+[dir="rtl"] * {
+  letter-spacing: 0 !important;
+}
+
+:lang(ar):is(h1, h2),
+[lang="ar"]:is(h1, h2),
+[dir="rtl"] :is(h1, h2),
+:is(h1, h2)[dir="rtl"] {
+  font-weight: 800 !important;
+}
+
+:lang(ar):is(h3, h4, h5, h6),
+[lang="ar"]:is(h3, h4, h5, h6),
+[dir="rtl"] :is(h3, h4, h5, h6),
+:is(h3, h4, h5, h6)[dir="rtl"] {
+  font-weight: 600 !important;
+}

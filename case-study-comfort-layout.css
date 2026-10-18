@@ -1,0 +1,149 @@
+/* Case study entry: calmer rhythm, consistent alignment, balanced visual weight. */
+html body main > #case-studies.case-studies.section.case-study-entry-section {
+  grid-template-columns: minmax(22rem, 0.9fr) minmax(0, 1.25fr) !important;
+  align-items: center !important;
+  gap: clamp(2.5rem, 4vw, 4.25rem) !important;
+  min-height: 0 !important;
+  padding: clamp(2.5rem, 3.6vw, 3.35rem) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  max-width: 31rem;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading .mini-title {
+  align-self: flex-start;
+  margin: 0 0 1rem !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 {
+  width: 100%;
+  max-width: 10.6ch !important;
+  margin: 0 0 1.15rem !important;
+  font-size: clamp(2.45rem, 3.25vw, 3.25rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.075 !important;
+  letter-spacing: -0.048em !important;
+  text-align: left !important;
+  text-wrap: balance;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong {
+  margin-top: 0.12em !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span + span {
+  margin-top: 0.08em;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-intro {
+  width: 100%;
+  max-width: 29rem;
+  margin: 0 0 1.45rem !important;
+  color: rgba(224, 220, 239, 0.8);
+  font-size: clamp(0.96rem, 1.1vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.75;
+  text-align: left !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cta {
+  align-self: flex-start;
+  min-height: 3.25rem;
+  margin: 0 !important;
+  padding-inline: 1.2rem 1.3rem;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-card {
+  align-self: center;
+  width: 100% !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link {
+  aspect-ratio: 16 / 10 !important;
+  border-radius: 1.35rem !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover {
+  border-radius: calc(1.35rem - 1px) !important;
+}
+
+@media (max-width: 1020px) {
+  html body main > #case-studies.case-studies.section.case-study-entry-section {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "case-copy" "case-visual" !important;
+    gap: 2.25rem !important;
+    padding: clamp(2rem, 6vw, 3rem) !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading {
+    align-items: center !important;
+    max-width: 43rem;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading .mini-title,
+  .case-studies.section.case-study-entry-section .case-study-entry-cta {
+    align-self: center;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2,
+  .case-studies.section.case-study-entry-section .case-studies-intro {
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    font-size: clamp(2.3rem, 6vw, 3.25rem) !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-card {
+    width: min(100%, 52rem) !important;
+    margin-inline: auto !important;
+  }
+}
+
+@media (max-width: 560px) {
+  html body main > #case-studies.case-studies.section.case-study-entry-section {
+    gap: 1.65rem !important;
+    padding: 1.35rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading .mini-title {
+    margin-bottom: 0.82rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    margin-bottom: 1rem !important;
+    font-size: clamp(2rem, 10vw, 2.65rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-intro {
+    margin-bottom: 1.25rem !important;
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-link {
+    border-radius: 1rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-cover {
+    border-radius: calc(1rem - 1px) !important;
+  }
+}

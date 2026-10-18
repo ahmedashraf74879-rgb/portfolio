@@ -1,0 +1,30 @@
+/* Remove the white decorative particle overlapping Photoshop. */
+html body #skills.creative-toolbox .toolbox-orbit .particle-c {
+  display: none !important;
+}
+html body #skills.creative-toolbox .toolbox-orbit .tool-orb {
+  pointer-events: auto !important;
+  animation: none !important;
+  transition: translate .22s ease, scale .22s ease, box-shadow .22s ease !important;
+  translate: 0 0;
+  scale: 1;
+}
+/* Preserve each image's existing crop while animating its outer container. */
+html body #skills.creative-toolbox .toolbox-orbit .tool-orb:not(.tool-orb-ps):hover img {
+  transform: none !important;
+}
+html body #skills.creative-toolbox .toolbox-orbit .tool-orb::after {
+  display: none !important;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  html body #skills.creative-toolbox .toolbox-orbit .tool-orb:hover {
+    translate: 0 -5px;
+    scale: 1.06;
+    box-shadow: 0 0 22px rgba(144,74,255,.5), 0 0 35px rgba(37,183,255,.22) !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body #skills.creative-toolbox .toolbox-orbit .tool-orb {
+    transition: none !important;
+  }
+}

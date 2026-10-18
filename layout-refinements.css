@@ -1,0 +1,48 @@
+/* Hero spacing and contrast, retaining the original title scale and palette. */
+html body main #home.intro-screen .intro-inner {gap:0 !important;width:min(1180px,100%) !important;min-width:0 !important;}
+html body main #home.intro-screen .intro-label {margin:22px 0 12px !important;}
+html body main #home.intro-screen .intro-title {margin:0 !important;max-width:100% !important;text-shadow:none !important;filter:drop-shadow(0 0 10px #7950db33) !important;}
+html body main #home.intro-screen .intro-title > span {text-shadow:none !important;filter:none !important;max-width:100% !important;}
+html body main #home.intro-screen .intro-subtitle {margin:20px auto 0 !important;line-height:1.8 !important;max-width:44rem !important;}
+html body main #home.intro-screen .intro-actions {margin:24px auto 0 !important;max-width:100% !important;}
+html body main #home.intro-screen .intro-graphics {opacity:.75 !important;}
+html body main #home.intro-screen .intro-portfolio-cta {box-shadow:0 6px 22px #8042de33,inset 0 1px 0 #ffffff26 !important;transition:translate .25s ease,box-shadow .25s ease !important;}
+html body main #home.intro-screen .intro-portfolio-cta:hover {translate:0 -3px;box-shadow:0 9px 28px #8054ed66,0 0 20px #28aeff33 !important;}
+html body .topbar {z-index:40 !important;}
+@media(max-width:760px){
+html body main #home.intro-screen {padding-inline:20px !important;overflow-x:clip !important;}
+html body main #home.intro-screen .intro-welcome {position:relative !important;inset:auto !important;max-width:100% !important;white-space:normal !important;}
+html body main #home.intro-screen .intro-title > span {white-space:normal !important;overflow-wrap:normal !important;text-wrap:balance !important;}
+html body main #home.intro-screen .intro-subtitle {margin-top:16px !important;}
+html body main #home.intro-screen .intro-actions {margin-top:20px !important;}
+}
+/* Full review pages: 3 wide desktop, 2 tablet, 1 mobile. */
+html body main #reviews .reviews-carousel {display:grid !important;grid-template-columns:52px minmax(0,1fr) 52px !important;gap:14px !important;align-items:center !important;padding:0 !important;}
+html body main #reviews .reviews-mask {mask-image:none !important;-webkit-mask-image:none !important;overflow:visible !important;width:100% !important;}
+html body main #reviews .reviews-track {display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:20px !important;width:100% !important;animation:none !important;}
+html body main #reviews .review-card {width:100% !important;min-width:0 !important;max-width:none !important;height:auto !important;min-height:310px !important;padding:24px !important;box-sizing:border-box !important;overflow:visible !important;}
+html body main #reviews .review-card[hidden] {display:none !important;}
+html body main #reviews .review-text {font-size:17px !important;line-height:1.85 !important;display:block !important;-webkit-line-clamp:unset !important;max-height:none !important;overflow:visible !important;white-space:normal !important;}
+html body main #reviews .review-person h3 {font-size:19px !important;}
+html body main #reviews .review-person p,html body main #reviews .review-person span {font-size:14px !important;}
+html body main #reviews .review-nav {position:static !important;transform:none !important;width:52px !important;height:52px !important;border-radius:50% !important;font-size:38px !important;line-height:1 !important;background:#382370 !important;color:#fff !important;border:1px solid #a17aff !important;opacity:1 !important;}
+html body main #reviews .review-nav:disabled {opacity:.35 !important;}
+@media(max-width:1150px){html body main #reviews .reviews-track {grid-template-columns:repeat(2,minmax(0,1fr)) !important;}}
+@media(max-width:700px){html body main #reviews .reviews-track {grid-template-columns:1fr !important;}html body main #reviews .reviews-carousel {grid-template-columns:40px minmax(0,1fr) 40px !important;gap:8px !important;}html body main #reviews .review-nav {width:40px !important;height:40px !important;}html body main #reviews .review-card {padding:18px !important;}}
+/* Balanced contact column and simple contact details. */
+html body main #contact.contact.section {grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr) !important;padding-bottom:24px !important;margin-bottom:0 !important;}
+html body main #contact.contact.section > form {width:100% !important;max-width:470px !important;justify-self:end !important;}
+html body main #contact.contact.section > .contact-links.contact-links-bottom {justify-content:flex-start !important;gap:14px 24px !important;margin-top:26px !important;}
+
+html body main #contact.contact.section > .contact-links.contact-links-bottom > a.contact-link-cv {margin-inline-start:auto !important;padding:8px 16px !important;}
+html body .site-footer {margin-top:0 !important;padding-top:28px !important;}
+@media(max-width:900px){html body main #contact.contact.section {grid-template-columns:1fr !important;}html body main #contact.contact.section > form {max-width:100% !important;}}
+@media(max-width:600px){html body main #contact.contact.section > .contact-links.contact-links-bottom {align-items:flex-start !important;flex-direction:column !important;}html body main #contact.contact.section > .contact-links.contact-links-bottom > a.contact-link-cv {margin-inline-start:0 !important;margin-top:8px !important;}}
+@keyframes cleanHeroEnter {from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+html body #reels .promo-card-preview {display:block !important;width:100% !important;height:100% !important;object-fit:cover !important;position:absolute !important;inset:0 !important;}
+/* Continuous review strip, retaining readable cards and large controls. */
+html body main #reviews .reviews-mask {overflow:hidden !important;mask-image:none !important;-webkit-mask-image:none !important;}
+html body main #reviews .reviews-track {display:flex !important;width:100% !important;gap:20px !important;animation:none !important;direction:ltr !important;}
+html body main #reviews .review-card {flex:0 0 calc((100% - 40px)/3) !important;width:calc((100% - 40px)/3) !important;min-width:0 !important;}
+@media(max-width:1150px){html body main #reviews .review-card{flex-basis:calc((100% - 20px)/2) !important;width:calc((100% - 20px)/2) !important;}}
+@media(max-width:700px){html body main #reviews .review-card{flex-basis:100% !important;width:100% !important;}}

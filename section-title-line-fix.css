@@ -1,0 +1,70 @@
+/* Section title underline — stable alignment before, during and after hover */
+#services.services-panel.section > h2::after,
+#reels.reels.section > h2::after,
+#portfolio.portfolio.section > h2::after,
+#identity.identity.section .identity-copy h2::after,
+#ai-videos.ai-videos.section h2::after,
+#case-studies.case-studies.section .case-studies-heading h2::after,
+#skills.skills.section .toolbox-copy h2::after,
+#reviews.reviews.section .reviews-heading h2::after,
+#contact.contact.section .contact-copy h2::after {
+  content: "" !important;
+  position: static !important;
+  inset: auto !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  display: block !important;
+  width: clamp(3.8rem, 6vw, 5.2rem) !important;
+  height: 2px !important;
+  margin: .72rem auto 0 !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, transparent, #b65cff 20%, #6578ff 55%, #25caff 82%, transparent) !important;
+  box-shadow: 0 0 10px rgba(139, 89, 255, .72), 0 0 20px rgba(37, 202, 255, .25) !important;
+  opacity: .78 !important;
+  transform: none !important;
+  translate: none !important;
+  scale: 1 !important;
+  animation: none !important;
+  transform-origin: center !important;
+  transition: opacity .24s ease, filter .24s ease, box-shadow .24s ease !important;
+  pointer-events: none !important;
+}
+
+#identity.identity.section .identity-copy h2::after,
+#case-studies.case-studies.section .case-studies-heading h2::after,
+#skills.skills.section .toolbox-copy h2::after,
+#contact.contact.section .contact-copy h2::after {
+  margin-inline: 0 auto !important;
+  transform-origin: left center !important;
+}
+
+#services.services-panel.section > h2:hover::after,
+#reels.reels.section > h2:hover::after,
+#portfolio.portfolio.section > h2:hover::after,
+#identity.identity.section .identity-copy h2:hover::after,
+#ai-videos.ai-videos.section h2:hover::after,
+#case-studies.case-studies.section .case-studies-heading h2:hover::after,
+#skills.skills.section .toolbox-copy h2:hover::after,
+#reviews.reviews.section .reviews-heading h2:hover::after,
+#contact.contact.section .contact-copy h2:hover::after {
+  width: clamp(3.8rem, 6vw, 5.2rem) !important;
+  opacity: 1 !important;
+  transform: none !important;
+  translate: none !important;
+  scale: 1 !important;
+  filter: brightness(1.18);
+  box-shadow: 0 0 13px rgba(139, 89, 255, .86), 0 0 24px rgba(37, 202, 255, .34) !important;
+}
+
+@media (max-width: 900px) {
+  #identity.identity.section .identity-copy h2::after,
+  #case-studies.case-studies.section .case-studies-heading h2::after,
+  #skills.skills.section .toolbox-copy h2::after,
+  #contact.contact.section .contact-copy h2::after {
+    margin-inline: auto !important;
+    transform-origin: center !important;
+  }
+}

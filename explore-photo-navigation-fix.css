@@ -1,0 +1,10 @@
+/* Let the opening CTA reveal the profile card cleanly below the sticky header. */
+html body main #about.profile-card {
+  scroll-margin-top: clamp(5.5rem, 8vw, 7rem);
+}
+
+@media (max-width: 760px) {
+  html body main #about.profile-card {
+    scroll-margin-top: 5.5rem;
+  }
+}

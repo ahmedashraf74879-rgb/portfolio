@@ -1,0 +1,143 @@
+/* Final client-performance guard: keep premium motion only when it can be seen. */
+html.is-site-scrolling body.performance-lite main #home.intro-screen .intro-welcome,
+html.is-site-scrolling body.performance-lite main #home.intro-screen .intro-welcome::before,
+html.is-site-scrolling body.performance-lite main #home.intro-screen .explore-cta-icon,
+html.is-site-scrolling body.performance-lite main #home.intro-screen .explore-cta-icon::after,
+html.is-site-scrolling body.performance-lite main #home.intro-screen .explore-cta-icon svg,
+html.is-site-scrolling body.performance-lite main .about-section .primary-btn[href="#portfolio"],
+html.is-site-scrolling body.performance-lite main .about-section .primary-btn[href="#portfolio"]::before,
+html.is-site-scrolling body.performance-lite main .about-section .primary-btn[href="#portfolio"] svg,
+html.is-page-hidden body.performance-lite main #home.intro-screen .intro-welcome,
+html.is-page-hidden body.performance-lite main #home.intro-screen .intro-welcome::before,
+html.is-page-hidden body.performance-lite main #home.intro-screen .explore-cta-icon,
+html.is-page-hidden body.performance-lite main #home.intro-screen .explore-cta-icon::after,
+html.is-page-hidden body.performance-lite main #home.intro-screen .explore-cta-icon svg,
+html.is-page-hidden body.performance-lite main .about-section .primary-btn[href="#portfolio"],
+html.is-page-hidden body.performance-lite main .about-section .primary-btn[href="#portfolio"]::before,
+html.is-page-hidden body.performance-lite main .about-section .primary-btn[href="#portfolio"] svg,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .intro-welcome,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .intro-welcome::before,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .explore-cta-icon,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .explore-cta-icon::after,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .explore-cta-icon svg,
+body.performance-lite main .about-section.is-performance-offscreen .primary-btn[href="#portfolio"],
+body.performance-lite main .about-section.is-performance-offscreen .primary-btn[href="#portfolio"]::before,
+body.performance-lite main .about-section.is-performance-offscreen .primary-btn[href="#portfolio"] svg {
+  animation-play-state: paused !important;
+  will-change: auto !important;
+}
+
+@media (max-width: 900px), (pointer: coarse) {
+  html body.performance-lite main #home.intro-screen .intro-welcome,
+  html body.performance-lite main #home.intro-screen .intro-welcome::before,
+  html body.performance-lite main #home.intro-screen .explore-cta-icon,
+  html body.performance-lite main #home.intro-screen .explore-cta-icon::after,
+  html body.performance-lite main #home.intro-screen .explore-cta-icon svg,
+  html body.performance-lite main .about-section .primary-btn[href="#portfolio"],
+  html body.performance-lite main .about-section .primary-btn[href="#portfolio"]::before,
+  html body.performance-lite main .about-section .primary-btn[href="#portfolio"] svg {
+    animation: none !important;
+    animation-delay: 0s !important;
+    will-change: auto !important;
+  }
+
+  html body.performance-lite :is(
+    .profile-card,
+    .service-card,
+    .media-card,
+    .identity-split-clean,
+    .ai-showcase-panel,
+    .case-study-entry-link,
+    .tool-card,
+    .review-card
+  ) {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.performance-lite *,
+  html body.performance-lite *::before,
+  html body.performance-lite *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition-duration: .01ms !important;
+    will-change: auto !important;
+  }
+}
+/* Adaptive rendering: defer offscreen sections and pause invisible decoration. */
+body.performance-lite main > section:not(#home),
+body.performance-lite .site-footer {
+  content-visibility: visible;
+  contain-intrinsic-size: none;
+}
+
+body.performance-lite main > section.is-performance-offscreen *,
+body.performance-lite main > section.is-performance-offscreen *::before,
+body.performance-lite main > section.is-performance-offscreen *::after,
+html.is-page-hidden body.performance-lite *,
+html.is-page-hidden body.performance-lite *::before,
+html.is-page-hidden body.performance-lite *::after {
+  animation-play-state: paused !important;
+  will-change: auto !important;
+}
+
+html.is-site-scrolling body.performance-lite .site-bg :is(.beam, .particle),
+html.is-site-scrolling body.performance-lite main > section:not(.is-performance-offscreen) :is(.orb, .floating-dot) {
+  animation-play-state: paused !important;
+}
+
+@media (max-width: 900px), (pointer: coarse), (prefers-reduced-data: reduce) {
+  body.performance-lite .site-bg :is(.beam, .particle) {
+    animation: none !important;
+    will-change: auto !important;
+  }
+
+  body.performance-lite :is(.cursor-dot, .cursor-ring) {
+    display: none !important;
+  }
+
+  body.performance-lite main > section:not(#home) {
+    contain-intrinsic-size: none;
+  }
+}
+/* Use native cursor and static ambient decoration to reduce continuous painting. */
+html body.performance-lite :is(.cursor-dot,.cursor-ring) {display:none !important;}
+html body.performance-lite {cursor:auto !important;}
+html body.performance-lite :is(a,button,[role=button]) {cursor:pointer !important;}
+html body.performance-lite :is(input,textarea) {cursor:text !important;}
+html body.performance-lite .site-bg,
+html body.performance-lite .site-bg *,
+html body.performance-lite .site-bg *::before,
+html body.performance-lite .site-bg *::after,
+html body.performance-lite .intro-graphics *,
+html body.performance-lite .intro-graphics *::before,
+html body.performance-lite .intro-graphics *::after {
+ animation:none !important; will-change:auto !important;
+}
+html body.performance-lite :is(.service-card,.media-card,.tool-card,.review-card) {
+ backdrop-filter:none !important; -webkit-backdrop-filter:none !important;
+}
+
+/* Pause decorative painting during navigation, preserving JS scroll and video controls. */
+html.is-site-scrolling body.performance-lite main *,
+html.is-site-scrolling body.performance-lite main *::before,
+html.is-site-scrolling body.performance-lite main *::after {animation-play-state:paused !important;}
+html body.performance-lite main :is(.profile-card,.service-card,.media-card,.tool-card,.review-card)::before,
+html body.performance-lite main :is(.profile-card,.service-card,.media-card,.tool-card,.review-card)::after {
+ animation:none !important;backdrop-filter:none !important;will-change:auto !important;
+}
+
+/* Stable section geometry avoids jumps while smooth scrolling. */
+html body.performance-lite main > section,
+html body.performance-lite .site-footer {content-visibility:visible !important;contain-intrinsic-size:none !important;}
+html body.performance-lite main > section::before,
+html body.performance-lite main > section::after,
+html body.performance-lite .site-footer::before,
+html body.performance-lite .site-footer::after {animation:none !important;will-change:auto !important;}
+html body.performance-lite :is(.profile-card,.service-card,.media-card,.tool-card,.review-card,.site-footer,.contact,.topbar) {
+ backdrop-filter:none !important;-webkit-backdrop-filter:none !important;
+}
+html body.performance-lite #home .intro-title,
+html body.performance-lite #home .intro-title > span {filter:none !important;text-shadow:none !important;}

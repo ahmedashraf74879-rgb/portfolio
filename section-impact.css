@@ -1,0 +1,72 @@
+/* Clear, consistent section titles and short, finite attention cues. */
+html body main .section .section-impact-title {
+ font-size:clamp(30px,3.3vw,52px) !important; line-height:1.16 !important;
+ letter-spacing:-.035em !important; font-weight:800 !important;
+ color:#f6f1ff !important; -webkit-text-fill-color:#f6f1ff !important;
+ text-wrap:balance; overflow:visible !important; padding-bottom:.12em !important;
+ text-shadow:none !important; filter:none !important;
+}
+html body main .section .section-impact-title strong,
+html body main .section .section-impact-title strong > span {
+ color:transparent !important; -webkit-text-fill-color:transparent !important;
+ background:linear-gradient(105deg,#e3adff,#a77aff 50%,#6cdcff) !important;
+ background-clip:text !important; -webkit-background-clip:text !important;
+ font-weight:800 !important; filter:none !important; text-shadow:none !important;
+}
+html body main .section .section-impact-title::after {display:none !important;}
+html body main .section .about-positioning.section-impact-title {font-size:clamp(25px,2.4vw,36px) !important;line-height:1.3 !important;}
+html body #work-navigation-button {
+ position:relative !important; isolation:isolate; overflow:hidden !important;
+ background:linear-gradient(110deg,#8933ed,#4938c5 58%,#246cc7) !important;
+ border:1px solid #ba8aff !important;box-shadow:0 6px 24px #8745e638 !important;
+ transition:translate .2s ease,box-shadow .2s ease !important;
+}
+html body #work-navigation-button::after {
+ content:'';position:absolute;inset:-40% auto -40% -70%;width:40%;pointer-events:none;
+ background:linear-gradient(90deg,transparent,#ffffff60,transparent);
+ transform:skewX(-20deg);opacity:0;
+}
+html body #work-navigation-button.work-invite::after {animation:workButtonShine 1s ease .25s 2 !important;}
+html body #work-navigation-button:is(:hover,:focus-visible) {translate:0 -3px;box-shadow:0 10px 30px #8d50ed55 !important;}
+html body #work-navigation-button:is(:hover,:focus-visible)::after {animation:workButtonShine .8s ease 1 !important;}
+@keyframes workButtonShine {0%{opacity:0;transform:translateX(0) skewX(-20deg)}20%{opacity:.85}100%{opacity:0;transform:translateX(550%) skewX(-20deg)}}
+@media(prefers-reduced-motion:reduce){html body #work-navigation-button,html body #work-navigation-button::after{animation:none !important;transition:none !important;}}
+
+/* Keep the footer invitation proportional to its links. */
+html body footer.site-footer .footer-social-inner > h2.section-impact-title {
+ font-size:clamp(25px,2.5vw,38px) !important; line-height:1.3 !important;
+ max-width:900px !important; margin:12px auto 28px !important;
+ letter-spacing:-.025em !important; text-wrap:balance !important;
+ text-shadow:none !important; filter:none !important;
+}
+html body :is(.social-image-link,.footer-social-link,.contact-link) {
+ transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease !important;
+}
+@media(prefers-reduced-motion:reduce){html body :is(.social-image-link,.footer-social-link,.contact-link){transition:none !important;}}
+
+/* Case study: consistent alignment and intentional line breaks. */
+html body main #case-studies .case-studies-heading h2#case-studies-title {
+ font-size:clamp(28px,2.8vw,42px) !important; line-height:1.18 !important;
+ text-align:left !important; max-width:100% !important; margin:0 0 20px !important;
+ letter-spacing:-.035em !important;
+}
+html body main #case-studies .case-studies-heading h2#case-studies-title > span {
+ display:block !important; margin:0 0 8px !important; text-align:left !important;
+}
+html body main #case-studies .case-studies-heading h2#case-studies-title > strong {
+ display:block !important; text-align:left !important; line-height:1.2 !important;
+}
+html body main #case-studies .case-studies-heading h2#case-studies-title > strong > span {
+ display:block !important; margin:0 !important; padding:0 !important; text-align:left !important;
+}
+html body main #reviews .reviews-track {transition:none !important;}
+
+/* Short, centered footer invitation. */
+html body footer.site-footer .footer-social-inner > h2.section-impact-title {
+ display:block !important; width:100% !important; max-width:100% !important;
+ text-align:center !important; margin:16px auto 28px !important;
+ font-size:clamp(26px,3vw,42px) !important; line-height:1.2 !important;
+}
+html body footer.site-footer .footer-social-inner > h2.section-impact-title strong {
+ display:inline !important; font-size:inherit !important; line-height:inherit !important;
+}

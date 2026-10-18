@@ -1,0 +1,23 @@
+/* Explore CTA: land on the complete personal-information scene, not its inner card. */
+main > .hero.section.about-section {
+  min-height: calc(100svh - 6.25rem) !important;
+  scroll-margin-top: 6.25rem !important;
+  scroll-snap-align: start;
+}
+
+main > .hero.section.about-section #about.profile-card {
+  scroll-margin-top: 0 !important;
+}
+
+@media (max-width: 860px) {
+  main > .hero.section.about-section {
+    min-height: calc(100svh - 5rem) !important;
+    scroll-margin-top: 5rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}

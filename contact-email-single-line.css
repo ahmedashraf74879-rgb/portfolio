@@ -1,0 +1,122 @@
+/* Contact links: give the email the space its longer label needs. */
+@media (min-width: 901px) {
+  .contact.section#contact > .contact-links {
+    grid-template-columns: minmax(0, 0.82fr) minmax(20rem, 1.36fr) minmax(0, 0.82fr) !important;
+    width: min(100%, 66rem) !important;
+  }
+}
+
+.contact.section#contact > .contact-links a:nth-child(2) {
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+  font-size: clamp(0.78rem, 0.92vw, 0.92rem) !important;
+}
+
+@media (max-width: 900px) {
+  .contact.section#contact > .contact-links {
+    width: min(100%, 40rem) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact.section#contact > .contact-links a:nth-child(2) {
+    gap: 0.55rem !important;
+    padding-inline: 0.6rem !important;
+    font-size: clamp(0.72rem, 3.55vw, 0.8rem) !important;
+    letter-spacing: -0.015em;
+  }
+
+  .contact.section#contact > .contact-links a:nth-child(2)::before {
+    flex-basis: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* Contact options: full-width bottom row with uploaded icon artwork. */
+html body main #contact.contact.section {
+  display: grid !important;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr) !important;
+  align-items: start !important;
+  column-gap: clamp(2rem, 4vw, 4.2rem) !important;
+}
+html body main #contact.contact.section > .contact-copy {
+  grid-column: 1 !important;
+}
+html body main #contact.contact.section > form {
+  grid-column: 2 !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1rem !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: clamp(2rem, 4vw, 3.2rem) 0 0 !important;
+  padding: 0 !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link {
+  --contact-accent: #9b62ff;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: .85rem !important;
+  min-width: 0 !important;
+  min-height: 74px !important;
+  padding: .65rem 1rem !important;
+  overflow: hidden !important;
+  color: #fff !important;
+  font-size: clamp(.86rem, 1.25vw, 1rem) !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  border: 1px solid color-mix(in srgb, var(--contact-accent) 78%, transparent) !important;
+  border-radius: 16px !important;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--contact-accent) 18%, #10072d), rgba(5, 8, 34, .94)) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 12px 28px rgba(2,3,22,.2) !important;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link-whatsapp { --contact-accent: #15e89a; }
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link-email { --contact-accent: #24bfff; }
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link-cv { --contact-accent: #ad68ff; }
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link:hover,
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link:focus-visible {
+  transform: translateY(-4px) !important;
+  border-color: var(--contact-accent) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 16px 34px color-mix(in srgb, var(--contact-accent) 20%, transparent) !important;
+}
+html body main #contact.contact.section .contact-link-icon {
+  flex: 0 0 52px !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 52px !important;
+  height: 52px !important;
+}
+html body main #contact.contact.section .contact-link-icon img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+}
+html body main #contact.contact.section .contact-link > span:last-child {
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+}
+@media (max-width: 900px) {
+  html body main #contact.contact.section {
+    grid-template-columns: 1fr !important;
+  }
+  html body main #contact.contact.section > .contact-copy,
+  html body main #contact.contact.section > form,
+  html body main #contact.contact.section > .contact-links.contact-links-bottom {
+    grid-column: 1 !important;
+  }
+}
+@media (max-width: 700px) {
+  html body main #contact.contact.section > .contact-links.contact-links-bottom {
+    grid-template-columns: 1fr !important;
+  }
+}

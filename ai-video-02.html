@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Different Places Environment | Ahmed Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400..900&amp;family=Sora:wght@400..800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.min.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon-ahmed.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon-ahmed.png" />
+    <link rel="apple-touch-icon" href="./assets/favicon-ahmed.png" />
+    <link rel="stylesheet" href="./arabic-font-overrides.css" />
+      <link rel="stylesheet" href="./portfolio-visual-polish.css?v=20260912-1" />
+</head>
+  <body class="detail-body ai-video-detail-page">
+    <main class="detail-shell ai-video-detail-shell">
+      <div class="detail-topbar">
+        <a class="detail-back" href="./index.html#ai-videos">Back to AI Videos</a>
+        <span class="mini-title">AI VIDEO 02</span>
+      </div>
+
+      <article class="detail-card detail-rich ai-video-hero-detail">
+        <div class="detail-media ai-video-frame">
+          <div class="reel-scene-badge" aria-hidden="true"><span></span>AI Learning Video</div>
+          <video src="./assets/ai-different-places.mp4?v=20260720-swap" poster="./assets/ai-different-places-thumb-opt.webp" controls playsinline preload="none"></video>
+          <button class="reel-watch-center" type="button" aria-label="Play video"><span>▶</span> Watch Video</button>
+        </div>
+        <div class="detail-copy" dir="rtl">
+          <span class="card-number">AI</span>
+          <h1>Different Places Environment</h1>
+          <p>فيديو تعليمي مدعوم بالذكاء الاصطناعي لدرس My Environment، بيقدم محادثة بصرية عن الأماكن والبيئات المختلفة، مع مشاهد مدينة وريف وصحراء تساعد الطالب يفهم الكلمات من خلال الصورة والحوار.</p>
+          <div class="detail-meta-grid">
+            <span><b>Type</b>AI Educational Video</span>
+            <span><b>Lesson</b>My Environment</span>
+            <span><b>Topic</b>Different Places Environment</span>
+          </div>
+        </div>
+      </article>
+
+      <section class="reel-creative-strip ai-video-strip" dir="rtl" aria-label="AI video structure">
+        <article><span>01</span><h2>تمهيد البيئة</h2><p>افتتاح يجهز الطالب لفكرة الأماكن المختلفة ويربط المفردات بالمشهد قبل بداية الحوار.</p></article>
+        <article><span>02</span><h2>محادثة تعليمية</h2><p>الحوار يقدم مقارنة بسيطة بين المدينة والريف والصحراء، مع جمل مناسبة للاستماع والقراءة.</p></article>
+        <article><span>03</span><h2>تجربة بصرية</h2><p>الصورة المصغرة والمشاهد المتنوعة بتخلي الدرس أوضح وأسهل في التذكر، خصوصًا مع الشخصيات الكرتونية.</p></article>
+      </section>
+
+      <section class="detail-analysis-grid reel-script-grid ai-video-script-grid" dir="rtl">
+        <article class="detail-analysis-card">
+          <h2>هدف الفيديو</h2>
+          <p>تعليم الطالب مفردات ومحادثة عن <strong>Different Places</strong> من خلال سياق بصري يوضح الاختلاف بين البيئات المختلفة.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>فكرة السكريبت</h2>
+          <p>السكريبت مبني على محادثة سهلة في جزء <strong>My Environment</strong>، مع ربط كل مكان بصورة واضحة تساعد الطالب على الفهم.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>المحتوى التعليمي</h2>
+          <p>الفيديو يعرض أماكن وبيئات مختلفة مثل المدينة والريف والصحراء، مع لغة بسيطة مناسبة للتدريب على المحادثة.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>الأسلوب البصري</h2>
+          <p>استخدام شخصيات AI ومشاهد ملونة بيخلي الدرس أقرب لفيديو قصصي ممتع، ويدعم الانتباه وفهم المعنى من الصورة.</p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      (() => {
+        const video = document.querySelector(".ai-video-frame video");
+        const button = document.querySelector(".ai-video-frame .reel-watch-center");
+        if (!video || !button) return;
+
+        const hideButton = () => button.classList.add("is-hidden");
+        const showButton = () => {
+          if (video.paused) button.classList.remove("is-hidden");
+        };
+
+        button.addEventListener("click", () => {
+          video.play();
+          hideButton();
+        });
+
+        video.addEventListener("play", hideButton);
+        video.addEventListener("pause", showButton);
+        video.addEventListener("ended", showButton);
+      })();
+    </script>
+    <script src="./detail-return.js?v=20260829-1"></script>
+</body>
+</html>
+
+
+
+
+
+
+

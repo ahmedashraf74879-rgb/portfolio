@@ -1,0 +1,55 @@
+/* Make the welcome message read as a clear opening statement. */
+html body main section#home.intro-screen .intro-inner p.intro-welcome {
+  gap: .3rem .58rem !important;
+  max-width: min(94%, 48rem) !important;
+  margin-bottom: .58rem !important;
+  padding: .68rem 1.15rem !important;
+  border: 1px solid rgba(144, 91, 255, .5) !important;
+  border-radius: 999px !important;
+  color: #e0d9ee !important;
+  -webkit-text-fill-color: #e0d9ee !important;
+  font-size: clamp(1.18rem, 1.65vw, 1.5rem) !important;
+  font-weight: 600 !important;
+  background:
+    linear-gradient(110deg, rgba(111, 44, 210, .2), rgba(20, 98, 170, .13)),
+    rgba(8, 6, 31, .7) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .08),
+    0 10px 28px rgba(2, 3, 24, .3),
+    0 0 24px rgba(113, 72, 236, .15) !important;
+  backdrop-filter: blur(10px);
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+  flex-basis: .58rem;
+  width: .58rem;
+  height: .58rem;
+  box-shadow:
+    0 0 0 5px rgba(132, 83, 255, .14),
+    0 0 19px rgba(63, 202, 255, .68);
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome strong {
+  font-size: 1.04em !important;
+  font-weight: 800 !important;
+  text-shadow:
+    0 2px 16px rgba(2, 3, 24, .9),
+    0 0 22px rgba(181, 111, 255, .34) !important;
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome span {
+  color: #d7d0e5 !important;
+  -webkit-text-fill-color: #d7d0e5 !important;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 560px) {
+  html body main section#home.intro-screen .intro-inner p.intro-welcome {
+    max-width: min(94vw, 21.5rem) !important;
+    margin-bottom: .35rem !important;
+    padding: .62rem .8rem !important;
+    border-radius: 1.15rem !important;
+    font-size: clamp(.98rem, 4.6vw, 1.1rem) !important;
+    line-height: 1.4 !important;
+  }
+}

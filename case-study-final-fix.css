@@ -1,0 +1,52 @@
+/* Keep the case-study heading clean and fit one frame to its cover. */
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title::after,
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title:hover::after {
+  content: none !important;
+  display: none !important;
+  margin: 0 !important;
+}
+html body main #case-studies.case-study-entry-section .case-study-entry-card {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 24px !important;
+  background: transparent !important;
+  overflow: hidden !important;
+}
+html body main #case-studies.case-study-entry-section .case-study-entry-card::before,
+html body main #case-studies.case-study-entry-section .case-study-entry-card::after {
+  content: none !important;
+  display: none !important;
+}
+html body main #case-studies.case-study-entry-section .case-study-entry-link {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  margin: 0 !important;
+  padding: 1px !important;
+  border: 0 !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  background: linear-gradient(125deg, #af55ff, #655bdf 50%, #27baff) !important;
+  box-shadow: none !important;
+}
+html body main #case-studies.case-study-entry-section .case-study-entry-cover {
+  display: block !important;
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  border-radius: 23px !important;
+  overflow: hidden !important;
+}
+html body main #case-studies.case-study-entry-section .case-study-entry-cover img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+  transform: none !important;
+  border-radius: inherit !important;
+}

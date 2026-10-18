@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Math Promo | برومو الرياضيات | Ahmed Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400..900&family=Sora:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.min.css"><link rel="stylesheet" href="./arabic-font-overrides.css">
+<link rel="icon" href="./assets/favicon-ahmed.png"><link rel="stylesheet" href="./promo-detail.css?v=20260914-1">
+</head>
+<body class="detail-body promo-detail-page">
+<main class="detail-shell promo-shell">
+<div class="detail-topbar"><a class="detail-back" href="./index.html#reels">Back to Work</a><span class="mini-title">PROMO VIDEO · 02</span></div>
+<header class="promo-heading">
+  <p class="mini-title">VIDEO EDITING · PROJECT 02</p>
+  <h1>Math <strong>Promo</strong></h1>
+  <p class="promo-ar-title" lang="ar" dir="rtl">برومو تعليمي للرياضيات</p>
+  <p class="promo-summary" lang="ar" dir="rtl">سؤال رياضي في قالب بصري يجمع النصوص العربية والعناصر الجرافيكية.</p>
+</header>
+<figure class="promo-player"><video poster="./assets/promo-testat-cover-sep15.png" width="1920" height="1080" controls playsinline preload="metadata" aria-label="مشاهدة البرومو كاملًا"><source src="./assets/reel-02-promo.mp4#t=0.1" type="video/mp4">Your browser does not support video playback.</video></figure>
+<section class="promo-info" aria-label="Project details">
+<div class="promo-description" dir="rtl">
+  <p class="mini-title">PROJECT OVERVIEW</p>
+  <h2>عن <strong>البرومو</strong></h2>
+  <p>برومو حول الرياضيات، تتصدره عبارة «تقدر تحدد الأصفار الحقيقية للدالة؟» مع معالجة بصرية للنص وعناصر هندسية بألوان بنفسجية.</p>
+  <div class="promo-tags"><span>رياضيات</span><span>فيديو ترويجي</span><span>نصوص عربية</span></div>
+</div><div class="promo-specs"><div><span>PROJECT TYPE</span><strong>Promo Video</strong></div><div><span>RESOLUTION</span><strong>1920 × 1080</strong></div><div><span>ASPECT RATIO</span><strong>16:9 · Landscape</strong></div><div><span>DURATION</span><strong id="promo-duration">—</strong></div></div>
+</section><nav class="promo-bottom-nav" aria-label="Project navigation"><a class="detail-back" href="./index.html#reels">← Back to Work</a><a class="detail-back promo-contact-cta" href="./index.html#contact">ناقش مشروعك القادم ↗</a></nav>
+</main>
+<script>const video=document.querySelector('video');video.addEventListener('loadedmetadata',()=>{if(Number.isFinite(video.duration)){const seconds=Math.round(video.duration);document.getElementById('promo-duration').textContent=Math.floor(seconds/60)+':'+String(seconds%60).padStart(2,'0');}});</script>
+<script src="./detail-return.js?v=20260829-1"></script>
+</body></html>

@@ -1,0 +1,238 @@
+/* Consistent existing heading rules, with stable hover geometry. */
+html body :is(h1,h2,h3):not(#unused-heading-rule):not(#unused-heading-hover)::after {
+  position: relative !important;
+  inset: auto !important;
+  width: 54px !important;
+  max-width: 30% !important;
+  height: 2px !important;
+  margin: 12px auto 0 !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg,#b86cff,#5883ff,#28c5e8) !important;
+  box-shadow: 0 0 8px #8c5bff40 !important;
+  transform: none !important;
+  translate: none !important;
+  scale: 1 !important;
+  animation: none !important;
+}
+html body #case-studies h2#case-studies-title::after { display:none !important; content:none !important; }
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(n) > .work-info {
+  inset: auto 0 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 48px 20px 16px !important;
+  gap: 0 !important;
+  background: linear-gradient(180deg,transparent,rgba(4,4,20,.87) 32%,#050516 100%) !important;
+}
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info h3 {
+  color:#fff !important; -webkit-text-fill-color:#fff !important;
+  font-size:clamp(1.05rem,1.6vw,1.4rem) !important;
+  line-height:1.3 !important; margin:0 38px 12px 0 !important;
+}
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info h3::after {
+  content:'' !important; display:block !important; margin-inline:0 auto !important;
+}
+html body main .portfolio.section#portfolio .work-grid > .media-card:is([href="./design-04.html"],[href="./design-06.html"]) {
+  aspect-ratio:auto !important; grid-template-rows:auto 1fr !important;
+  width:min(100%,360px) !important; justify-self:center !important; border-radius:18px !important;
+}
+html body main .portfolio.section#portfolio .work-grid > .media-card:is([href="./design-04.html"],[href="./design-06.html"]) > img {
+  width:100% !important; height:auto !important; max-height:none !important;
+  aspect-ratio:auto !important; padding:0 !important; object-fit:contain !important;
+}
+/* Each campaign image gets its own palette and an unobstructed caption. */
+html body main :is(.product-gallery-card,.infinity-product-gallery-card) {
+  --mood:#71c5de; --mood-bg:#081c28;
+  height:auto !important; aspect-ratio:auto !important;
+  padding:10px !important; overflow:hidden !important;
+  border:1px solid color-mix(in srgb,var(--mood) 55%,transparent) !important;
+  border-radius:20px !important;
+  background:radial-gradient(ellipse at top,color-mix(in srgb,var(--mood) 20%,var(--mood-bg)),var(--mood-bg)) !important;
+  box-shadow:0 14px 35px #0003,0 0 22px color-mix(in srgb,var(--mood) 9%,transparent) !important;
+}
+html body main :is(.product-gallery-card,.infinity-product-gallery-card) img {
+  display:block !important; position:relative !important; inset:auto !important;
+  width:100% !important; height:auto !important; max-height:none !important;
+  aspect-ratio:auto !important; object-fit:contain !important;
+  border-radius:12px !important; transform:none !important;
+}
+html body main :is(.product-gallery-card,.infinity-product-gallery-card) figcaption {
+  position:relative !important; inset:auto !important; display:block !important;
+  width:auto !important; max-width:none !important; margin:10px 0 0 !important;
+  padding:10px 8px !important; background:none !important;
+  border:0 !important; border-radius:0 !important; color:var(--mood) !important;
+  font-size:14px !important; line-height:1.6 !important; text-align:center !important;
+}
+html body #orovex-gallery .product-gallery-card:nth-child(2) { --mood:#afd58c; --mood-bg:#111f14; }
+html body #orovex-gallery .product-gallery-card:nth-child(3) { --mood:#d3dda0; --mood-bg:#262315; }
+html body #orovex-gallery .product-gallery-card:nth-child(4) { --mood:#e1af77; --mood-bg:#2b1b11; }
+html body .infinity-product-gallery-card:nth-child(1) { --mood:#d1dcaa; --mood-bg:#242719; }
+html body .infinity-product-gallery-card:nth-child(2) { --mood:#eacb8b; --mood-bg:#2a2114; }
+html body .infinity-product-gallery-card:nth-child(3) { --mood:#93dcf1; --mood-bg:#082431; }
+html body .infinity-product-gallery-card:nth-child(4) { --mood:#e2c5a5; --mood-bg:#292017; }
+html body .infinity-product-gallery-card:nth-child(5) { --mood:#a4d1bb; --mood-bg:#172923; }
+/* Infinity gallery: frameless artwork with a subtle palette-matched glow. */
+html body main .infinity-product-gallery-card {
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+html body main .infinity-product-gallery-card img {
+  border: 0 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--mood) 18%, transparent) !important;
+}
+html body main .infinity-product-gallery-card figcaption {
+  margin: 12px 0 0 !important;
+  padding: 5px 8px 12px !important;
+}
+/* Compact blue title chips leave the video artwork unobscured. */
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(n) > .work-info {
+  background: none !important;
+  padding: 16px 18px !important;
+  overflow: visible !important;
+}
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info h3 {
+  display: inline-block !important;
+  align-self: flex-start !important;
+  width: fit-content !important;
+  max-width: calc(100% - 42px) !important;
+  margin: 0 0 10px !important;
+  padding: 8px 12px !important;
+  border-radius: 9px !important;
+  background: linear-gradient(110deg, rgba(5,48,106,.92), rgba(10,93,166,.78)) !important;
+  box-shadow: 0 2px 10px rgba(0,34,82,.18) !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4) !important;
+}
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info h3::after,
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info h3::before {
+  content: none !important;
+  display: none !important;
+}
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info .watch-link {
+  background: linear-gradient(110deg,#164cad,#1387c5) !important;
+  border-color: rgba(93,190,255,.65) !important;
+}/* Final heading cleanup and compact reel labels. */
+html body :is(h1,h2,h3):not(#unused-heading-rule):not(#unused-heading-hover)::after { content:none !important; display:none !important; }
+html body main #reels .work-info h3 { width:fit-content !important; min-width:0 !important; max-width:100% !important; padding:6px 10px !important; }
+html body main #reels .work-info h3::before {content:none !important;display:none !important;}
+/* Edge-to-edge campaign images. */
+html body main #orovex-gallery .product-gallery-card {position:relative !important;padding:0 !important;aspect-ratio:1 !important;overflow:hidden !important;}
+html body main #orovex-gallery .product-gallery-card img {width:100% !important;height:100% !important;object-fit:cover !important;border-radius:inherit !important;}
+html body main #orovex-gallery .product-gallery-card figcaption {position:absolute !important;inset:auto 0 0 !important;margin:0 !important;padding:38px 18px 18px !important;color:#fff !important;font-size:16px !important;font-weight:700 !important;background:linear-gradient(transparent,rgba(2,12,15,.85)) !important;}
+html body main .orovex-before-showcase {display:grid !important;grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;gap:clamp(24px,4vw,56px) !important;padding:clamp(20px,3vw,40px) !important;align-items:center !important;}
+html body main .orovex-before-copy {min-width:0 !important;text-align:right !important;}
+html body main #orovex-before-title {font-size:clamp(28px,3.2vw,44px) !important;line-height:1.45 !important;max-width:none !important;margin:18px 0 !important;}
+html body main #orovex-before-title strong {display:block !important;font-size:.78em !important;line-height:1.5 !important;margin-top:12px !important;}
+html body main .orovex-before-copy p {font-size:16px !important;line-height:1.9 !important;max-width:none !important;}
+html body main .orovex-before-media {width:100% !important;max-width:460px !important;min-width:0 !important;justify-self:center !important;padding:0 !important;margin:0 !important;background:transparent !important;border:0 !important;box-shadow:none !important;}
+html body main .orovex-before-media img {width:100% !important;height:auto !important;aspect-ratio:1 !important;object-fit:contain !important;background:white !important;border-radius:18px !important;}
+html body main .orovex-before-media figcaption {border:0 !important;background:none !important;padding:14px 0 !important;box-shadow:none !important;gap:12px !important;flex-wrap:wrap !important;}
+@media(max-width:760px){html body main .orovex-before-showcase {grid-template-columns:1fr !important;}}
+/* Quiet, bounded motion when the section first enters view. */
+html body #skills .tool-card,html body #skills .toolbox-toolbar > span {transition:translate .25s ease,box-shadow .25s ease,border-color .25s ease !important;}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+html body #skills .tool-card:hover,html body #skills .toolbox-toolbar > span:hover {translate:0 -4px;box-shadow:0 12px 28px #08042155,0 0 18px #9561ff25 !important;border-color:#8275d8 !important;}
+html body #skills.skills-entered .tool-card {animation:toolCardReveal .6s ease both !important;}
+html body #skills.skills-entered .tool-card:nth-child(2){animation-delay:.08s !important;}
+html body #skills.skills-entered .tool-card:nth-child(3){animation-delay:.16s !important;}
+html body #skills.skills-entered .tool-card:nth-child(4){animation-delay:.24s !important;}
+html body #skills.skills-entered .tool-card:nth-child(5){animation-delay:.32s !important;}
+html body .actions .primary-btn.work-invite svg {animation:workInvite 1s ease 2 !important;}
+}
+@keyframes toolCardReveal{from{opacity:.3;translate:0 12px}to{opacity:1;translate:0 0}}
+@keyframes workInvite{0%,100%{scale:1;rotate:0deg}40%{scale:1.14;rotate:-6deg;filter:brightness(1.3)}70%{scale:1.06;rotate:4deg}}
+/* Small title labels, with minimal coverage of the thumbnail. */
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info h3 {
+  width: fit-content !important;
+  min-width: 0 !important;
+  padding: 4px 7px !important;
+  margin: 0 0 8px !important;
+  font-size: clamp(.88rem, 1.1vw, 1.02rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  border-radius: 5px !important;
+  background: linear-gradient(110deg, rgba(5,48,106,.82), rgba(10,93,166,.6)) !important;
+  box-shadow: none !important;
+}
+/* Clear compact blue gradient labels for AI video titles. */
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info h3 {
+  display: inline-block !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: calc(100% - 38px) !important;
+  padding: 6px 10px !important;
+  margin: 0 0 9px !important;
+  border: 1px solid rgba(118,205,255,.5) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(110deg,#183b89 0%,#1764b1 58%,#168ac0 100%) !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-size: clamp(.94rem,1.15vw,1.08rem) !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+  text-shadow: 0 1px 2px rgba(0,20,55,.35) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12),0 3px 10px rgba(0,15,45,.2) !important;
+}
+/* Plain editorial titles in place of blue badges. */
+html body main #ai-videos.ai-videos.section .ai-showcase-content .ai-video-card .work-info h3 {
+  background: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 0 10px !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-size: clamp(1rem,1.4vw,1.25rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.35 !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,.95), 0 0 12px rgba(0,0,0,.75) !important;
+}
+/* Original product: one clean image frame with a separate caption. */
+html body.orovex-detail-page main .orovex-before-media {
+  display:block !important; aspect-ratio:auto !important; min-height:0 !important;
+  padding:0 !important; border:0 !important; background:none !important;
+  box-shadow:none !important; overflow:visible !important;
+}
+html body.orovex-detail-page main .orovex-before-media::before,
+html body.orovex-detail-page main .orovex-before-media::after {content:none !important;display:none !important;}
+html body.orovex-detail-page main .orovex-before-media img {
+  display:block !important; width:100% !important; height:auto !important;
+  aspect-ratio:1 !important; object-fit:contain !important; transform:none !important;
+  border:1px solid rgba(115,220,196,.3) !important; border-radius:18px !important;
+  box-shadow:0 10px 28px rgba(0,0,0,.18) !important;
+}
+html body.orovex-detail-page main .orovex-before-media figcaption {
+  position:static !important; transform:none !important; min-height:0 !important;
+  padding:12px 2px !important; border:0 !important; background:none !important;
+}
+html body.orovex-detail-page main #orovex-before-title strong {
+  width:100% !important; max-width:none !important; text-wrap:balance !important;
+}
+/* Gentle recurring invitation on View My Work. */
+@media (prefers-reduced-motion: no-preference) {
+  html body main .actions .primary-btn[href="#portfolio"] svg {
+    animation: portfolioIconInvite 4.5s ease-in-out infinite !important;
+    transition: filter .25s ease !important;
+  }
+  html body main .actions .primary-btn[href="#portfolio"] {
+    transition: translate .25s ease, box-shadow .25s ease !important;
+  }
+  html body main .actions .primary-btn[href="#portfolio"]:hover {
+    translate: 0 -3px;
+  }
+  html body main .actions .primary-btn[href="#portfolio"]:hover svg {
+    animation-play-state: paused !important;
+    filter: brightness(1.18) !important;
+  }
+}
+@keyframes portfolioIconInvite {
+  0%, 32%, 100% { scale: 1; rotate: 0deg; translate: 0 0; }
+  9% { scale: 1.13; rotate: -7deg; translate: 0 -2px; }
+  17% { scale: 1.08; rotate: 5deg; translate: 0 -1px; }
+  25% { scale: 1.04; rotate: -2deg; translate: 0 0; }
+}

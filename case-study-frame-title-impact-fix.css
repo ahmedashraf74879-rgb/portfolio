@@ -1,0 +1,60 @@
+/* Case study — remove the stray frame highlight and strengthen the heading. */
+.case-studies.section.case-study-entry-section .case-study-entry-link::before {
+  content: none !important;
+  display: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 {
+  font-size: clamp(2.55rem, 3.75vw, 3.6rem) !important;
+  font-weight: 800 !important;
+  line-height: .99 !important;
+  letter-spacing: -.052em !important;
+  text-shadow:
+    0 4px 20px rgba(2, 3, 24, .86),
+    0 0 30px rgba(126, 73, 255, .28) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 > span {
+  color: #fff !important;
+  text-shadow:
+    0 3px 18px rgba(1, 2, 20, .9),
+    0 0 20px rgba(236, 221, 255, .18) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span {
+  padding-inline-end: .08em;
+  background: linear-gradient(102deg, #e58cff 0%, #a967ff 38%, #5f83ff 68%, #31d5ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  filter:
+    drop-shadow(0 0 12px rgba(176, 90, 255, .42))
+    drop-shadow(0 0 20px rgba(46, 191, 255, .2)) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+  width: 5.25rem !important;
+  height: 3px !important;
+  margin-top: 1rem !important;
+  background: linear-gradient(90deg, #d474ff, #776cff 52%, #31d5ff, transparent) !important;
+  box-shadow:
+    0 0 11px rgba(158, 84, 255, .82),
+    0 0 24px rgba(49, 213, 255, .34) !important;
+}
+
+@media (max-width: 900px) {
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    font-size: clamp(2.25rem, 8.7vw, 3.25rem) !important;
+    line-height: 1.02 !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+    margin-inline: auto !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    font-size: clamp(2rem, 10.5vw, 2.7rem) !important;
+    line-height: 1.04 !important;
+  }
+}

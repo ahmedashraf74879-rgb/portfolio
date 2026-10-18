@@ -1,0 +1,174 @@
+/* Opening screen: clear hierarchy, restrained light, responsive spacing. */
+html body main > section#home.intro-screen.section {
+  min-height: 100svh !important;
+  padding: clamp(100px, 12vh, 150px) 24px 64px !important;
+  display: grid !important;
+  place-items: center !important;
+  box-sizing: border-box !important;
+}
+html body main > section#home.intro-screen.section .intro-inner {
+  width: min(1100px, 100%) !important;
+  gap: 0 !important;
+}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome {
+  position: relative !important;
+  inset: auto !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 6px 10px !important;
+  min-height: 0 !important;
+  margin: 0 0 30px !important;
+  padding: 10px 18px !important;
+  max-width: 100% !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  border: 1px solid #b19aff30 !important;
+  border-radius: 999px !important;
+  background: #17132980 !important;
+  box-shadow: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome strong {
+  font-size: 1em !important; color: #f4efff !important; text-shadow: none !important;
+}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome span {
+  color: #aaa7bd !important; -webkit-text-fill-color: #aaa7bd !important;
+  background: none !important; filter: none !important; font-size: 1em !important; font-weight: 400 !important;
+}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome::before {
+  width: 6px !important; height: 6px !important; flex-basis: 6px !important;
+  box-shadow: 0 0 10px #a38aff66 !important; animation: none !important; align-self: center;
+}
+html body main > section#home.intro-screen.section .intro-label {
+  margin: 0 0 20px !important; padding: 0 !important; border: 0 !important;
+  background: none !important; box-shadow: none !important; color: #bcb0dc !important;
+  font-size: 11px !important; letter-spacing: .24em !important;
+}
+html body main > section#home.intro-screen.section .intro-title {
+  margin: 0 !important; padding: 0 !important; width: 100% !important;
+  font-size: clamp(42px, 6.1vw, 88px) !important;
+  line-height: 1.08 !important; letter-spacing: -.055em !important;
+  font-weight: 800 !important; filter: none !important; text-shadow: none !important;
+}
+html body main > section#home.intro-screen.section .intro-title > span {
+  display: block !important; font-size: inherit !important; line-height: inherit !important;
+  padding: 0 0 .06em !important; margin: 0 !important;
+  color: #f4f1fc !important; -webkit-text-fill-color: #f4f1fc !important;
+  background: none !important; filter: none !important; text-shadow: none !important;
+  white-space: normal !important; text-wrap: balance !important;
+}
+html body main > section#home.intro-screen.section .intro-title > span:last-child {
+  background: linear-gradient(100deg, #c194ff 15%, #9d65ff 48%, #5bafff 85%) !important;
+  background-clip: text !important; -webkit-background-clip: text !important;
+  color: transparent !important; -webkit-text-fill-color: transparent !important;
+}
+html body main > section#home.intro-screen.section .intro-title::after {display: none !important;}
+html body main > section#home.intro-screen.section .intro-subtitle {
+  max-width: 560px !important; margin: 24px auto 0 !important;
+  font-size: clamp(15px, 1.25vw, 18px) !important; line-height: 1.8 !important;
+  color: #aaa9bf !important; -webkit-text-fill-color: #aaa9bf !important;
+  background: none !important; text-shadow: none !important; font-weight: 400 !important;
+}
+html body main > section#home.intro-screen.section .intro-actions {margin: 30px auto 0 !important;}
+html body main > section#home.intro-screen.section .intro-portfolio-cta {
+  min-height: 60px !important; padding: 7px 8px 7px 25px !important;
+  box-shadow: 0 8px 30px #8455ef28 !important;
+}
+html body main > section#home.intro-screen.section .intro-graphics {opacity: .38 !important;}
+@media (max-width: 600px) {
+  html body main > section#home.intro-screen.section {padding: 100px 20px 48px !important;}
+  html body main > section#home.intro-screen.section .intro-inner p.intro-welcome {border-radius: 18px !important; max-width: 300px !important; margin-bottom: 26px !important; font-size: 12px !important;}
+  html body main > section#home.intro-screen.section .intro-title {font-size: clamp(34px, 8.5vw, 50px) !important;}
+  html body main > section#home.intro-screen.section .intro-label {font-size: 9px !important; letter-spacing: .18em !important;}
+  html body main > section#home.intro-screen.section .intro-subtitle {max-width: 340px !important; margin-top: 20px !important;}
+}
+@media (prefers-reduced-motion: reduce) {
+  html body main > section#home.intro-screen.section * {animation: none !important; transition: none !important;}
+}
+
+/* Anchor the introduction below navigation instead of vertically centering it. */
+html body main > section#home.intro-screen.section {
+ padding-top:clamp(110px, 10vh, 140px) !important;
+ padding-bottom:48px !important; place-items:start center !important;
+ height:auto !important; min-height:100svh !important;
+}
+html body main > section#home.intro-screen.section .intro-inner {
+ align-self:start !important; justify-content:flex-start !important;
+ min-height:0 !important; height:auto !important;
+ margin-top:0 !important; padding-top:0 !important; transform:none !important;
+}
+@media(max-width:600px) {
+ html body main > section#home.intro-screen.section {padding-top:96px !important;}
+}
+
+/* Restore the original compact greeting, with a brighter border and clear copy. */
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome {
+ display:flex !important; flex-direction:row !important; flex-wrap:wrap !important;
+ align-items:center !important; justify-content:center !important;
+ width:fit-content !important; max-width:100% !important; box-sizing:border-box !important;
+ margin:0 auto 30px !important; padding:14px 22px !important; gap:5px 10px !important;
+ min-height:0 !important; border:1px solid transparent !important; border-radius:999px !important;
+ font-size:clamp(16px,1.65vw,25px) !important; line-height:1.35 !important;
+ background:linear-gradient(110deg,#301550f2,#12254bf2 65%,#07405af2) padding-box,
+ linear-gradient(105deg,#d889ff,#8b76ff 55%,#49d5ff) border-box !important;
+ box-shadow:0 5px 24px #8e51e92b,inset 0 1px 0 #ffffff17 !important;
+ text-align:center !important; white-space:normal !important;
+}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome::before {
+ content:'' !important;display:block !important;position:static !important;
+ flex:0 0 8px !important;width:8px !important;height:8px !important;border-radius:50% !important;
+ background:#8adfff !important;box-shadow:0 0 0 5px #a879ff25,0 0 12px #85cfff66 !important;
+ animation:none !important;
+}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome strong {
+ display:inline !important;font-size:1em !important;line-height:inherit !important;
+ color:#fff5ff !important;-webkit-text-fill-color:#fff5ff !important;background:none !important;
+ font-weight:800 !important;letter-spacing:-.03em !important;
+}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome span {
+ display:inline !important;font-size:.92em !important;line-height:inherit !important;
+ background:linear-gradient(100deg,#e3c5ff,#88dcff) !important;
+ background-clip:text !important;-webkit-background-clip:text !important;
+ color:transparent !important;-webkit-text-fill-color:transparent !important;
+ font-weight:650 !important;letter-spacing:-.02em !important;
+}
+@keyframes welcomeSpotlightEnter {
+ from {opacity:0;translate:0 12px;}
+ to {opacity:1;translate:0 0;}
+}
+@media(max-width:600px) {
+ html body main > section#home.intro-screen.section .intro-inner p.intro-welcome {
+  padding:12px 16px !important;border-radius:22px !important;font-size:16px !important;gap:6px 9px !important;
+ }
+ html body main > section#home.intro-screen.section .intro-inner p.intro-welcome span {flex-basis:100% !important;}
+}
+
+/* One container entrance; child text remains stable throughout. */
+html body main > section#home.intro-screen.section {padding-top:clamp(94px,9vh,120px) !important;}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome strong {font-size:1.2em !important;}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome {font-size:clamp(17px,1.9vw,28px) !important;margin-bottom:24px !important;}
+html body main > section#home.intro-screen.section .intro-inner :is(.intro-welcome,.intro-label,.intro-title,.intro-title > span,.intro-subtitle,.intro-actions) {
+ opacity:1 !important;visibility:visible !important;animation:none !important;clip-path:none !important;translate:none !important;
+}
+html body main > section#home.intro-screen.section .intro-subtitle {max-width:650px !important;line-height:1.65 !important;font-size:clamp(16px,1.4vw,20px) !important;}
+@media(max-width:600px){html body main > section#home.intro-screen.section .intro-inner p.intro-welcome {font-size:16px !important;}}
+
+/* Larger compact greeting and lightweight decorative accents. */
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome {
+ font-size:clamp(19px,2.1vw,32px) !important;padding:18px 28px !important;
+ max-width:100% !important;margin-bottom:30px !important;
+}
+html body main > section#home.intro-screen.section .intro-inner p.intro-welcome strong {font-size:1.22em !important;}
+html body main #home .welcome-accents {position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0;}
+html body main #home .welcome-accents > span {position:absolute;display:block;}
+html body main #home .welcome-orbit {width:88px;height:88px;left:7%;top:125px;border:1px solid #b574ff99;border-radius:50%;box-shadow:inset 0 0 0 14px #9e6bff09;}
+html body main #home .welcome-orbit::after {content:'';position:absolute;width:10px;height:10px;right:8px;top:8px;border-radius:50%;background:#8ce6ff;box-shadow:0 0 14px #55caff66;}
+html body main #home .welcome-diamond {width:42px;height:42px;right:9%;top:125px;rotate:35deg;border:1px solid #79ccff99;background:linear-gradient(135deg,#aa66ff25,#58cfff0a);border-radius:9px;}
+html body main #home .welcome-plus {left:13%;top:260px;font-size:30px;color:#ab85ec80;font-weight:300;}
+html body main #home .welcome-spark {right:17%;top:240px;width:7px;height:7px;border-radius:50%;background:#c08cff;box-shadow:18px -18px 0 -2px #7edfff;}
+@media(max-width:900px){html body main #home .welcome-accents {display:none;}}
+@media(max-width:600px){
+ html body main > section#home.intro-screen.section .intro-inner p.intro-welcome {font-size:17px !important;padding:15px 17px !important;}
+}

@@ -1,0 +1,272 @@
+/* Orovex case study: a premium, product-led original-shot stage. */
+.orovex-detail-page .orovex-before-showcase {
+  position: relative;
+  isolation: isolate;
+  grid-template-columns: minmax(20rem, 0.92fr) minmax(0, 1.08fr) !important;
+  min-height: clamp(34rem, 48vw, 44rem);
+  gap: clamp(2rem, 5vw, 5.5rem);
+  margin-block: clamp(2.5rem, 5vw, 4.5rem);
+  padding: clamp(1.35rem, 3.5vw, 3.6rem);
+  border-color: rgba(58, 220, 170, 0.5);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 78% 34%, rgba(28, 214, 158, 0.18), transparent 32%),
+    radial-gradient(circle at 14% 78%, rgba(41, 184, 255, 0.15), transparent 31%),
+    linear-gradient(125deg, rgba(7, 35, 39, 0.98), rgba(5, 16, 46, 0.98));
+  box-shadow:
+    0 32px 90px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 0 38px rgba(26, 208, 158, 0.09);
+}
+
+.orovex-detail-page .orovex-before-showcase::before,
+.orovex-detail-page .orovex-before-showcase::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.orovex-detail-page .orovex-before-showcase::before {
+  inset: 0;
+  opacity: 0.23;
+  background-image:
+    linear-gradient(rgba(64, 221, 180, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(64, 221, 180, 0.12) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(90deg, transparent 38%, #000 100%);
+}
+
+.orovex-detail-page .orovex-before-showcase::after {
+  inset-inline-end: clamp(1.5rem, 4vw, 4rem);
+  bottom: clamp(1.5rem, 4vw, 3.5rem);
+  width: clamp(5rem, 9vw, 8.5rem);
+  aspect-ratio: 1;
+  border: 1px solid rgba(81, 229, 185, 0.2);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 18px rgba(40, 220, 165, 0.03),
+    0 0 60px rgba(42, 198, 255, 0.12);
+}
+
+.orovex-detail-page .orovex-before-copy {
+  position: relative;
+  z-index: 2;
+  align-content: center;
+  justify-items: start;
+  gap: clamp(1rem, 1.8vw, 1.35rem);
+  max-width: 43rem;
+  padding-inline: clamp(0rem, 2vw, 1.5rem);
+}
+
+.orovex-detail-page .orovex-before-copy .mini-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.62rem;
+  min-height: 2.25rem;
+  padding: 0.48rem 0.9rem;
+  border: 1px solid rgba(66, 229, 178, 0.52);
+  border-radius: 999px;
+  color: #a9ffe2;
+  background: linear-gradient(110deg, rgba(22, 194, 143, 0.19), rgba(24, 146, 227, 0.12));
+  box-shadow: 0 0 24px rgba(20, 201, 149, 0.14);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.orovex-detail-page .orovex-before-copy .mini-title::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #51f2bd;
+  box-shadow: 0 0 0 4px rgba(64, 230, 177, 0.12), 0 0 14px #28d9b2;
+}
+
+.orovex-detail-page .orovex-before-copy h2 {
+  max-width: 13ch;
+  margin: 0;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(2.05rem, 4vw, 4.15rem);
+  font-weight: 800;
+  line-height: 1.23;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+  text-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+.orovex-detail-page .orovex-before-copy h2 strong {
+  display: block;
+  color: transparent;
+  background: linear-gradient(92deg, #53f0b8 0%, #32d5ca 48%, #37baff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font: inherit;
+  filter: drop-shadow(0 8px 20px rgba(42, 210, 168, 0.18));
+}
+
+.orovex-detail-page .orovex-before-copy p {
+  max-width: 37rem;
+  margin: 0;
+  padding: 0.2rem 1rem 0.2rem 0;
+  border-inline-start: 3px solid transparent;
+  border-image: linear-gradient(#45e6af, #30bfff) 1;
+  color: rgba(235, 250, 247, 0.82);
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(1rem, 1.35vw, 1.17rem);
+  font-weight: 500;
+  line-height: 2;
+}
+
+.orovex-detail-page .orovex-before-media {
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  justify-self: center !important;
+  width: min(100%, 33rem) !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 1 / 1 !important;
+  padding: clamp(0.55rem, 1vw, 0.82rem);
+  overflow: hidden;
+  border: 1px solid rgba(67, 226, 180, 0.7);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 50% 48%, rgba(73, 241, 190, 0.3), transparent 55%),
+    linear-gradient(145deg, #072e2b 0%, #071b31 100%) !important;
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(66, 224, 179, 0.11),
+    inset 0 0 60px rgba(58, 224, 177, 0.1);
+}
+
+.orovex-detail-page .orovex-before-media::before,
+.orovex-detail-page .orovex-before-media::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.orovex-detail-page .orovex-before-media::before {
+  z-index: 0;
+  inset: 8%;
+  border-radius: 28px;
+  background: radial-gradient(circle at 50% 55%, rgba(58, 230, 178, 0.32), transparent 64%);
+  filter: blur(14px);
+}
+
+.orovex-detail-page .orovex-before-media::after {
+  z-index: 2;
+  inset: clamp(0.55rem, 1vw, 0.82rem);
+  border: 1px solid rgba(18, 117, 91, 0.12);
+  border-radius: 17px;
+  box-shadow: inset 0 0 45px rgba(33, 193, 146, 0.08);
+}
+
+.orovex-detail-page .orovex-before-media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 17px;
+  background: #f7fbfa !important;
+  transform: scale(1.055);
+  transition: transform 420ms ease, filter 420ms ease;
+  filter: saturate(1.04) contrast(1.015) drop-shadow(0 20px 24px rgba(0, 0, 0, 0.14));
+}
+
+.orovex-detail-page .orovex-before-showcase:hover .orovex-before-media img {
+  transform: scale(1.09) translateY(-0.25%);
+  filter: saturate(1.08) contrast(1.025) drop-shadow(0 24px 28px rgba(0, 0, 0, 0.18));
+}
+
+.orovex-detail-page .orovex-before-media figcaption {
+  z-index: 4;
+  inset-inline: 50% auto;
+  bottom: 1.35rem;
+  width: max-content;
+  max-width: calc(100% - 2.8rem);
+  margin: 0;
+  padding: 0.58rem 0.9rem;
+  transform: translateX(-50%);
+  border-color: rgba(69, 225, 181, 0.48);
+  color: rgba(255, 255, 255, 0.94);
+  background: rgba(4, 35, 36, 0.82);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  white-space: normal;
+}
+
+@media (max-width: 900px) {
+  .orovex-detail-page .orovex-before-showcase {
+    grid-template-columns: 1fr !important;
+    min-height: 0;
+    gap: 2.25rem;
+  }
+
+  .orovex-detail-page .orovex-before-copy {
+    grid-row: 1;
+    max-width: 42rem;
+    margin-inline: auto;
+    padding-block: 0.5rem;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .orovex-detail-page .orovex-before-copy h2,
+  .orovex-detail-page .orovex-before-copy p {
+    max-width: 100%;
+  }
+
+  .orovex-detail-page .orovex-before-copy p {
+    padding: 0;
+    border: 0;
+  }
+
+  .orovex-detail-page .orovex-before-media {
+    grid-row: 2;
+    width: min(100%, 31rem) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .orovex-detail-page .orovex-before-showcase {
+    margin-block: 1.75rem;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .orovex-detail-page .orovex-before-copy {
+    padding-inline: 0.35rem;
+  }
+
+  .orovex-detail-page .orovex-before-copy h2 {
+    font-size: clamp(1.75rem, 9vw, 2.45rem);
+    line-height: 1.3;
+  }
+
+  .orovex-detail-page .orovex-before-media {
+    width: 100% !important;
+    border-radius: 18px;
+  }
+
+  .orovex-detail-page .orovex-before-media figcaption {
+    bottom: 1.05rem;
+    font-size: 0.65rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orovex-detail-page .orovex-before-media img {
+    transition: none;
+  }
+}

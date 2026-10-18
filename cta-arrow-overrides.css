@@ -1,0 +1,91 @@
+/* Explore CTA arrow — stronger focal point and subtle directional motion */
+section#home.intro-screen .explore-cta-icon {
+  position: relative;
+  isolation: isolate;
+  overflow: visible !important;
+  border-color: rgba(255, 255, 255, .98) !important;
+  background:
+    radial-gradient(circle at 30% 18%, rgba(255, 255, 255, .96), transparent 23%),
+    linear-gradient(145deg, #c467ff 0%, #657dff 46%, #16dcff 100%) !important;
+  box-shadow:
+    0 0 0 4px rgba(113, 75, 244, .3),
+    0 9px 21px rgba(2, 6, 44, .56),
+    0 0 25px rgba(55, 213, 255, .66),
+    0 0 42px rgba(141, 72, 255, .34),
+    inset 0 1px 0 rgba(255, 255, 255, .88),
+    inset 0 -11px 20px rgba(20, 40, 170, .24) !important;
+  animation: exploreIconPulse 2.15s ease-in-out infinite;
+}
+
+section#home.intro-screen .explore-cta-icon::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  z-index: -1;
+  border: 1px solid rgba(83, 219, 255, .54);
+  border-radius: 50%;
+  box-shadow: 0 0 14px rgba(43, 211, 255, .34);
+  opacity: .72;
+  animation: exploreRingEcho 2.15s ease-out infinite;
+  pointer-events: none;
+}
+
+section#home.intro-screen .explore-cta-icon svg {
+  width: 1.88rem !important;
+  height: 1.88rem !important;
+  color: #fff !important;
+  stroke-width: 3.8 !important;
+  filter: drop-shadow(0 2px 3px rgba(7, 9, 54, .72)) drop-shadow(0 0 8px rgba(255, 255, 255, .68));
+  animation: exploreArrowDrop 1.55s cubic-bezier(.45, 0, .2, 1) infinite;
+  transform-origin: center;
+}
+
+@keyframes exploreArrowDrop {
+  0%, 100% { transform: translateY(-2px) scale(1); }
+  42% { transform: translateY(4px) scale(1.08); }
+  62% { transform: translateY(1px) scale(1.03); }
+}
+
+@keyframes exploreIconPulse {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.13);
+  }
+}
+
+@keyframes exploreRingEcho {
+  0% {
+    transform: scale(.88);
+    opacity: .76;
+  }
+  72%, 100% {
+    transform: scale(1.16);
+    opacity: 0;
+  }
+}
+
+@media (hover: hover) {
+  section#home.intro-screen .intro-portfolio-cta:hover .explore-cta-icon svg,
+  section#home.intro-screen .intro-portfolio-cta:focus-visible .explore-cta-icon svg {
+    animation-duration: .85s;
+    filter: drop-shadow(0 2px 3px rgba(7, 9, 54, .72)) drop-shadow(0 0 12px rgba(255, 255, 255, .88));
+  }
+}
+
+@media (max-width: 560px) {
+  section#home.intro-screen .explore-cta-icon svg {
+    width: 1.58rem !important;
+    height: 1.58rem !important;
+    stroke-width: 3.65 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section#home.intro-screen .explore-cta-icon,
+  section#home.intro-screen .explore-cta-icon::after,
+  section#home.intro-screen .explore-cta-icon svg {
+    animation: none !important;
+  }
+}

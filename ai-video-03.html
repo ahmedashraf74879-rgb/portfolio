@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riyad Bank AI Story | Ahmed Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400..900&amp;family=Sora:wght@400..800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.min.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon-ahmed.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon-ahmed.png" />
+    <link rel="apple-touch-icon" href="./assets/favicon-ahmed.png" />
+    <link rel="stylesheet" href="./arabic-font-overrides.css" />
+      <link rel="stylesheet" href="./portfolio-visual-polish.css?v=20260912-1" />
+</head>
+  <body class="detail-body ai-video-detail-page">
+    <main class="detail-shell ai-video-detail-shell">
+      <div class="detail-topbar">
+        <a class="detail-back" href="./index.html#ai-videos">Back to AI Videos</a>
+        <span class="mini-title">AI VIDEO 03</span>
+      </div>
+
+      <article class="detail-card detail-rich ai-video-hero-detail">
+        <div class="detail-media ai-video-frame">
+          <div class="reel-scene-badge" aria-hidden="true"><span></span>AI Story Video</div>
+          <video src="./assets/ai-riyad-bank.mp4?v=20260720-swap" poster="./assets/ai-riyad-bank-thumbnail-20260720-opt.webp" controls playsinline preload="none"></video>
+          <button class="reel-watch-center" type="button" aria-label="Play video"><span>▶</span> Watch Video</button>
+        </div>
+        <div class="detail-copy" dir="rtl">
+          <span class="card-number">AI</span>
+          <h1>Riyad Bank AI Story</h1>
+          <p>فيديو قصصي مدعوم بالذكاء الاصطناعي يعرض رحلة حلم مرتبطة ببنك الرياض، بأسلوب بصري سينمائي يجمع بين الشخصيات الكرتونية، الإحساس العاطفي، والهوية البصرية للبنك.</p>
+          <div class="detail-meta-grid">
+            <span><b>Type</b>AI Story Video</span>
+            <span><b>Style</b>Cinematic AI Visuals</span>
+            <span><b>Focus</b>Riyad Bank Story</span>
+          </div>
+        </div>
+      </article>
+
+      <section class="reel-creative-strip ai-video-strip" dir="rtl" aria-label="AI video structure">
+        <article><span>01</span><h2>بداية عاطفية</h2><p>الفكرة تبدأ بإحساس الحلم والطموح، مع مشاهد تمهيدية تربط الشخصية بالرحلة البصرية.</p></article>
+        <article><span>02</span><h2>تصعيد بصري</h2><p>اللقطات تتحول إلى عالم أكثر سينمائية، مع حضور واضح للهوية والمكان والشخصيات.</p></article>
+        <article><span>03</span><h2>رسالة نهائية</h2><p>النهاية تركز على فكرة الوصول للحلم بشكل بصري واضح ومناسب للمنصات الرقمية.</p></article>
+      </section>
+
+      <section class="detail-analysis-grid reel-script-grid ai-video-script-grid" dir="rtl">
+        <article class="detail-analysis-card">
+          <h2>هدف الفيديو</h2>
+          <p>تقديم قصة قصيرة جذابة تعتمد على المشاعر والصورة، وتعرض الفكرة بأسلوب مناسب لفيديوهات الذكاء الاصطناعي.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>الفكرة البصرية</h2>
+          <p>مزج مشاهد الشخصيات الكرتونية مع أجواء سينمائية وإضاءة درامية لإبراز الطموح والرحلة.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>الأسلوب</h2>
+          <p>تصميم بصري يعتمد على التكوين السينمائي، الألوان الدافئة، وتفاصيل الهوية داخل المشهد.</p>
+        </article>
+        <article class="detail-analysis-card">
+          <h2>الاستخدام</h2>
+          <p>مناسب كفيديو قصصي قصير للعرض على المنصات الرقمية أو ضمن أعمال الذكاء الاصطناعي في البورتفوليو.</p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      (() => {
+        const video = document.querySelector(".ai-video-frame video");
+        const button = document.querySelector(".ai-video-frame .reel-watch-center");
+        if (!video || !button) return;
+
+        const hideButton = () => button.classList.add("is-hidden");
+        const showButton = () => {
+          if (video.paused) button.classList.remove("is-hidden");
+        };
+
+        button.addEventListener("click", () => {
+          video.play();
+          hideButton();
+        });
+
+        video.addEventListener("play", hideButton);
+        video.addEventListener("pause", showButton);
+        video.addEventListener("ended", showButton);
+      })();
+    </script>
+    <script src="./detail-return.js?v=20260829-1"></script>
+</body>
+</html>
+
+
+

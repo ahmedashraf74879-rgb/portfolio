@@ -1,0 +1,35 @@
+/* Stronger English typography while preserving a readable visual hierarchy. */
+html[lang="en"] body {
+  font-weight: 600;
+}
+
+html[lang="en"] :where(p, li, dd, dt, small, em, input, textarea, select):not(:lang(ar)) {
+  font-weight: 600 !important;
+}
+
+html[lang="en"] :where(
+  h3,
+  h4,
+  h5,
+  h6,
+  .mini-title,
+  .eyebrow,
+  .intro-label,
+  .detail-kicker,
+  .case-study-detail-kicker,
+  .loading-greeting-caption,
+  .topbar .nav a,
+  .footer-quick-links a,
+  .primary-btn,
+  .secondary-btn,
+  .watch-link,
+  .talk-btn,
+  button,
+  label
+) {
+  font-weight: 700 !important;
+}
+
+html[lang="en"] :where(h1, h2, .intro-title, .about-name, .detail-copy > h1, .reel-title-only > h1) {
+  font-weight: 800 !important;
+}

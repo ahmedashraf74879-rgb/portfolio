@@ -1,0 +1,2506 @@
+/* cta-overrides.css */
+/* Explore CTA — larger premium wordmark and clearer icon */
+section#home.intro-screen .intro-actions {
+  width: min(100%, 25.5rem) !important;
+}
+
+section#home.intro-screen .intro-portfolio-cta {
+  grid-template-columns: minmax(0, 1fr) 3.85rem !important;
+  min-height: 5.15rem !important;
+  padding: .58rem .66rem .58rem 1.45rem !important;
+  gap: .85rem !important;
+  border: 1px solid transparent !important;
+  background:
+    linear-gradient(104deg, rgba(119, 29, 222, .98) 0%, rgba(45, 38, 162, .98) 53%, rgba(1, 133, 176, .97) 100%) padding-box,
+    linear-gradient(105deg, #ec88ff 0%, #8274ff 48%, #35dcff 100%) border-box !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .25),
+    inset 0 -1px 0 rgba(35, 222, 255, .28),
+    0 15px 34px rgba(7, 2, 45, .5),
+    0 0 30px rgba(125, 59, 245, .3),
+    0 0 22px rgba(28, 202, 255, .18) !important;
+}
+
+section#home.intro-screen .intro-portfolio-cta::before {
+  opacity: .76 !important;
+  background:
+    linear-gradient(125deg, rgba(255, 255, 255, .18), transparent 30% 70%, rgba(79, 229, 255, .13)),
+    radial-gradient(circle at 82% 50%, rgba(107, 227, 255, .28), transparent 24%) !important;
+}
+
+section#home.intro-screen .explore-cta-copy strong {
+  min-height: 3.85rem !important;
+  gap: .32em !important;
+  font-size: clamp(1.34rem, 1.65vw, 1.58rem) !important;
+  font-weight: 900 !important;
+  letter-spacing: -.025em !important;
+  text-shadow: 0 2px 12px rgba(5, 2, 31, .65), 0 0 18px rgba(226, 186, 255, .3) !important;
+}
+
+section#home.intro-screen .explore-cta-icon {
+  flex-basis: 3.85rem !important;
+  width: 3.85rem !important;
+  height: 3.85rem !important;
+  border-width: 2px !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, .85), transparent 24%),
+    linear-gradient(145deg, #b65cff 0%, #667cff 47%, #18d7ff 100%) !important;
+  box-shadow:
+    0 0 0 4px rgba(113, 75, 244, .24),
+    0 9px 20px rgba(2, 6, 44, .52),
+    0 0 27px rgba(44, 210, 255, .48),
+    inset 0 1px 0 rgba(255, 255, 255, .72),
+    inset 0 -10px 18px rgba(23, 37, 159, .22) !important;
+}
+
+section#home.intro-screen .explore-cta-icon svg {
+  width: 1.62rem !important;
+  height: 1.62rem !important;
+  stroke-width: 3.35 !important;
+}
+
+@media (hover: hover) {
+  section#home.intro-screen .intro-portfolio-cta:hover,
+  section#home.intro-screen .intro-portfolio-cta:focus-visible {
+    transform: translateY(-4px) scale(1.015) !important;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, .3),
+      inset 0 -1px 0 rgba(35, 222, 255, .32),
+      0 18px 40px rgba(7, 2, 45, .55),
+      0 0 38px rgba(145, 67, 255, .38),
+      0 0 28px rgba(28, 202, 255, .25) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  section#home.intro-screen .intro-actions {
+    width: min(92vw, 22rem) !important;
+  }
+
+  section#home.intro-screen .intro-portfolio-cta {
+    grid-template-columns: minmax(0, 1fr) 3.35rem !important;
+    min-height: 4.55rem !important;
+    padding: .48rem .54rem .48rem 1.1rem !important;
+    gap: .58rem !important;
+  }
+
+  section#home.intro-screen .explore-cta-copy strong {
+    min-height: 3.35rem !important;
+    font-size: clamp(1.12rem, 5.4vw, 1.3rem) !important;
+  }
+
+  section#home.intro-screen .explore-cta-icon {
+    flex-basis: 3.35rem !important;
+    width: 3.35rem !important;
+    height: 3.35rem !important;
+  }
+
+  section#home.intro-screen .explore-cta-icon svg {
+    width: 1.4rem !important;
+    height: 1.4rem !important;
+  }
+}
+
+
+/* section-heading-overrides.css */
+/* Section headings — slightly smaller with a sharper visual hook */
+:where(
+  .services-panel,
+  .reels,
+  .portfolio,
+  .identity,
+  .ai-videos,
+  .case-studies,
+  .reviews,
+  .contact
+) h2 {
+  position: relative;
+  font-size: clamp(1.9rem, 3.25vw, 2.5rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.035em !important;
+  text-wrap: balance;
+  text-shadow: 0 3px 18px rgba(2, 3, 24, .72), 0 0 22px rgba(141, 78, 255, .2);
+}
+
+:where(
+  .services-panel,
+  .reels,
+  .portfolio,
+  .identity,
+  .ai-videos,
+  .case-studies,
+  .reviews,
+  .contact
+) h2 strong {
+  background: linear-gradient(100deg, #d77aff 0%, #9f62ff 42%, #24c7ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  filter: drop-shadow(0 0 13px rgba(135, 79, 255, .28));
+}
+
+:where(
+  .services-panel,
+  .reels,
+  .portfolio,
+  .identity,
+  .ai-videos,
+  .case-studies,
+  .reviews,
+  .contact
+) h2::after {
+  content: "";
+  display: block;
+  width: clamp(3.6rem, 7vw, 5.1rem);
+  height: 2px;
+  margin: .72rem auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #b65cff 20%, #6578ff 55%, #25caff 82%, transparent);
+  box-shadow: 0 0 10px rgba(139, 89, 255, .72), 0 0 20px rgba(37, 202, 255, .25);
+}
+
+/* Keep split-layout headings visually anchored to their copy column. */
+:where(.identity, .contact) h2::after {
+  margin-inline: 0 auto;
+}
+
+/* The toolbox title is intentionally larger; reduce it without flattening its hierarchy. */
+#skills.creative-toolbox .toolbox-copy h2#skills-title {
+  max-width: 8.8ch !important;
+  font-size: clamp(2.75rem, 4.2vw, 4.1rem) !important;
+  line-height: .98 !important;
+  letter-spacing: -.04em !important;
+  text-shadow: 0 4px 22px rgba(2, 3, 24, .7), 0 0 24px rgba(141, 78, 255, .18);
+}
+
+#skills.creative-toolbox .toolbox-copy h2#skills-title strong {
+  background: linear-gradient(100deg, #d77aff 0%, #9f62ff 42%, #24c7ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  filter: drop-shadow(0 0 13px rgba(135, 79, 255, .28));
+}
+
+#skills.creative-toolbox .toolbox-copy h2#skills-title::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 2px;
+  margin: .8rem auto 0 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b65cff, #6578ff 55%, #25caff, transparent);
+  box-shadow: 0 0 10px rgba(139, 89, 255, .68), 0 0 20px rgba(37, 202, 255, .22);
+}
+
+@media (max-width: 620px) {
+  :where(
+    .services-panel,
+    .reels,
+    .portfolio,
+    .identity,
+    .ai-videos,
+    .case-studies,
+    .reviews,
+    .contact
+  ) h2 {
+    font-size: clamp(1.72rem, 7.5vw, 2.15rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  #skills.creative-toolbox .toolbox-copy h2#skills-title {
+    max-width: 10ch !important;
+    font-size: clamp(2.15rem, 10.5vw, 2.85rem) !important;
+    line-height: 1 !important;
+  }
+}
+
+
+/* case-study-layout-overrides.css */
+/* Case study entry — split editorial layout matching the identity section */
+.case-studies.section.case-study-entry-section {
+  display: grid !important;
+  grid-template-columns: minmax(16rem, .72fr) minmax(0, 1.45fr) !important;
+  grid-template-areas: "case-copy case-visual" !important;
+  align-items: center !important;
+  gap: clamp(2.2rem, 5vw, 5.4rem) !important;
+  min-height: 34rem;
+  padding: clamp(2.5rem, 5vw, 4.5rem) !important;
+  overflow: hidden;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading {
+  grid-area: case-copy;
+  align-self: center;
+  width: 100%;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading .mini-title {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 0 1.25rem !important;
+  text-align: left !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 {
+  max-width: 9.2ch !important;
+  margin: 0 0 1.25rem !important;
+  color: #fff !important;
+  font-size: clamp(2.65rem, 4.2vw, 4.15rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.045em !important;
+  text-align: left !important;
+  text-shadow: 0 4px 24px rgba(2, 3, 24, .72), 0 0 24px rgba(141, 78, 255, .2) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong {
+  display: block;
+  margin-top: .12em;
+  background: linear-gradient(100deg, #c66cff 0%, #8a6cff 48%, #28c8ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  filter: drop-shadow(0 0 16px rgba(113, 85, 255, .28));
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+  width: 4.5rem !important;
+  margin: .85rem auto 0 0 !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-intro {
+  max-width: 27rem;
+  margin: 0 0 1.7rem !important;
+  color: #b8b2c9;
+  font-size: clamp(.96rem, 1.25vw, 1.08rem);
+  line-height: 1.75;
+  text-align: left !important;
+}
+
+.case-study-entry-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  min-height: 3.35rem;
+  padding: .7rem 1.25rem;
+  border: 1px solid rgba(184, 93, 255, .88);
+  border-radius: .85rem;
+  background: linear-gradient(115deg, rgba(119, 39, 214, .92), rgba(53, 35, 137, .86));
+  color: #fff;
+  font-size: .98rem;
+  font-weight: 800;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), 0 10px 24px rgba(54, 29, 142, .28), 0 0 18px rgba(129, 67, 242, .18);
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.case-study-entry-cta svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: none;
+  stroke: #35cfff;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.case-study-entry-cta:hover,
+.case-study-entry-cta:focus-visible {
+  transform: translateY(-3px);
+  border-color: #38d4ff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 14px 30px rgba(54, 29, 142, .34), 0 0 24px rgba(44, 203, 255, .24);
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-card {
+  grid-area: case-visual;
+  width: 100% !important;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid rgba(113, 91, 255, .7);
+  border-radius: 1.2rem;
+  background: #050617;
+  box-shadow: 0 22px 50px rgba(2, 3, 25, .4), 0 0 28px rgba(85, 64, 210, .16);
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  transform: scale(1.01);
+  transition: transform .45s cubic-bezier(.2, .75, .25, 1), filter .35s ease;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link:hover img,
+.case-studies.section.case-study-entry-section .case-study-entry-link:focus-visible img {
+  transform: scale(1.035);
+  filter: brightness(1.06) saturate(1.04);
+}
+
+@media (max-width: 900px) {
+  .case-studies.section.case-study-entry-section {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "case-copy" "case-visual" !important;
+    gap: 2rem !important;
+    min-height: 0;
+    padding: clamp(2rem, 7vw, 3.25rem) !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading {
+    display: grid;
+    justify-items: center;
+    text-align: center !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading .mini-title,
+  .case-studies.section.case-study-entry-section .case-studies-heading h2,
+  .case-studies.section.case-study-entry-section .case-studies-intro {
+    text-align: center !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    max-width: 13ch !important;
+    font-size: clamp(2.25rem, 8.5vw, 3.35rem) !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+    margin-inline: auto !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-link {
+    aspect-ratio: 16 / 10.5;
+  }
+}
+
+@media (max-width: 560px) {
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    max-width: 12ch !important;
+    font-size: clamp(2rem, 10.5vw, 2.7rem) !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-link {
+    border-radius: 1rem;
+  }
+}
+
+
+/* social-icons-overrides.css */
+/* Footer social icons — remove square tiles and use platform-colored rings */
+.site-footer .footer-social-link:nth-child(1) {
+  --dock-accent: #a855f7;
+  --social-accent: #b45cff;
+  --social-accent-2: #39bfff;
+}
+
+.site-footer .footer-social-link:nth-child(2) {
+  --dock-accent: #ea4335;
+  --social-accent: #ea4335;
+  --social-accent-2: #fbbc05;
+}
+
+.site-footer .footer-social-link:nth-child(3) {
+  --dock-accent: #e1306c;
+  --social-accent: #833ab4;
+  --social-accent-2: #fd1d1d;
+}
+
+.site-footer .footer-social-link:nth-child(4) {
+  --dock-accent: #1877f2;
+  --social-accent: #1877f2;
+  --social-accent-2: #4fb7ff;
+}
+
+.site-footer .footer-social-link:nth-child(5) {
+  --dock-accent: #25d366;
+  --social-accent: #25d366;
+  --social-accent-2: #19bfa0;
+}
+
+.site-footer .footer-social-icon.footer-social-image {
+  position: relative;
+  isolation: isolate;
+  overflow: visible !important;
+  width: 3.3rem !important;
+  height: 3.3rem !important;
+  border: 2px solid transparent !important;
+  border-radius: 50% !important;
+  background:
+    linear-gradient(rgba(5, 6, 24, .82), rgba(5, 6, 24, .82)) padding-box,
+    linear-gradient(135deg, var(--social-accent), var(--social-accent-2)) border-box !important;
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--social-accent) 16%, transparent),
+    0 0 17px color-mix(in srgb, var(--social-accent) 54%, transparent),
+    0 0 28px color-mix(in srgb, var(--social-accent-2) 22%, transparent) !important;
+}
+
+.site-footer .footer-social-icon.footer-social-image::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, rgba(255, 255, 255, .12), transparent 48%);
+  pointer-events: none;
+}
+
+.site-footer .footer-social-icon.footer-social-image img {
+  display: block !important;
+  width: 82% !important;
+  height: 82% !important;
+  margin: auto !important;
+  object-fit: contain !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 0 7px color-mix(in srgb, var(--social-accent) 56%, transparent));
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-footer .footer-social-link:hover .footer-social-icon.footer-social-image {
+    transform: translateY(-2px) scale(1.08) rotate(-2deg);
+    box-shadow:
+      0 0 0 4px color-mix(in srgb, var(--social-accent) 20%, transparent),
+      0 0 22px color-mix(in srgb, var(--social-accent) 68%, transparent),
+      0 0 34px color-mix(in srgb, var(--social-accent-2) 30%, transparent) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-footer .footer-social-icon.footer-social-image {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+}
+
+
+/* cta-arrow-overrides.css */
+/* Explore CTA arrow — stronger focal point and subtle directional motion */
+section#home.intro-screen .explore-cta-icon {
+  position: relative;
+  isolation: isolate;
+  overflow: visible !important;
+  border-color: rgba(255, 255, 255, .98) !important;
+  background:
+    radial-gradient(circle at 30% 18%, rgba(255, 255, 255, .96), transparent 23%),
+    linear-gradient(145deg, #c467ff 0%, #657dff 46%, #16dcff 100%) !important;
+  box-shadow:
+    0 0 0 4px rgba(113, 75, 244, .3),
+    0 9px 21px rgba(2, 6, 44, .56),
+    0 0 25px rgba(55, 213, 255, .66),
+    0 0 42px rgba(141, 72, 255, .34),
+    inset 0 1px 0 rgba(255, 255, 255, .88),
+    inset 0 -11px 20px rgba(20, 40, 170, .24) !important;
+  animation: exploreIconPulse 2.15s ease-in-out infinite;
+}
+
+section#home.intro-screen .explore-cta-icon::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  z-index: -1;
+  border: 1px solid rgba(83, 219, 255, .54);
+  border-radius: 50%;
+  box-shadow: 0 0 14px rgba(43, 211, 255, .34);
+  opacity: .72;
+  animation: exploreRingEcho 2.15s ease-out infinite;
+  pointer-events: none;
+}
+
+section#home.intro-screen .explore-cta-icon svg {
+  width: 1.88rem !important;
+  height: 1.88rem !important;
+  color: #fff !important;
+  stroke-width: 3.8 !important;
+  filter: drop-shadow(0 2px 3px rgba(7, 9, 54, .72)) drop-shadow(0 0 8px rgba(255, 255, 255, .68));
+  animation: exploreArrowDrop 1.55s cubic-bezier(.45, 0, .2, 1) infinite;
+  transform-origin: center;
+}
+
+@keyframes exploreArrowDrop {
+  0%, 100% { transform: translateY(-2px) scale(1); }
+  42% { transform: translateY(4px) scale(1.08); }
+  62% { transform: translateY(1px) scale(1.03); }
+}
+
+@keyframes exploreIconPulse {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.13);
+  }
+}
+
+@keyframes exploreRingEcho {
+  0% {
+    transform: scale(.88);
+    opacity: .76;
+  }
+  72%, 100% {
+    transform: scale(1.16);
+    opacity: 0;
+  }
+}
+
+@media (hover: hover) {
+  section#home.intro-screen .intro-portfolio-cta:hover .explore-cta-icon svg,
+  section#home.intro-screen .intro-portfolio-cta:focus-visible .explore-cta-icon svg {
+    animation-duration: .85s;
+    filter: drop-shadow(0 2px 3px rgba(7, 9, 54, .72)) drop-shadow(0 0 12px rgba(255, 255, 255, .88));
+  }
+}
+
+@media (max-width: 560px) {
+  section#home.intro-screen .explore-cta-icon svg {
+    width: 1.58rem !important;
+    height: 1.58rem !important;
+    stroke-width: 3.65 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section#home.intro-screen .explore-cta-icon,
+  section#home.intro-screen .explore-cta-icon::after,
+  section#home.intro-screen .explore-cta-icon svg {
+    animation: none !important;
+  }
+}
+
+
+/* case-study-polish-overrides.css */
+/* Case study polish — intentional title lines and a cleaner visual frame */
+.case-studies.section.case-study-entry-section {
+  grid-template-columns: minmax(24rem, .92fr) minmax(0, 1.42fr) !important;
+  gap: clamp(2.4rem, 4.2vw, 4.7rem) !important;
+  border-color: rgba(111, 76, 226, .5) !important;
+  background:
+    radial-gradient(circle at 86% 20%, rgba(30, 173, 255, .08), transparent 28rem),
+    radial-gradient(circle at 18% 52%, rgba(142, 62, 238, .1), transparent 24rem),
+    rgba(5, 4, 24, .72) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .035),
+    inset 0 0 48px rgba(91, 46, 192, .06),
+    0 22px 55px rgba(2, 2, 18, .24) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 {
+  width: 100%;
+  max-width: none !important;
+  font-size: clamp(2.5rem, 3.25vw, 3.35rem) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -.05em !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 > span,
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong,
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span {
+  display: block;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 > span {
+  white-space: nowrap;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong {
+  margin-top: .16em !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span + span {
+  margin-top: .04em;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 16 / 10 !important;
+  padding: .58rem !important;
+  overflow: hidden !important;
+  border: 1px solid transparent !important;
+  border-radius: 1.55rem !important;
+  background:
+    linear-gradient(145deg, rgba(5, 5, 25, .98), rgba(3, 7, 24, .98)) padding-box,
+    linear-gradient(120deg, rgba(194, 91, 255, .96), rgba(104, 95, 255, .72) 48%, rgba(39, 207, 255, .94)) border-box !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .12),
+    0 24px 55px rgba(1, 2, 20, .48),
+    0 0 30px rgba(113, 65, 230, .24),
+    0 0 22px rgba(31, 189, 255, .12) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link::before {
+  content: "";
+  position: absolute;
+  top: .34rem;
+  left: 13%;
+  right: 13%;
+  z-index: 3;
+  height: 1px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(222, 141, 255, .9), rgba(67, 211, 255, .82), transparent);
+  box-shadow: 0 0 13px rgba(112, 113, 255, .6);
+  pointer-events: none;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link::after {
+  content: "";
+  position: absolute;
+  right: -4rem;
+  bottom: -4rem;
+  z-index: 0;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(29, 202, 255, .16), transparent 68%);
+  pointer-events: none;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover {
+  position: relative;
+  z-index: 1;
+  overflow: hidden !important;
+  border: 1px solid rgba(107, 105, 255, .28);
+  border-radius: 1.05rem !important;
+  background: #02030d;
+  box-shadow: inset 0 0 24px rgba(67, 45, 160, .1);
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover img {
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  filter: contrast(1.035) saturate(1.04);
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link:hover img,
+.case-studies.section.case-study-entry-section .case-study-entry-link:focus-visible img {
+  transform: scale(1.018) !important;
+  filter: contrast(1.04) saturate(1.07) brightness(1.04);
+}
+
+@media (max-width: 1080px) {
+  .case-studies.section.case-study-entry-section {
+    grid-template-columns: minmax(20rem, .82fr) minmax(0, 1.25fr) !important;
+    gap: 2.3rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    font-size: clamp(2.35rem, 4vw, 3rem) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .case-studies.section.case-study-entry-section {
+    grid-template-columns: 1fr !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    max-width: 13ch !important;
+    font-size: clamp(2.25rem, 8.5vw, 3.25rem) !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 > span {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 560px) {
+  .case-studies.section.case-study-entry-section .case-study-entry-link {
+    padding: .38rem !important;
+    border-radius: 1.1rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-cover {
+    border-radius: .82rem !important;
+  }
+}
+
+
+/* case-study-title-fix.css */
+/* Keep the two highlighted title lines visible after splitting the heading. */
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong {
+  background: none !important;
+  color: inherit !important;
+  filter: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span {
+  width: fit-content;
+  max-width: 100%;
+  color: transparent !important;
+  background: linear-gradient(100deg, #c66cff 0%, #8a6cff 48%, #28c8ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  filter: drop-shadow(0 0 16px rgba(113, 85, 255, .3));
+}
+
+@media (max-width: 900px) {
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span {
+    width: auto;
+  }
+}
+
+
+/* arabic-font-overrides.css */
+:root{--af:"Cairo",Tahoma,Arial,sans-serif}:where([dir="rtl"],[lang="ar"],:lang(ar)),:where([dir="rtl"],[lang="ar"],:lang(ar)) *{font-family:var(--af)!important;letter-spacing:0!important}.reel-detail-page h1[data-en]{display:grid!important;gap:.38rem!important;padding-bottom:.72rem!important;color:transparent!important;-webkit-text-fill-color:transparent!important;background:linear-gradient(95deg,#fff,#c868ff 56%,#25b7ff)!important;-webkit-background-clip:text!important;background-clip:text!important;font-size:clamp(2.1rem,4vw,4rem)!important;font-weight:900!important;line-height:1.15!important}.reel-detail-page h1[data-en]::before{content:attr(data-en);direction:ltr;color:#66d2ff!important;-webkit-text-fill-color:#66d2ff!important;background:none!important;font-family:"Sora",sans-serif!important;font-size:.32em!important;letter-spacing:.09em!important;text-shadow:0 0 18px rgba(65,181,255,.42)}.reel-detail-page h1[data-en]::after{content:"";width:5.4rem;height:2px;justify-self:end;border-radius:99px;background:linear-gradient(90deg,#b75cff,#26c8ff);box-shadow:0 0 14px rgba(73,173,255,.55)}.reel-detail-page .reel-title-only h1[data-en]{justify-items:center!important;text-align:center!important}                        
+
+/* section-title-line-fix.css */
+/* Section title underline — stable alignment before, during and after hover */
+#services.services-panel.section > h2::after,
+#reels.reels.section > h2::after,
+#portfolio.portfolio.section > h2::after,
+#identity.identity.section .identity-copy h2::after,
+#ai-videos.ai-videos.section h2::after,
+#case-studies.case-studies.section .case-studies-heading h2::after,
+#skills.skills.section .toolbox-copy h2::after,
+#reviews.reviews.section .reviews-heading h2::after,
+#contact.contact.section .contact-copy h2::after {
+  content: "" !important;
+  position: static !important;
+  inset: auto !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  display: block !important;
+  width: clamp(3.8rem, 6vw, 5.2rem) !important;
+  height: 2px !important;
+  margin: .72rem auto 0 !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, transparent, #b65cff 20%, #6578ff 55%, #25caff 82%, transparent) !important;
+  box-shadow: 0 0 10px rgba(139, 89, 255, .72), 0 0 20px rgba(37, 202, 255, .25) !important;
+  opacity: .78 !important;
+  transform: none !important;
+  translate: none !important;
+  scale: 1 !important;
+  animation: none !important;
+  transform-origin: center !important;
+  transition: opacity .24s ease, filter .24s ease, box-shadow .24s ease !important;
+  pointer-events: none !important;
+}
+
+#identity.identity.section .identity-copy h2::after,
+#case-studies.case-studies.section .case-studies-heading h2::after,
+#skills.skills.section .toolbox-copy h2::after,
+#contact.contact.section .contact-copy h2::after {
+  margin-inline: 0 auto !important;
+  transform-origin: left center !important;
+}
+
+#services.services-panel.section > h2:hover::after,
+#reels.reels.section > h2:hover::after,
+#portfolio.portfolio.section > h2:hover::after,
+#identity.identity.section .identity-copy h2:hover::after,
+#ai-videos.ai-videos.section h2:hover::after,
+#case-studies.case-studies.section .case-studies-heading h2:hover::after,
+#skills.skills.section .toolbox-copy h2:hover::after,
+#reviews.reviews.section .reviews-heading h2:hover::after,
+#contact.contact.section .contact-copy h2:hover::after {
+  width: clamp(3.8rem, 6vw, 5.2rem) !important;
+  opacity: 1 !important;
+  transform: none !important;
+  translate: none !important;
+  scale: 1 !important;
+  filter: brightness(1.18);
+  box-shadow: 0 0 13px rgba(139, 89, 255, .86), 0 0 24px rgba(37, 202, 255, .34) !important;
+}
+
+@media (max-width: 900px) {
+  #identity.identity.section .identity-copy h2::after,
+  #case-studies.case-studies.section .case-studies-heading h2::after,
+  #skills.skills.section .toolbox-copy h2::after,
+  #contact.contact.section .contact-copy h2::after {
+    margin-inline: auto !important;
+    transform-origin: center !important;
+  }
+}
+
+
+/* section-title-line-position-fix.css */
+/* Final underline placement: centered titles stay centered; split titles stay left-aligned. */
+#services.services-panel.section > h2,
+#reels.reels.section > h2,
+#portfolio.portfolio.section > h2,
+#identity.identity.section .identity-copy h2,
+#ai-videos.ai-videos.section h2,
+#case-studies.case-studies.section .case-studies-heading h2,
+#skills.skills.section .toolbox-copy h2,
+#reviews.reviews.section .reviews-heading h2,
+#contact.contact.section .contact-copy h2 {
+  position: relative !important;
+  overflow: visible !important;
+  padding-bottom: .9rem !important;
+}
+
+#services.services-panel.section > h2::after,
+#reels.reels.section > h2::after,
+#portfolio.portfolio.section > h2::after,
+#identity.identity.section .identity-copy h2::after,
+#ai-videos.ai-videos.section h2::after,
+#case-studies.case-studies.section .case-studies-heading h2::after,
+#skills.skills.section .toolbox-copy h2::after,
+#reviews.reviews.section .reviews-heading h2::after,
+#contact.contact.section .contact-copy h2::after,
+#services.services-panel.section > h2:hover::after,
+#reels.reels.section > h2:hover::after,
+#portfolio.portfolio.section > h2:hover::after,
+#identity.identity.section .identity-copy h2:hover::after,
+#ai-videos.ai-videos.section h2:hover::after,
+#case-studies.case-studies.section .case-studies-heading h2:hover::after,
+#skills.skills.section .toolbox-copy h2:hover::after,
+#reviews.reviews.section .reviews-heading h2:hover::after,
+#contact.contact.section .contact-copy h2:hover::after {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 0 !important;
+  width: clamp(3.8rem, 6vw, 5.2rem) !important;
+  height: 2px !important;
+  margin: 0 !important;
+  opacity: .92 !important;
+  transform: translateX(-50%) !important;
+  translate: none !important;
+  scale: 1 !important;
+  animation: none !important;
+}
+
+#identity.identity.section .identity-copy h2::after,
+#case-studies.case-studies.section .case-studies-heading h2::after,
+#skills.skills.section .toolbox-copy h2::after,
+#contact.contact.section .contact-copy h2::after,
+#identity.identity.section .identity-copy h2:hover::after,
+#case-studies.case-studies.section .case-studies-heading h2:hover::after,
+#skills.skills.section .toolbox-copy h2:hover::after,
+#contact.contact.section .contact-copy h2:hover::after {
+  left: 0 !important;
+  transform: none !important;
+}
+
+@media (max-width: 900px) {
+  #identity.identity.section .identity-copy h2::after,
+  #case-studies.case-studies.section .case-studies-heading h2::after,
+  #skills.skills.section .toolbox-copy h2::after,
+  #contact.contact.section .contact-copy h2::after,
+  #identity.identity.section .identity-copy h2:hover::after,
+  #case-studies.case-studies.section .case-studies-heading h2:hover::after,
+  #skills.skills.section .toolbox-copy h2:hover::after,
+  #contact.contact.section .contact-copy h2:hover::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+
+/* section-heading-size-tweak.css */
+/* Section headings — a modest size reduction while preserving hierarchy */
+#services.services-panel.section > h2,
+#reels.reels.section > h2,
+#portfolio.portfolio.section > h2,
+#identity.identity.section .identity-copy h2,
+#case-studies.case-studies.section .case-studies-heading h2,
+#reviews.reviews.section .reviews-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 3.2rem) !important;
+}
+
+#ai-videos.ai-videos.section h2,
+#contact.contact.section .contact-copy h2 {
+  font-size: clamp(1.95rem, 4.2vw, 3.5rem) !important;
+}
+
+#skills.skills.section .toolbox-copy h2#skills-title {
+  font-size: clamp(2.15rem, 4.2vw, 3.3rem) !important;
+}
+
+@media (max-width: 620px) {
+  #services.services-panel.section > h2,
+  #reels.reels.section > h2,
+  #portfolio.portfolio.section > h2,
+  #identity.identity.section .identity-copy h2,
+  #ai-videos.ai-videos.section h2,
+  #case-studies.case-studies.section .case-studies-heading h2,
+  #reviews.reviews.section .reviews-heading h2,
+  #contact.contact.section .contact-copy h2 {
+    font-size: clamp(1.7rem, 7.2vw, 2.05rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  #skills.skills.section .toolbox-copy h2#skills-title {
+    font-size: clamp(2rem, 9.5vw, 2.65rem) !important;
+  }
+}
+
+
+/* section-heading-size-specific-fix.css */
+/* High-specificity size correction for sections with legacy title rules. */
+html body main #identity.identity.section.identity-split-clean .identity-copy.identity-split-copy h2,
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 {
+  font-size: clamp(2.2rem, 4vw, 3.15rem) !important;
+}
+
+html body main #ai-videos.ai-videos.section .ai-showcase-panel .ai-showcase-content h2,
+html body main #ai-videos.ai-videos.section h2 {
+  font-size: clamp(2rem, 4.1vw, 3.5rem) !important;
+}
+
+@media (max-width: 620px) {
+  html body main #identity.identity.section.identity-split-clean .identity-copy.identity-split-copy h2,
+  html body main #identity.identity.section.identity-split-clean .identity-split-copy h2,
+  html body main #ai-videos.ai-videos.section .ai-showcase-panel .ai-showcase-content h2,
+  html body main #ai-videos.ai-videos.section h2 {
+    font-size: clamp(1.7rem, 7.2vw, 2.05rem) !important;
+    line-height: 1.12 !important;
+  }
+}
+
+
+/* identity-title-clipping-fix.css */
+/* Give the Identity headline enough breathing room for complete glyphs. */
+html body main #identity.identity.section.identity-split-clean .identity-split-copy,
+html body main #identity.identity.section.identity-split-clean .identity-copy.identity-split-copy,
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2,
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 strong {
+  overflow: visible !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 {
+  width: max-content !important;
+  max-width: 100% !important;
+  padding-inline-end: 0.18em !important;
+  box-sizing: content-box !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 strong {
+  width: max-content !important;
+  max-width: none !important;
+  padding-inline-end: 0.14em !important;
+  box-sizing: content-box !important;
+}
+
+@media (min-width: 981px) {
+  html body main #identity.identity.section.identity-split-clean {
+    grid-template-columns: minmax(22rem, 0.78fr) minmax(0, 1.38fr) !important;
+  }
+
+  html body main #identity.identity.section.identity-split-clean .identity-split-copy,
+  html body main #identity.identity.section.identity-split-clean .identity-copy.identity-split-copy {
+    max-width: 34rem !important;
+  }
+}
+
+@media (max-width: 980px) {
+  html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 {
+    width: fit-content !important;
+    max-width: calc(100% - 0.2em) !important;
+  }
+
+  html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 strong {
+    max-width: 100% !important;
+  }
+}
+
+
+/* intro-first-screen-layout-fix.css */
+/* Keep the opening composition self-contained in the first viewport. */
+html body main > section#home.intro-screen.section {
+  min-height: max(42rem, 100svh) !important;
+  margin-bottom: clamp(1.75rem, 3vh, 2.75rem) !important;
+  padding:
+    clamp(6.25rem, 8vh, 7.5rem)
+    clamp(1rem, 4vw, 3rem)
+    clamp(3rem, 5vh, 4.5rem) !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+}
+
+html body main > section#home.intro-screen.section .intro-inner {
+  align-self: center !important;
+  justify-self: center !important;
+  justify-content: center !important;
+  gap: clamp(0.8rem, 1.35vh, 1.18rem) !important;
+}
+
+html body main > section#home.intro-screen.section .intro-label {
+  margin-bottom: clamp(0.45rem, 1vh, 0.8rem) !important;
+}
+
+html body main > section#home.intro-screen.section .intro-subtitle {
+  margin-top: clamp(0.55rem, 1.25vh, 1rem) !important;
+}
+
+html body main > section#home.intro-screen.section .intro-actions {
+  margin-top: clamp(0.8rem, 1.8vh, 1.45rem) !important;
+}
+
+@media (max-width: 760px) {
+  html body main > section#home.intro-screen.section {
+    min-height: max(42rem, 100svh) !important;
+    margin-bottom: clamp(1.25rem, 3vh, 2rem) !important;
+    padding:
+      clamp(5.5rem, 10vh, 6.75rem)
+      1rem
+      clamp(2.25rem, 5vh, 3.25rem) !important;
+  }
+}
+
+@media (max-height: 720px) and (min-width: 761px) {
+  html body main > section#home.intro-screen.section {
+    padding-top: 5.5rem !important;
+    padding-bottom: 2.25rem !important;
+  }
+
+  html body main > section#home.intro-screen.section .intro-inner {
+    gap: 0.68rem !important;
+  }
+}
+
+
+/* identity-copy-button-polish.css */
+/* Keep the Identity copy inside its column and give the CTA more presence. */
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2,
+html body main #identity.identity.section.identity-split-clean .identity-copy.identity-split-copy h2 {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-inline-end: 0.12em !important;
+  box-sizing: border-box !important;
+  font-size: clamp(2.55rem, 3.65vw, 3.35rem) !important;
+  line-height: 1.03 !important;
+  letter-spacing: -0.02em !important;
+  overflow: visible !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 > span,
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 strong > span {
+  display: block !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  white-space: nowrap !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 strong {
+  display: grid !important;
+  width: auto !important;
+  max-width: 100% !important;
+  gap: 0.05em !important;
+  margin-top: 0.13em !important;
+  padding-inline-end: 0.12em !important;
+  box-sizing: border-box !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-file-link {
+  min-width: 13.5rem !important;
+  min-height: 3.8rem !important;
+  padding: 0.78rem 1.25rem !important;
+  gap: 0.78rem !important;
+  border-radius: 13px !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-file-link svg {
+  width: 1.55rem !important;
+  height: 1.55rem !important;
+  flex: 0 0 1.55rem !important;
+  overflow: visible !important;
+  filter: drop-shadow(0 0 8px rgba(37, 183, 255, 0.55));
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-file-link svg path {
+  stroke-width: 2.25 !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-file-link > span {
+  font-size: 1rem !important;
+  line-height: 1.1 !important;
+}
+
+@media (max-width: 600px) {
+  html body main #identity.identity.section.identity-split-clean .identity-split-copy h2,
+  html body main #identity.identity.section.identity-split-clean .identity-copy.identity-split-copy h2 {
+    font-size: clamp(2.05rem, 9.5vw, 2.75rem) !important;
+    letter-spacing: -0.015em !important;
+  }
+
+  html body main #identity.identity.section.identity-split-clean .identity-file-link {
+    min-width: 12.5rem !important;
+    min-height: 3.55rem !important;
+  }
+
+  html body main #identity.identity.section.identity-split-clean .identity-file-link svg {
+    width: 1.4rem !important;
+    height: 1.4rem !important;
+    flex-basis: 1.4rem !important;
+  }
+}
+
+
+/* case-study-image-button-alignment-fix.css */
+/* Case study — edge-to-edge artwork and a precisely aligned CTA. */
+.case-studies.section.case-study-entry-section .case-study-entry-link {
+  padding: 0 !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: calc(1.55rem - 1px) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  aspect-ratio: auto !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transform: scale(1.002) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link:hover img,
+.case-studies.section.case-study-entry-section .case-study-entry-link:focus-visible img {
+  transform: scale(1.025) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cta {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .68rem !important;
+  line-height: 1 !important;
+  white-space: nowrap;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cta svg {
+  display: block !important;
+  flex: 0 0 1.15rem !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cta span {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+@media (max-width: 560px) {
+  .case-studies.section.case-study-entry-section .case-study-entry-cover {
+    border-radius: calc(1.1rem - 1px) !important;
+  }
+}
+
+
+/* social-icon-artwork-scale-fix.css */
+/* Keep the visible artwork correctly framed after the social assets become WebP. */
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-cv"] {
+  --social-art-scale: 1.48;
+  --social-art-x: 8%;
+  --social-art-y: 4%;
+}
+
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-email"] {
+  --social-art-scale: 2.25;
+  --social-art-x: 3%;
+  --social-art-y: -33%;
+}
+
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-instagram"] {
+  --social-art-scale: 2.15;
+  --social-art-x: -18%;
+  --social-art-y: 9%;
+}
+
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-facebook"] {
+  --social-art-scale: 1.45;
+  --social-art-x: -2%;
+  --social-art-y: -9%;
+}
+
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-whatsapp"] {
+  --social-art-scale: 1.42;
+  --social-art-x: -4%;
+  --social-art-y: 21%;
+}
+
+
+/* case-study-frame-title-impact-fix.css */
+/* Case study — remove the stray frame highlight and strengthen the heading. */
+.case-studies.section.case-study-entry-section .case-study-entry-link::before {
+  content: none !important;
+  display: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 {
+  font-size: clamp(2.55rem, 3.75vw, 3.6rem) !important;
+  font-weight: 800 !important;
+  line-height: .99 !important;
+  letter-spacing: -.052em !important;
+  text-shadow:
+    0 4px 20px rgba(2, 3, 24, .86),
+    0 0 30px rgba(126, 73, 255, .28) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 > span {
+  color: #fff !important;
+  text-shadow:
+    0 3px 18px rgba(1, 2, 20, .9),
+    0 0 20px rgba(236, 221, 255, .18) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span {
+  padding-inline-end: .08em;
+  background: linear-gradient(102deg, #e58cff 0%, #a967ff 38%, #5f83ff 68%, #31d5ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  filter:
+    drop-shadow(0 0 12px rgba(176, 90, 255, .42))
+    drop-shadow(0 0 20px rgba(46, 191, 255, .2)) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+  width: 5.25rem !important;
+  height: 3px !important;
+  margin-top: 1rem !important;
+  background: linear-gradient(90deg, #d474ff, #776cff 52%, #31d5ff, transparent) !important;
+  box-shadow:
+    0 0 11px rgba(158, 84, 255, .82),
+    0 0 24px rgba(49, 213, 255, .34) !important;
+}
+
+@media (max-width: 900px) {
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    font-size: clamp(2.25rem, 8.7vw, 3.25rem) !important;
+    line-height: 1.02 !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+    margin-inline: auto !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    font-size: clamp(2rem, 10.5vw, 2.7rem) !important;
+    line-height: 1.04 !important;
+  }
+}
+
+
+/* explore-photo-navigation-fix.css */
+/* Let the opening CTA reveal the profile card cleanly below the sticky header. */
+html body main #about.profile-card {
+  scroll-margin-top: clamp(5.5rem, 8vw, 7rem);
+}
+
+@media (max-width: 760px) {
+  html body main #about.profile-card {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+
+/* intro-welcome-message.css */
+/* A personal welcome line that uses the open space above the hero message. */
+html body main section#home.intro-screen .intro-inner p.intro-welcome {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .25rem .48rem !important;
+  width: fit-content !important;
+  max-width: min(92%, 42rem) !important;
+  margin: 0 0 .35rem !important;
+  padding: .18rem .5rem !important;
+  color: #c6bfd8 !important;
+  -webkit-text-fill-color: #c6bfd8 !important;
+  font-size: clamp(1.02rem, 1.35vw, 1.24rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  letter-spacing: .005em !important;
+  text-align: center !important;
+  background: none !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  filter: none !important;
+  text-shadow: 0 3px 16px rgba(2, 3, 24, .78) !important;
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+  content: "";
+  flex: 0 0 .48rem;
+  width: .48rem;
+  height: .48rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c66cff, #35d6ff);
+  box-shadow:
+    0 0 0 4px rgba(132, 83, 255, .12),
+    0 0 16px rgba(63, 202, 255, .52);
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome strong {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-weight: 800 !important;
+  text-shadow:
+    0 2px 14px rgba(2, 3, 24, .86),
+    0 0 18px rgba(181, 111, 255, .26) !important;
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome span {
+  color: #bdb5d0 !important;
+  -webkit-text-fill-color: #bdb5d0 !important;
+}
+
+@media (max-width: 560px) {
+  html body main section#home.intro-screen .intro-inner p.intro-welcome {
+    gap: .18rem .38rem !important;
+    max-width: 20rem !important;
+    margin-bottom: .2rem !important;
+    padding-inline: .25rem !important;
+    font-size: clamp(.9rem, 4.15vw, 1rem) !important;
+  }
+
+  html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+    flex-basis: .4rem;
+    width: .4rem;
+    height: .4rem;
+  }
+}
+
+
+/* intro-welcome-visibility-fix.css */
+/* Make the welcome message read as a clear opening statement. */
+html body main section#home.intro-screen .intro-inner p.intro-welcome {
+  gap: .3rem .58rem !important;
+  max-width: min(94%, 48rem) !important;
+  margin-bottom: .58rem !important;
+  padding: .68rem 1.15rem !important;
+  border: 1px solid rgba(144, 91, 255, .5) !important;
+  border-radius: 999px !important;
+  color: #e0d9ee !important;
+  -webkit-text-fill-color: #e0d9ee !important;
+  font-size: clamp(1.18rem, 1.65vw, 1.5rem) !important;
+  font-weight: 600 !important;
+  background:
+    linear-gradient(110deg, rgba(111, 44, 210, .2), rgba(20, 98, 170, .13)),
+    rgba(8, 6, 31, .7) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .08),
+    0 10px 28px rgba(2, 3, 24, .3),
+    0 0 24px rgba(113, 72, 236, .15) !important;
+  backdrop-filter: blur(10px);
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+  flex-basis: .58rem;
+  width: .58rem;
+  height: .58rem;
+  box-shadow:
+    0 0 0 5px rgba(132, 83, 255, .14),
+    0 0 19px rgba(63, 202, 255, .68);
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome strong {
+  font-size: 1.04em !important;
+  font-weight: 800 !important;
+  text-shadow:
+    0 2px 16px rgba(2, 3, 24, .9),
+    0 0 22px rgba(181, 111, 255, .34) !important;
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome span {
+  color: #d7d0e5 !important;
+  -webkit-text-fill-color: #d7d0e5 !important;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 560px) {
+  html body main section#home.intro-screen .intro-inner p.intro-welcome {
+    max-width: min(94vw, 21.5rem) !important;
+    margin-bottom: .35rem !important;
+    padding: .62rem .8rem !important;
+    border-radius: 1.15rem !important;
+    font-size: clamp(.98rem, 4.6vw, 1.1rem) !important;
+    line-height: 1.4 !important;
+  }
+}
+
+
+/* section-title-underline-removal.css */
+/* Remove the small decorative line below every main section heading. */
+html body main :is(
+  #services > h2,
+  #reels > h2,
+  #portfolio > h2,
+  #identity .identity-copy h2,
+  #ai-videos h2,
+  #case-studies .case-studies-heading h2,
+  #skills .toolbox-copy h2,
+  #reviews .reviews-heading h2,
+  #contact .contact-copy h2
+)::after,
+html body .site-footer h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* ai-video-number-reel-style.css */
+/* Match AI video numbering to the Reels cards. */
+html body main #ai-videos.ai-videos.section .ai-video-card .work-info > span:first-child {
+  position: absolute !important;
+  z-index: 5 !important;
+  inset: auto clamp(.9rem, 1.4vw, 1.15rem) clamp(.85rem, 1.35vw, 1.05rem) auto !important;
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: none !important;
+  color: rgba(177, 90, 255, .82) !important;
+  -webkit-text-fill-color: rgba(177, 90, 255, .82) !important;
+  font-size: clamp(1.65rem, 3vw, 2.2rem) !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  letter-spacing: -.03em !important;
+  text-shadow:
+    0 0 18px rgba(169, 76, 255, .42),
+    0 0 24px rgba(37, 183, 255, .12) !important;
+  box-shadow: none !important;
+  pointer-events: none;
+}
+
+@media (max-width: 560px) {
+  html body main #ai-videos.ai-videos.section .ai-video-card .work-info > span:first-child {
+    right: .85rem !important;
+    bottom: .8rem !important;
+    font-size: clamp(1.55rem, 8vw, 2rem) !important;
+  }
+}
+
+
+/* case-study-outer-frame-stability.css */
+/* Keep the Case Study outer frame crisp against every background position. */
+html body main > #case-studies.case-studies.section.case-study-entry-section {
+  isolation: isolate;
+  border: 1px solid transparent !important;
+  border-radius: 1.2rem !important;
+  background:
+    radial-gradient(circle at 86% 20%, rgba(30, 173, 255, .08), transparent 28rem) padding-box,
+    radial-gradient(circle at 18% 52%, rgba(142, 62, 238, .1), transparent 24rem) padding-box,
+    linear-gradient(rgba(5, 4, 24, .82), rgba(5, 4, 24, .82)) padding-box,
+    linear-gradient(118deg, rgba(185, 91, 255, .78), rgba(105, 92, 255, .54) 52%, rgba(41, 202, 255, .76)) border-box !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(128, 91, 255, .16),
+    inset 0 1px 0 rgba(255, 255, 255, .045),
+    inset 0 0 48px rgba(91, 46, 192, .06),
+    0 22px 55px rgba(2, 2, 18, .24),
+    0 0 24px rgba(83, 69, 205, .08) !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+@media (max-width: 560px) {
+  html body main > #case-studies.case-studies.section.case-study-entry-section {
+    border-radius: 1rem !important;
+  }
+}
+
+
+/* ai-overlay-bottom-gap-fix.css */
+/* AI cards: seal the bottom shade and redraw one uninterrupted top-layer frame. */
+html body main #ai-videos.ai-videos.section .ai-video-card {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  border: 1px solid transparent !important;
+  border-radius: 16px !important;
+  background: #030211 !important;
+  background-clip: padding-box !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+html body main #ai-videos.ai-videos.section .ai-video-card > img,
+html body main #ai-videos.ai-videos.section .ai-video-card > video.ai-hover-preview {
+  position: absolute !important;
+  inset: -2px !important;
+  width: calc(100% + 4px) !important;
+  height: calc(100% + 4px) !important;
+  min-width: calc(100% + 4px) !important;
+  min-height: calc(100% + 4px) !important;
+  max-width: none !important;
+  border: 0 !important;
+  border-radius: inherit !important;
+  outline: 0 !important;
+}
+
+html body main #ai-videos.ai-videos.section .ai-video-card .work-info {
+  position: absolute !important;
+  inset: -5px !important;
+  z-index: 3 !important;
+  box-sizing: border-box !important;
+  width: calc(100% + 10px) !important;
+  height: calc(100% + 10px) !important;
+  min-width: calc(100% + 10px) !important;
+  min-height: calc(100% + 10px) !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: inherit !important;
+  outline: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 2, 17, .01) 0%,
+    rgba(3, 2, 17, .1) 34%,
+    rgba(3, 2, 17, .82) 72%,
+    #030211 93%,
+    #030211 100%
+  ) !important;
+  background-color: #030211 !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  box-shadow: inset 0 -10px 0 #030211 !important;
+  clip-path: none !important;
+}
+
+html body main #ai-videos.ai-videos.section .ai-video-card::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 6 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  pointer-events: none !important;
+  border: 1px solid rgba(166, 92, 255, .94) !important;
+  border-radius: inherit !important;
+  background: none !important;
+  background-image: none !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(43, 202, 255, .18),
+    inset 0 1px 0 rgba(255, 255, 255, .12),
+    0 0 18px rgba(111, 72, 235, .18) !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+html body main #ai-videos.ai-videos.section .ai-video-card:hover::after,
+html body main #ai-videos.ai-videos.section .ai-video-card:focus-visible::after {
+  border-color: rgba(75, 213, 255, .98) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(175, 91, 255, .3),
+    inset 0 1px 0 rgba(255, 255, 255, .18),
+    0 0 24px rgba(47, 202, 255, .28),
+    0 0 20px rgba(151, 70, 255, .22) !important;
+}
+
+@media (max-width: 560px) {
+  html body main #ai-videos.ai-videos.section .ai-video-card {
+    border-radius: 14px !important;
+  }
+
+  html body main #ai-videos.ai-videos.section .ai-video-card .work-info {
+    inset: -4px !important;
+    width: calc(100% + 8px) !important;
+    height: calc(100% + 8px) !important;
+    min-width: calc(100% + 8px) !important;
+    min-height: calc(100% + 8px) !important;
+  }
+}
+
+/* intro-welcome-position-impact-fix.css */
+/* Lift the welcome statement into the open hero space and make it a stronger opening cue. */
+html body main section#home.intro-screen .intro-inner p.intro-welcome {
+  position: relative !important;
+  top: clamp(-3.2rem, -4.2vh, -1.8rem) !important;
+  isolation: isolate;
+  gap: .36rem .72rem !important;
+  min-height: 4.15rem;
+  max-width: min(96%, 60rem) !important;
+  padding: .88rem 1.6rem !important;
+  border: 1px solid transparent !important;
+  border-radius: 999px !important;
+  font-size: clamp(1.38rem, 2vw, 1.78rem) !important;
+  font-weight: 650 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -.018em !important;
+  background:
+    linear-gradient(112deg, rgba(35, 14, 83, .96), rgba(13, 29, 76, .94) 58%, rgba(5, 54, 92, .92)) padding-box,
+    linear-gradient(112deg, #e187ff, #806fff 50%, #38ddff) border-box !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .16),
+    inset 0 -1px 0 rgba(55, 214, 255, .09),
+    0 16px 38px rgba(2, 3, 24, .46),
+    0 0 34px rgba(137, 75, 244, .3),
+    0 0 24px rgba(49, 213, 255, .14) !important;
+  transform-origin: center;
+  will-change: transform;
+  animation: introWelcomePresence 3.4s cubic-bezier(.37, 0, .63, 1) infinite;
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome strong {
+  font-size: 1.12em !important;
+  font-weight: 850 !important;
+  letter-spacing: -.035em !important;
+  text-shadow:
+    0 2px 16px rgba(2, 3, 24, .94),
+    0 0 28px rgba(205, 132, 255, .5) !important;
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome span {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: .92em !important;
+  font-weight: 750 !important;
+  letter-spacing: -.018em !important;
+  background: linear-gradient(95deg, #f4eaff 0%, #c7b8ff 48%, #68dbff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  filter: drop-shadow(0 2px 10px rgba(20, 17, 70, .7));
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+  flex-basis: .72rem;
+  width: .72rem;
+  height: .72rem;
+  background: linear-gradient(135deg, #eb8cff, #38dcff) !important;
+  box-shadow:
+    0 0 0 6px rgba(132, 83, 255, .2),
+    0 0 24px rgba(63, 202, 255, .88) !important;
+  animation: introWelcomeDotPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes introWelcomePresence {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-2px) scale(1.008); }
+}
+
+@keyframes introWelcomeDotPulse {
+  0%, 100% { transform: scale(.9); filter: brightness(1); }
+  50% { transform: scale(1.14); filter: brightness(1.25); }
+}
+
+@media (max-width: 560px) {
+  html body main section#home.intro-screen .intro-inner p.intro-welcome {
+    top: -1.35rem !important;
+    gap: .28rem .5rem !important;
+    min-height: 0;
+    max-width: min(94vw, 23rem) !important;
+    padding: .76rem .95rem !important;
+    border-radius: 1.25rem !important;
+    font-size: clamp(1.05rem, 4.9vw, 1.2rem) !important;
+    line-height: 1.42 !important;
+  }
+
+  html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+    flex-basis: .55rem;
+    width: .55rem;
+    height: .55rem;
+    box-shadow:
+      0 0 0 5px rgba(132, 83, 255, .18),
+      0 0 19px rgba(63, 202, 255, .76) !important;
+  }
+}
+
+@media (max-height: 720px) and (min-width: 761px) {
+  html body main section#home.intro-screen .intro-inner p.intro-welcome {
+    top: -1.3rem !important;
+    min-height: 3.7rem;
+    padding-block: .72rem !important;
+    font-size: clamp(1.25rem, 1.75vw, 1.55rem) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body main section#home.intro-screen .intro-inner p.intro-welcome,
+  html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+    animation: none !important;
+  }
+}
+
+/* case-study-comfort-layout.css */
+/* Case study entry: calmer rhythm, consistent alignment, balanced visual weight. */
+html body main > #case-studies.case-studies.section.case-study-entry-section {
+  grid-template-columns: minmax(22rem, 0.9fr) minmax(0, 1.25fr) !important;
+  align-items: center !important;
+  gap: clamp(2.5rem, 4vw, 4.25rem) !important;
+  min-height: 0 !important;
+  padding: clamp(2.5rem, 3.6vw, 3.35rem) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  max-width: 31rem;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading .mini-title {
+  align-self: flex-start;
+  margin: 0 0 1rem !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 {
+  width: 100%;
+  max-width: 10.6ch !important;
+  margin: 0 0 1.15rem !important;
+  font-size: clamp(2.45rem, 3.25vw, 3.25rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.075 !important;
+  letter-spacing: -0.048em !important;
+  text-align: left !important;
+  text-wrap: balance;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong {
+  margin-top: 0.12em !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span + span {
+  margin-top: 0.08em;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-intro {
+  width: 100%;
+  max-width: 29rem;
+  margin: 0 0 1.45rem !important;
+  color: rgba(224, 220, 239, 0.8);
+  font-size: clamp(0.96rem, 1.1vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.75;
+  text-align: left !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cta {
+  align-self: flex-start;
+  min-height: 3.25rem;
+  margin: 0 !important;
+  padding-inline: 1.2rem 1.3rem;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-card {
+  align-self: center;
+  width: 100% !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link {
+  aspect-ratio: 16 / 10 !important;
+  border-radius: 1.35rem !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover {
+  border-radius: calc(1.35rem - 1px) !important;
+}
+
+@media (max-width: 1020px) {
+  html body main > #case-studies.case-studies.section.case-study-entry-section {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "case-copy" "case-visual" !important;
+    gap: 2.25rem !important;
+    padding: clamp(2rem, 6vw, 3rem) !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading {
+    align-items: center !important;
+    max-width: 43rem;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading .mini-title,
+  .case-studies.section.case-study-entry-section .case-study-entry-cta {
+    align-self: center;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2,
+  .case-studies.section.case-study-entry-section .case-studies-intro {
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    font-size: clamp(2.3rem, 6vw, 3.25rem) !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-card {
+    width: min(100%, 52rem) !important;
+    margin-inline: auto !important;
+  }
+}
+
+@media (max-width: 560px) {
+  html body main > #case-studies.case-studies.section.case-study-entry-section {
+    gap: 1.65rem !important;
+    padding: 1.35rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading .mini-title {
+    margin-bottom: 0.82rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    margin-bottom: 1rem !important;
+    font-size: clamp(2rem, 10vw, 2.65rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-intro {
+    margin-bottom: 1.25rem !important;
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-link {
+    border-radius: 1rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-cover {
+    border-radius: calc(1rem - 1px) !important;
+  }
+}
+
+
+/* explore-about-section-navigation.css */
+/* Explore CTA: land on the complete personal-information scene, not its inner card. */
+main > .hero.section.about-section {
+  min-height: calc(100svh - 6.25rem) !important;
+  scroll-margin-top: 6.25rem !important;
+  scroll-snap-align: start;
+}
+
+main > .hero.section.about-section #about.profile-card {
+  scroll-margin-top: 0 !important;
+}
+
+@media (max-width: 860px) {
+  main > .hero.section.about-section {
+    min-height: calc(100svh - 5rem) !important;
+    scroll-margin-top: 5rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* contact-email-single-line.css */
+/* Contact links: give the email the space its longer label needs. */
+@media (min-width: 901px) {
+  .contact.section#contact > .contact-links {
+    grid-template-columns: minmax(0, 0.82fr) minmax(20rem, 1.36fr) minmax(0, 0.82fr) !important;
+    width: min(100%, 66rem) !important;
+  }
+}
+
+.contact.section#contact > .contact-links a:nth-child(2) {
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+  font-size: clamp(0.78rem, 0.92vw, 0.92rem) !important;
+}
+
+@media (max-width: 900px) {
+  .contact.section#contact > .contact-links {
+    width: min(100%, 40rem) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact.section#contact > .contact-links a:nth-child(2) {
+    gap: 0.55rem !important;
+    padding-inline: 0.6rem !important;
+    font-size: clamp(0.72rem, 3.55vw, 0.8rem) !important;
+    letter-spacing: -0.015em;
+  }
+
+  .contact.section#contact > .contact-links a:nth-child(2)::before {
+    flex-basis: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+
+/* case-study-gradient-contrast.css */
+/* Case study title: brighter hierarchy and a clean 3:2 artwork frame. */
+.case-studies.section.case-study-entry-section .case-studies-heading h2 {
+  max-width: 11.4ch !important;
+  font-size: clamp(2.6rem, 3.45vw, 3.5rem) !important;
+  font-weight: 850 !important;
+  line-height: 1.035 !important;
+  letter-spacing: -.052em !important;
+  text-wrap: balance;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 > span {
+  opacity: 1 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow:
+    0 3px 18px rgba(1, 2, 20, .94),
+    0 0 22px rgba(236, 221, 255, .22) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong {
+  margin-top: .16em !important;
+  opacity: 1 !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span {
+  width: fit-content !important;
+  max-width: 100%;
+  opacity: 1 !important;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: 850 !important;
+  background: linear-gradient(100deg, #ffc0ff 0%, #ea99ff 24%, #bd8cff 48%, #7da8ff 72%, #43e6ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-stroke: .24px rgba(248, 239, 255, .46);
+  filter:
+    brightness(1.12)
+    saturate(1.08)
+    drop-shadow(0 0 10px rgba(220, 130, 255, .62))
+    drop-shadow(0 0 20px rgba(67, 190, 255, .36)) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span + span {
+  margin-top: .045em !important;
+}
+
+.case-studies.section.case-study-entry-section .case-studies-heading h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link {
+  aspect-ratio: 3 / 2 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 1px solid transparent !important;
+  border-radius: 1.4rem !important;
+  background:
+    linear-gradient(#030416, #030416) padding-box,
+    linear-gradient(120deg, #dd76ff 0%, #806fff 48%, #35d9ff 100%) border-box !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .13),
+    0 24px 52px rgba(1, 2, 20, .44),
+    0 0 28px rgba(122, 73, 235, .24),
+    0 0 20px rgba(45, 201, 255, .14) !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link::before,
+.case-studies.section.case-study-entry-section .case-study-entry-link::after {
+  content: none !important;
+  display: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: calc(1.4rem - 2px) !important;
+  background: #030416 !important;
+  box-shadow: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border: 0 !important;
+  border-radius: inherit !important;
+  outline: 0 !important;
+  transform: scale(1.004) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link:hover,
+.case-studies.section.case-study-entry-section .case-study-entry-link:focus-visible {
+  background:
+    linear-gradient(#030416, #030416) padding-box,
+    linear-gradient(120deg, #f096ff 0%, #8d7cff 45%, #4ce8ff 100%) border-box !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .18),
+    0 28px 58px rgba(1, 2, 20, .5),
+    0 0 36px rgba(140, 75, 244, .32),
+    0 0 28px rgba(45, 211, 255, .22) !important;
+}
+
+@media (max-width: 1020px) {
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    max-width: 13ch !important;
+    font-size: clamp(2.35rem, 6.2vw, 3.4rem) !important;
+    text-align: center !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 {
+    max-width: 12ch !important;
+    font-size: clamp(2.05rem, 10.2vw, 2.75rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-studies-heading h2 strong > span {
+    background: linear-gradient(100deg, #ffc5ff 0%, #e99cff 30%, #9c97ff 62%, #48e8ff 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-link {
+    border-radius: 1rem !important;
+  }
+
+  .case-studies.section.case-study-entry-section .case-study-entry-cover {
+    border-radius: calc(1rem - 2px) !important;
+  }
+}
+
+/* about-portrait-seam-fix.css */
+
+
+/* view-work-icon-polish.css */
+/* View My Work: bright icon and calm, lightweight invitation. */
+.about-section .actions .primary-btn[href="#portfolio"]{position:relative!important;isolation:isolate!important;overflow:hidden!important;border-color:rgba(182,102,255,.88)!important;background:linear-gradient(112deg,rgba(126,43,224,.96),rgba(67,26,157,.94) 58%,rgba(25,92,174,.9))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 12px 26px rgba(13,4,53,.38),0 0 24px rgba(144,65,255,.28)!important;transform:translateZ(0)!important;animation:viewWorkButtonInvite 2.65s ease-in-out infinite!important}
+.about-section .actions .primary-btn[href="#portfolio"] svg{flex:0 0 auto!important;width:2.35rem!important;height:2.35rem!important;margin-right:.78rem!important;padding:.52rem!important;box-sizing:border-box!important;overflow:visible!important;color:#fff!important;border:1px solid rgba(133,224,255,.94)!important;border-radius:.78rem!important;background:radial-gradient(circle at 28% 22%,rgba(255,255,255,.48),transparent 34%),linear-gradient(145deg,#9d52ff 5%,#6247f5 48%,#16b9ff 100%)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.52),0 0 18px rgba(73,190,255,.52),0 8px 18px rgba(23,6,72,.38)!important;transform:rotate(-3deg)!important;animation:viewWorkIconPulse 2.2s ease-in-out infinite!important}
+.about-section .actions .primary-btn[href="#portfolio"] svg path{fill:currentColor!important;filter:drop-shadow(0 0 3px rgba(255,255,255,.62))}
+.about-section .actions .primary-btn[href="#portfolio"]:hover,.about-section .actions .primary-btn[href="#portfolio"]:focus-visible{animation-play-state:paused!important;transform:translateY(-4px) scale(1.025)!important;border-color:rgba(91,219,255,.98)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.27),0 16px 32px rgba(13,4,53,.44),0 0 34px rgba(151,70,255,.44),0 0 26px rgba(39,205,255,.3)!important}
+.about-section .actions .primary-btn[href="#portfolio"]:hover svg,.about-section .actions .primary-btn[href="#portfolio"]:focus-visible svg{animation-play-state:paused!important;transform:translateY(-2px) rotate(5deg) scale(1.1)!important;filter:brightness(1.08) saturate(1.12)!important}
+.about-section .actions .primary-btn[href="#portfolio"]:active{transform:translateY(-1px) scale(.985)!important}
+@keyframes viewWorkIconPulse{0%,100%{transform:translateY(0) rotate(-3deg) scale(1)}50%{transform:translateY(-2px) rotate(2deg) scale(1.055)}}
+@keyframes viewWorkButtonInvite{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-3px) scale(1.018)}}
+/* About card: one clean frame with no tint or shape over the face. */
+.hero #about.profile-card{isolation:isolate;background:linear-gradient(135deg,rgba(19,10,54,.98),rgba(7,20,49,.98))!important}
+.hero #about.profile-card .about-content{isolation:isolate;background:transparent!important}
+.hero #about.profile-card .about-content::after,.hero #about.profile-card .portrait::before{content:none!important;display:none!important;background:none!important}
+.hero #about.profile-card .portrait-glow{display:none!important;background:none!important;opacity:0!important}
+@media (min-width:761px){.hero #about.profile-card .about-content{padding-inline-end:clamp(.7rem,1vw,.95rem)!important}.hero #about.profile-card .portrait{top:0!important;right:0!important;bottom:0!important;height:100%!important;overflow:hidden!important;border-left:0!important;box-shadow:none!important;background:transparent!important}.hero #about.profile-card .portrait img{inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:58% top!important;border:0!important;border-radius:0!important;outline:0!important;-webkit-mask-image:none!important;mask-image:none!important;transform:scale(1.025)!important}.hero #about.profile-card:hover .portrait img,.hero #about.profile-card.is-profile-active .portrait img{transform:scale(1.025)!important}}
+@media (max-width:760px){.hero #about.profile-card .portrait{margin-top:0!important;overflow:hidden!important;border-top:0!important;box-shadow:none!important;background:transparent!important;-webkit-mask-image:none!important;mask-image:none!important}.hero #about.profile-card .portrait img{object-position:56% 18%!important;border:0!important;border-radius:0!important;outline:0!important;-webkit-mask-image:none!important;mask-image:none!important}}
+@media (prefers-reduced-motion:reduce){.about-section .actions .primary-btn[href="#portfolio"],.about-section .actions .primary-btn[href="#portfolio"] svg{animation:none!important}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+/* client-performance-guard.css */
+/* Final client-performance guard: keep premium motion only when it can be seen. */
+html.is-site-scrolling body.performance-lite main #home.intro-screen .intro-welcome,
+html.is-site-scrolling body.performance-lite main #home.intro-screen .intro-welcome::before,
+html.is-site-scrolling body.performance-lite main #home.intro-screen .explore-cta-icon,
+html.is-site-scrolling body.performance-lite main #home.intro-screen .explore-cta-icon::after,
+html.is-site-scrolling body.performance-lite main #home.intro-screen .explore-cta-icon svg,
+html.is-site-scrolling body.performance-lite main .about-section .primary-btn[href="#portfolio"],
+html.is-site-scrolling body.performance-lite main .about-section .primary-btn[href="#portfolio"]::before,
+html.is-site-scrolling body.performance-lite main .about-section .primary-btn[href="#portfolio"] svg,
+html.is-page-hidden body.performance-lite main #home.intro-screen .intro-welcome,
+html.is-page-hidden body.performance-lite main #home.intro-screen .intro-welcome::before,
+html.is-page-hidden body.performance-lite main #home.intro-screen .explore-cta-icon,
+html.is-page-hidden body.performance-lite main #home.intro-screen .explore-cta-icon::after,
+html.is-page-hidden body.performance-lite main #home.intro-screen .explore-cta-icon svg,
+html.is-page-hidden body.performance-lite main .about-section .primary-btn[href="#portfolio"],
+html.is-page-hidden body.performance-lite main .about-section .primary-btn[href="#portfolio"]::before,
+html.is-page-hidden body.performance-lite main .about-section .primary-btn[href="#portfolio"] svg,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .intro-welcome,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .intro-welcome::before,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .explore-cta-icon,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .explore-cta-icon::after,
+body.performance-lite main #home.intro-screen.is-performance-offscreen .explore-cta-icon svg,
+body.performance-lite main .about-section.is-performance-offscreen .primary-btn[href="#portfolio"],
+body.performance-lite main .about-section.is-performance-offscreen .primary-btn[href="#portfolio"]::before,
+body.performance-lite main .about-section.is-performance-offscreen .primary-btn[href="#portfolio"] svg {
+  animation-play-state: paused !important;
+  will-change: auto !important;
+}
+
+@media (max-width: 900px), (pointer: coarse) {
+  html body.performance-lite main #home.intro-screen .intro-welcome,
+  html body.performance-lite main #home.intro-screen .intro-welcome::before,
+  html body.performance-lite main #home.intro-screen .explore-cta-icon,
+  html body.performance-lite main #home.intro-screen .explore-cta-icon::after,
+  html body.performance-lite main #home.intro-screen .explore-cta-icon svg,
+  html body.performance-lite main .about-section .primary-btn[href="#portfolio"],
+  html body.performance-lite main .about-section .primary-btn[href="#portfolio"]::before,
+  html body.performance-lite main .about-section .primary-btn[href="#portfolio"] svg {
+    animation: none !important;
+    animation-delay: 0s !important;
+    will-change: auto !important;
+  }
+
+  html body.performance-lite :is(
+    .profile-card,
+    .service-card,
+    .media-card,
+    .identity-split-clean,
+    .ai-showcase-panel,
+    .case-study-entry-link,
+    .tool-card,
+    .review-card
+  ) {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.performance-lite *,
+  html body.performance-lite *::before,
+  html body.performance-lite *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition-duration: .01ms !important;
+    will-change: auto !important;
+  }
+}
+/* Adaptive rendering: defer offscreen sections and pause invisible decoration. */
+body.performance-lite main > section:not(#home),
+body.performance-lite .site-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
+body.performance-lite main > section.is-performance-offscreen *,
+body.performance-lite main > section.is-performance-offscreen *::before,
+body.performance-lite main > section.is-performance-offscreen *::after,
+html.is-page-hidden body.performance-lite *,
+html.is-page-hidden body.performance-lite *::before,
+html.is-page-hidden body.performance-lite *::after {
+  animation-play-state: paused !important;
+  will-change: auto !important;
+}
+
+html.is-site-scrolling body.performance-lite .site-bg :is(.beam, .particle),
+html.is-site-scrolling body.performance-lite main > section:not(.is-performance-offscreen) :is(.orb, .floating-dot) {
+  animation-play-state: paused !important;
+}
+
+@media (max-width: 900px), (pointer: coarse), (prefers-reduced-data: reduce) {
+  body.performance-lite .site-bg :is(.beam, .particle) {
+    animation: none !important;
+    will-change: auto !important;
+  }
+
+  body.performance-lite :is(.cursor-dot, .cursor-ring) {
+    display: none !important;
+  }
+
+  body.performance-lite main > section:not(#home) {
+    contain-intrinsic-size: auto 720px;
+  }
+}
+
+/* AI video cards: strict edge-to-edge 16:9 frame lock */
+body main .ai-videos.section#ai-videos .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(n) {
+  position: relative !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 16 / 9 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+body main .ai-videos.section#ai-videos .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(n) > img,
+body main .ai-videos.section#ai-videos .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(n) > video.ai-hover-preview {
+  position: absolute !important;
+  inset: -2px !important;
+  display: block !important;
+  width: calc(100% + 4px) !important;
+  height: calc(100% + 4px) !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border: 0 !important;
+  border-radius: inherit !important;
+  clip-path: none !important;
+  transform: none !important;
+}
+body main .ai-videos.section#ai-videos .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(n) > .work-info {
+  position: absolute !important;
+  z-index: 3 !important;
+  inset: 0 !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  padding-bottom: .9rem !important;
+  border-radius: inherit !important;
+  clip-path: none !important;
+  background: linear-gradient(180deg, transparent 0%, transparent 58%, rgba(3,3,17,.06) 75%, rgba(3,3,17,.28) 100%) !important;
+}
+@media (max-width: 700px) {
+  body main .ai-videos.section#ai-videos .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(n) {
+    aspect-ratio: 16 / 9 !important;
+  }
+}
+
+/* Mobile AI cards: remove the legacy solid bottom inset that looked like an empty gap. */
+body main .ai-videos.section#ai-videos .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(n) > .work-info {
+  box-shadow: none !important;
+}
+
+/* Desktop AI grid: keep card 03 identical to cards 01 and 02. */
+@media (min-width: 701px) {
+  body main .ai-videos.section#ai-videos .ai-showcase-content .ai-video-grid.ai-video-list > .work-card.media-card.ai-video-card:nth-child(3) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    width: calc((100% - 1.5rem) / 2) !important;
+    max-width: none !important;
+  }
+}
+/* Final case-study title parity with the other section headings. */
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading #case-studies-title strong > span {
+  background: linear-gradient(100deg, #d77aff 0%, #9f62ff 42%, #24c7ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke: 0 transparent !important;
+  text-shadow: 0 8px 30px rgba(91, 72, 255, .18) !important;
+  filter: drop-shadow(0 0 12px rgba(118, 86, 255, .35)) !important;
+}
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading #case-studies-title {
+  filter: none !important;
+}
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading #case-studies-title::after,
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading #case-studies-title:hover::after {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+/* Contact options: full-width bottom row with uploaded icon artwork. */
+html body main #contact.contact.section {
+  display: grid !important;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr) !important;
+  align-items: start !important;
+  column-gap: clamp(2rem, 4vw, 4.2rem) !important;
+}
+html body main #contact.contact.section > .contact-copy {
+  grid-column: 1 !important;
+}
+html body main #contact.contact.section > form {
+  grid-column: 2 !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1rem !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: clamp(2rem, 4vw, 3.2rem) 0 0 !important;
+  padding: 0 !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link {
+  --contact-accent: #9b62ff;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: .85rem !important;
+  min-width: 0 !important;
+  min-height: 74px !important;
+  padding: .65rem 1rem !important;
+  overflow: hidden !important;
+  color: #fff !important;
+  font-size: clamp(.86rem, 1.25vw, 1rem) !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  border: 1px solid color-mix(in srgb, var(--contact-accent) 78%, transparent) !important;
+  border-radius: 16px !important;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--contact-accent) 18%, #10072d), rgba(5, 8, 34, .94)) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 12px 28px rgba(2,3,22,.2) !important;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link-whatsapp { --contact-accent: #15e89a; }
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link-email { --contact-accent: #24bfff; }
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link-cv { --contact-accent: #ad68ff; }
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link:hover,
+html body main #contact.contact.section > .contact-links.contact-links-bottom > .contact-link:focus-visible {
+  transform: translateY(-4px) !important;
+  border-color: var(--contact-accent) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 16px 34px color-mix(in srgb, var(--contact-accent) 20%, transparent) !important;
+}
+html body main #contact.contact.section .contact-link-icon {
+  flex: 0 0 52px !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 52px !important;
+  height: 52px !important;
+}
+html body main #contact.contact.section .contact-link-icon img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+}
+html body main #contact.contact.section .contact-link > span:last-child {
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+}
+@media (max-width: 900px) {
+  html body main #contact.contact.section {
+    grid-template-columns: 1fr !important;
+  }
+  html body main #contact.contact.section > .contact-copy,
+  html body main #contact.contact.section > form,
+  html body main #contact.contact.section > .contact-links.contact-links-bottom {
+    grid-column: 1 !important;
+  }
+}
+@media (max-width: 700px) {
+  html body main #contact.contact.section > .contact-links.contact-links-bottom {
+    grid-template-columns: 1fr !important;
+  }
+}
+/* Unified interactive underline for every main section title. */
+html body main #services.services-panel.section > h2::after,
+html body main #reels.reels.section > h2::after,
+html body main #portfolio.portfolio.section > h2::after,
+html body main #identity.identity.section .identity-copy h2::after,
+html body main #ai-videos.ai-videos.section h2::after,
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title::after,
+html body main #skills.skills.section .toolbox-copy h2::after,
+html body main #reviews.reviews.section .reviews-heading h2::after,
+html body main #contact.contact.section .contact-copy h2::after,
+html body .site-footer h2::after {
+  content: "" !important;
+  display: block !important;
+  visibility: visible !important;
+  position: relative !important;
+  inset: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 4.4rem !important;
+  height: 3px !important;
+  margin: .9rem auto 0 !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, #b55cff 0%, #706cff 52%, #25caff 100%) !important;
+  box-shadow: 0 0 12px rgba(158, 84, 255, .5), 0 0 22px rgba(37, 202, 255, .22) !important;
+  opacity: .82 !important;
+  transform: scaleX(.72) !important;
+  transform-origin: center !important;
+  filter: none !important;
+  pointer-events: none !important;
+  transition: transform .32s cubic-bezier(.2,.8,.2,1), opacity .32s ease, filter .32s ease, box-shadow .32s ease !important;
+  animation: none !important;
+}
+html body main #identity.identity.section .identity-copy h2::after,
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title::after,
+html body main #skills.skills.section .toolbox-copy h2::after,
+html body main #contact.contact.section .contact-copy h2::after {
+  margin-inline: 0 auto !important;
+  transform-origin: left center !important;
+}
+html body main #services.services-panel.section > h2:hover::after,
+html body main #reels.reels.section > h2:hover::after,
+html body main #portfolio.portfolio.section > h2:hover::after,
+html body main #identity.identity.section .identity-copy h2:hover::after,
+html body main #ai-videos.ai-videos.section h2:hover::after,
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title:hover::after,
+html body main #skills.skills.section .toolbox-copy h2:hover::after,
+html body main #reviews.reviews.section .reviews-heading h2:hover::after,
+html body main #contact.contact.section .contact-copy h2:hover::after,
+html body .site-footer h2:hover::after {
+  width: 4.4rem !important;
+  opacity: 1 !important;
+  transform: scaleX(1.32) translateY(-1px) !important;
+  filter: brightness(1.25) saturate(1.18) !important;
+  box-shadow: 0 0 15px rgba(181, 92, 255, .72), 0 0 28px rgba(37, 202, 255, .4) !important;
+}
+@media (max-width: 900px) {
+  html body main #identity.identity.section .identity-copy h2::after,
+  html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title::after,
+  html body main #skills.skills.section .toolbox-copy h2::after,
+  html body main #contact.contact.section .contact-copy h2::after {
+    margin-inline: auto !important;
+    transform-origin: center !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body main .section h2::after,
+  html body .site-footer h2::after {
+    transition: none !important;
+  }
+}

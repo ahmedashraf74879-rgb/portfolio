@@ -1,0 +1,63 @@
+/* Case study — edge-to-edge artwork and a precisely aligned CTA. */
+.case-studies.section.case-study-entry-section .case-study-entry-link {
+  padding: 0 !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: calc(1.55rem - 1px) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cover img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  aspect-ratio: auto !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transform: scale(1.002) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-link:hover img,
+.case-studies.section.case-study-entry-section .case-study-entry-link:focus-visible img {
+  transform: scale(1.025) !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cta {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .68rem !important;
+  line-height: 1 !important;
+  white-space: nowrap;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cta svg {
+  display: block !important;
+  flex: 0 0 1.15rem !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+.case-studies.section.case-study-entry-section .case-study-entry-cta span {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+@media (max-width: 560px) {
+  .case-studies.section.case-study-entry-section .case-study-entry-cover {
+    border-radius: calc(1.1rem - 1px) !important;
+  }
+}

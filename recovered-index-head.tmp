@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed | Motion Graphics Designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400..900&amp;family=Sora:wght@400..800&amp;display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const key = "ahmed-portfolio-welcome-seen-v3";
+        const restoreKey = `ahmedPortfolioRestorePending:${location.pathname}`;
+        const navigation = performance.getEntriesByType("navigation")[0];
+        const isHistoryReturn = navigation?.type === "back_forward";
+
+        try {
+          const returning = sessionStorage.getItem(key) === "1" || Boolean(window.location.hash);
+          const restorePending = sessionStorage.getItem(restoreKey) === "1" || isHistoryReturn;
+          if (returning) document.documentElement.classList.add("welcome-seen");
+          if (restorePending) document.documentElement.classList.add("history-return-pending");
+          sessionStorage.setItem(key, "1");
+        } catch {
+          if (window.location.hash) document.documentElement.classList.add("welcome-seen");
+          if (isHistoryReturn) document.documentElement.classList.add("history-return-pending");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="./styles.min.css" />
+    <link rel="stylesheet" href="./home-overrides.min.css" />
+
+    <link rel="icon" type="image/png" href="./assets/favicon-ahmed.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon-ahmed.png" />
+    <link rel="apple-touch-icon" href="./assets/favicon-ahmed.png" />
+
+  </head>
+  <body class="is-loading">
+    <div class="loading-screen" aria-hidden="true">
+      <div class="loading-welcome-stage">
+        <div class="loading-wave-wrap">
+          <img width="806" height="804" decoding="async" fetchpriority="high" src="./assets/welcome-wave-opt.webp" alt="" />
+        </div>
+        <div class="loading-greeting-wrap">
+          <p class="loading-greeting" data-loading-greeting data-direction="rtl" lang="ar" dir="rtl">مرحبًا</p>
+          <span class="loading-greeting-caption">Ahmed Ashraf · Creative Portfolio</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <div class="site-bg">
+      <span class="beam beam-one"></span>
+      <span class="beam beam-two"></span>
+      <span class="beam beam-three"></span>
+      <span class="particle particle-one"></span>
+      <span class="particle particle-two"></span>
+      <span class="particle particle-three"></span>
+      <span class="particle particle-four"></span>
+    </div>
+
+    <aside class="social-rail" aria-label="Social links">
+      <span class="dot-line"></span>
+      <a class="social-image-link" href="./assets/Ahmed_Ashraf_Graphic_Designer_CV.pdf" download aria-label="Download CV" title="Download CV">
+        <img width="272" height="197" src="./assets/social-cv-opt.webp" loading="lazy" decoding="async" fetchpriority="low" alt="" aria-hidden="true" />
+      </a>
+      <a class="social-image-link social-image-email" href="mailto:ahmedashraf74879@gmail.com" aria-label="Email Ahmed" title="Email Ahmed">
+        <img width="399" height="360" src="./assets/social-email-opt.webp" loading="lazy" decoding="async" fetchpriority="low" alt="" aria-hidden="true" />
+      </a>
+      <a class="social-image-link social-image-instagram" href="https://www.instagram.com/motion.by.ahmed/" data-app-link="instagram://user?username=motion.by.ahmed" target="_blank" rel="noopener noreferrer" aria-label="Instagram motion.by.ahmed" title="Instagram">
+        <img width="399" height="360" src="./assets/social-instagram-opt.webp" loading="lazy" decoding="async" fetchpriority="low" alt="" aria-hidden="true" />
+      </a>
+      <a class="social-image-link" href="https://www.facebook.com/profile.php?id=61591952311907" data-app-link="fb://profile/61591952311907" data-ios-app-link="fb://profile?id=61591952311907" target="_blank" rel="noopener noreferrer" aria-label="Facebook Ahmed Ashraf" title="Facebook">
+        <img width="239" height="186" src="./assets/social-facebook-opt.webp" loading="lazy" decoding="async" fetchpriority="low" alt="" aria-hidden="true" />
+      </a>
+      <a class="social-image-link" href="https://wa.me/201044556842" data-app-link="whatsapp://send?phone=201044556842" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Ahmed" title="WhatsApp">
+        <img width="230" height="256" src="./assets/social-whatsapp-opt.webp" loading="lazy" decoding="async" fetchpriority="low" alt="" aria-hidden="true" />
+      </a>
+      <span class="dot-line"></span>
+    </aside>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Ahmed Ashraf home">
+        <span class="brand-dots" aria-hidden="true"></span>
+        <span class="brand-signature" aria-hidden="true">
+          <span class="brand-first-name">Ahmed</span>
+          <span class="brand-last-name">Ashraf</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#reels">Reels</a>
+        <a href="#portfolio">Designs</a>
+        <a href="#identity">Identity</a>
+        <a href="#ai-videos">AI Videos</a>
+        <a href="#skills">Skills</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="talk-btn" href="https://wa.me/201044556842" data-app-link="whatsapp://send?phone=201044556842" target="_blank" rel="noopener noreferrer">Let's Talk
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21.6 3.2-5.7 17.1c-.3.9-1.5 1-1.9.2l-3.2-6.1-6.1-3.2c-.8-.4-.7-1.6.2-1.9L22 3.6a.3.3 0 0 1-.4-.4ZM8.3 10.4l4.2 2.2 2.2 4.2 3.8-11.3-10.2 4.9Z"/></svg>
+      </a>
+    </header>
+
+    <main>
+      <section class="intro-screen section" id="home">
+        <div class="intro-graphics" aria-hidden="true"><span class="gfx-ring"></span><span class="gfx-cube"></span><span class="gfx-disc"></span><span class="gfx-bezier"></span><span class="gfx-palette"></span><span class="gfx-frame"></span><span class="gfx-image-card"></span><span class="gfx-play-tile"></span><span class="gfx-layer-stack"></span></div>
+        <div class="intro-inner">
+          <p class="intro-welcome"><strong>Hi, I'm Ahmed Ashraf.</strong><span>Welcome to my creative world.</span></p>
+          <p class="intro-label">MOTION GRAPHICS DESIGNER</p>
+          <p class="intro-title client-hero-title" aria-label="Motion Graphics That Make People Stop Scrolling"><span>Motion Graphics</span><span>That Make People</span><span>Stop Scrolling</span></p>
+          <p class="intro-subtitle">I create scroll-stopping motion graphics that boost engagement, sharpen your message, and turn ideas into memorable visual stories.</p>
+          <div class="intro-actions" aria-label="Portfolio action">
+            <a class="intro-portfolio-cta" href="#about" aria-label="Explore portfolio and view Ahmed Ashraf profile">
+              <span class="explore-cta-copy">
+                <strong><span>Explore</span><span>Portfolio</span></strong>
+              </span>
+              <span class="explore-cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <path d="M24 10v23"></path>
+                  <path d="m15.5 25.5 8.5 8.5 8.5-8.5"></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <dialog class="hero-showreel-modal" id="hero-showreel-modal" aria-labelledby="hero-showreel-title">
+          <div class="hero-showreel-shell">
+            <div class="hero-showreel-header">
+              <div>
+                <p>FEATURED MOTION WORK</p>
+                <h2 id="hero-showreel-title">Showreel Preview</h2>
+              </div>
+              <button type="button" data-showreel-close aria-label="Close showreel">&times;</button>
+            </div>
+            <video class="hero-showreel-video" controls playsinline preload="none" poster="./assets/reel-01-badr-thumbnail-new-opt.webp"></video>
+          </div>
+        </dialog>
+      </section>
+
+      <section class="hero section about-section">
+        <div class="hero-copy">
+<p class="eyebrow"><span></span>Motion Graphics Designer<i></i></p>
+          <h1 class="about-name">Ahmed <span>Ashraf</span></h1>
+          <h2 class="about-positioning">Motion Graphics Designer &amp; Video Editor focused on video production, motion design, visual storytelling, and AI-assisted content creation.</h2>
+          <p class="intro about-summary">I turn lessons, campaigns, and ideas into polished reels and visual stories built for clarity, attention, and retention.</p>
+          <div class="actions">
+            <a class="primary-btn" href="#portfolio">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4V4Zm9 0h7v7h-7V4ZM4 13h7v7H4v-7Zm9 0h7v7h-7v-7Z"/></svg>
+              View My Work
+            </a>
+            <a class="secondary-btn" href="./assets/Ahmed_Ashraf_Graphic_Designer_CV.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9l3.3-3.3 1.4 1.4L12 15.8l-5.7-5.7 1.4-1.4L11 12V3Zm-5 15h12v2H6v-2Z"/></svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <article class="profile-card" id="about" aria-labelledby="about-card-title">
+          <div class="card-grid"></div>
+          <div class="frame-corner top-right"></div>
+          <div class="frame-corner bottom-right"></div>
+          <div class="about-content">
+            <span class="card-number">01</span>
+            <h3 id="about-card-title">About Me</h3>
+            <dl class="about-quick-info" aria-label="Ahmed Ashraf quick profile">
+              <div class="about-info-block">
+                <dt>Role</dt>
+                <dd>Motion Graphics Designer &amp; Video Editor</dd>
+              </div>
+              <div class="about-info-block">
+                <dt>Focus</dt>
+                <dd>Reels, Educational Content, Social Media, AI Videos</dd>
+              </div>
+              <div class="about-info-block">
+                <dt>Work Style</dt>
+                <dd>Clean visuals, clear messaging, strong storytelling</dd>
+              </div>
+              <div class="about-info-block">
+                <dt>Currently</dt>
+                <dd>Working with <a href="https://testat-app.com/Home-page" target="_blank" rel="noreferrer">Testat</a></dd>
+              </div>
+            </dl>
+            <div class="stats about-stats" aria-label="Portfolio statistics">
+              <span><b>4+</b><small>Years Experience</small></span>
+              <span><b>180+</b><small>Videos Delivered</small></span>
+              <span><b>35+</b><small>Clients</small></span>
+            </div>
+          </div>
+          <div class="portrait">
+            <img width="1254" height="1254" loading="lazy" decoding="async" src="./assets/ahmed-profile-opt.webp" alt="Ahmed Ashraf portrait" />
+            <span class="portrait-glow" aria-hidden="true"></span>
+          </div>
+        </article>
+      </section>
+
+      <section class="services-panel section" id="services">
+        <p class="mini-title">WHAT I DO</p>
+        <h2>Creative Services That <strong>Move People</strong></h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="icon-wrap"><img width="512" height="512" loading="lazy" decoding="async" src="./assets/service-motion-graphics-opt.webp" alt="" aria-hidden="true" /></span>
+            <h3>Motion Graphics</h3>
+            <p class="service-description">Scroll-stopping motion visuals built to communicate ideas clearly and keep viewers engaged.</p>
+            <ul class="service-points">
+              <li>Motion campaigns</li>
+              <li>Explainer visuals</li>
+              <li>Brand animation</li>
+            </ul>
+            <a href="#contact" aria-label="Motion Graphics details">&rarr;</a>
+          </article>
+          <article class="service-card">
+            <span class="icon-wrap"><img width="512" height="512" loading="lazy" decoding="async" src="./assets/service-social-media-opt.webp" alt="" aria-hidden="true" /></span>
+            <h3>Social Media Design</h3>
+            <p class="service-description">Brand-consistent social content designed to attract attention and communicate offers quickly.</p>
+            <ul class="service-points">
+              <li>Campaign posts</li>
+              <li>Offer creatives</li>
+              <li>Content systems</li>
+            </ul>
+            <a href="#contact" aria-label="Social Media Design details">&rarr;</a>
+          </article>
+          <article class="service-card">
+            <span class="icon-wrap"><img width="512" height="512" loading="lazy" decoding="async" src="./assets/service-branding-design-opt.webp" alt="" aria-hidden="true" /></span>
+            <h3>Branding Design</h3>
+            <p class="service-description">Visual identity systems that create a clear, consistent and memorable brand presence.</p>
+            <ul class="service-points">
+              <li>Logo direction</li>
+              <li>Identity systems</li>
+              <li>Brand assets</li>
+            </ul>
+            <a href="#contact" aria-label="Branding Design details">&rarr;</a>
+          </article>
+          <article class="service-card">
+            <span class="icon-wrap"><img width="512" height="512" loading="lazy" decoding="async" src="./assets/service-video-editing-opt.webp" alt="" aria-hidden="true" /></span>
+            <h3>Video Editing</h3>
+            <p class="service-description">Clean, engaging edits with strong pacing, motion, subtitles, sound and visual polish.</p>
+            <ul class="service-points">
+              <li>Reels &amp; short-form</li>
+              <li>Subtitles &amp; pacing</li>
+              <li>Color &amp; sound</li>
+            </ul>
+            <a href="#contact" aria-label="Video Editing details">&rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="reels section" id="reels">
+        <p class="mini-title">VIDEO WORK</p>
+        <h2>Reels That <strong>Hold Attention</strong></h2>
+        <div class="work-grid reel-grid">
+          <article class="work-card media-card reel-preview">
+            <img width="1448" height="1086" loading="lazy" decoding="async" src="./assets/reel-01-badr-thumbnail-new-opt.webp" alt="Ghazwat Badr historical reel thumbnail" srcset="./assets/reel-01-badr-thumbnail-new-opt-mobile.webp 900w, ./assets/reel-01-badr-thumbnail-new-opt.webp 1448w" sizes="(max-width: 700px) calc(100vw - 2rem), (max-width: 1100px) 46vw, 38rem">
+            <div class="work-info">
+              <span>01</span>
+              <h3>Ghazwat Badr Reel</h3>
+              <p>Historical short-form reel with cinematic storytelling and visual motion direction.</p>
+              <a class="watch-link" href="./reel-01.html">Watch Reel</a>
+            </div>
+          </article>
+          <article class="work-card media-card reel-preview">
+            <img width="1448" height="1086" loading="lazy" decoding="async" src="./assets/reel-02-physics-thumbnail-opt.webp" alt="Physics made easy educational reel thumbnail" srcset="./assets/reel-02-physics-thumbnail-opt-mobile.webp 900w, ./assets/reel-02-physics-thumbnail-opt.webp 1448w" sizes="(max-width: 700px) calc(100vw - 2rem), (max-width: 1100px) 46vw, 38rem">
+            <div class="work-info">
+              <span>02</span>
+              <h3>Before / After Edit</h3>
+              <p>Talking-head edit with cut rhythm, Arabic subtitles, B-roll, sound polish, and final before/after presentation.</p>
+              <a class="watch-link" href="./reel-02.html">Watch Reel</a>
+            </div>
+          </article>
+          <article class="work-card media-card reel-preview">
+            <img width="1448" height="1086" loading="lazy" decoding="async" src="./assets/reel-03-bimaristan-thumbnail-4x3-opt.webp" alt="Al Bimaristan historical reel thumbnail" srcset="./assets/reel-03-bimaristan-thumbnail-4x3-opt-mobile.webp 900w, ./assets/reel-03-bimaristan-thumbnail-4x3-opt.webp 1448w" sizes="(max-width: 700px) calc(100vw - 2rem), (max-width: 1100px) 46vw, 38rem">
+            <div class="work-info">
+              <span>03</span>
+              <h3>Al Bimaristan Reel</h3>
+              <p>Talking-head reel with before/after editing, subtitles, motion, and historical context.</p>
+              <a class="watch-link" href="./reel-03.html">Watch Reel</a>
+            </div>
+          </article>
+          <article class="work-card media-card reel-preview">
+            <img width="1535" height="1024" loading="lazy" decoding="async" src="./assets/reel-05-math-thumbnail-blue-opt.webp" alt="Mathematics third preparatory grade reel thumbnail" srcset="./assets/reel-05-math-thumbnail-blue-opt-mobile.webp 900w, ./assets/reel-05-math-thumbnail-blue-opt.webp 1535w" sizes="(max-width: 700px) calc(100vw - 2rem), (max-width: 1100px) 46vw, 38rem">
+            <div class="work-info">
+              <span>04</span>
+              <h3>Mathematics Revision Reel</h3>
+              <p>Educational mathematics reel with clear problem steps, focused motion graphics, and engaging visual pacing.</p>
+              <a class="watch-link" href="./reel-05.html" target="_self">Watch Reel</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <p class="mini-title">DESIGN WORK</p>
+        <h2>Social Designs That <strong>Stop the Scroll</strong></h2>
+        <div class="work-grid">
+          <a class="work-card media-card" href="./design-01.html">
+            <img width="1080" height="1080" loading="lazy" decoding="async" src="./assets/jacket-post-opt.webp" alt="Social media jacket offer design" srcset="./assets/jacket-post-opt-mobile.webp 900w, ./assets/jacket-post-opt.webp 1080w" sizes="(max-width: 700px) calc(100vw - 2rem), (max-width: 1100px) 46vw, 38rem">
+            <div class="work-info">
+              <span>01</span>
+              <h3>Fashion Offer Post</h3>
+              <p>Arabic social media design for a jacket limited offer campaign.</p>
+            </div>
+          </a>
+          <a class="work-card media-card" href="./design-02.html">
+            <img width="1600" height="1600" loading="lazy" decoding="async" src="./assets/dental-post-opt.webp" alt="Dental clinic social media design" srcset="./assets/dental-post-opt-mobile.webp 900w, ./assets/dental-post-opt.webp 1600w" sizes="(max-width: 700px) calc(100vw - 2rem), (max-width: 1100px) 46vw, 38rem">
+            <div class="work-info">
+              <span>02</span>
+              <h3>Dental Clinic Post</h3>
+              <p>Clean medical post design with Arabic copy and clear call to action.</p>
+            </div>
+          </a>
+          <a class="work-card media-card" href="./design-03.html">
+            <img width="1080" height="1080" loading="lazy" decoding="async" src="./assets/jacket-fur-ad-opt.webp" alt="Fur jacket guard offer design" srcset="./assets/jacket-fur-ad-opt-mobile.webp 900w, ./assets/jacket-fur-ad-opt.webp 1080w" sizes="(max-width: 700px) calc(100vw

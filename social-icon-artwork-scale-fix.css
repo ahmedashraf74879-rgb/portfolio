@@ -1,0 +1,30 @@
+/* Keep the visible artwork correctly framed after the social assets become WebP. */
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-cv"] {
+  --social-art-scale: 1.48;
+  --social-art-x: 8%;
+  --social-art-y: 4%;
+}
+
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-email"] {
+  --social-art-scale: 2.25;
+  --social-art-x: 3%;
+  --social-art-y: -33%;
+}
+
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-instagram"] {
+  --social-art-scale: 2.15;
+  --social-art-x: -18%;
+  --social-art-y: 9%;
+}
+
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-facebook"] {
+  --social-art-scale: 1.45;
+  --social-art-x: -2%;
+  --social-art-y: -9%;
+}
+
+:is(.social-rail a.social-image-link, .footer-social-image) img[src*="social-whatsapp"] {
+  --social-art-scale: 1.42;
+  --social-art-x: -4%;
+  --social-art-y: 21%;
+}

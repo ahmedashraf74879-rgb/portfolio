@@ -1,0 +1,592 @@
+/* Orovex detail page — restored stacked transformation story. */
+.orovex-detail-page .product-hero-detail {
+  display: grid !important;
+  grid-template-columns: minmax(22rem, .86fr) minmax(26rem, 1.14fr) !important;
+  align-items: center !important;
+  gap: clamp(2rem, 4.5vw, 5rem) !important;
+  min-height: 0 !important;
+  padding: clamp(1rem, 2.4vw, 2rem) !important;
+  overflow: visible !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.orovex-detail-page .product-main-media.orovex-final-media {
+  position: relative !important;
+  display: block !important;
+  justify-self: center !important;
+  width: min(100%, 32rem) !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 2 / 3 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(55, 224, 176, .62) !important;
+  border-radius: 22px !important;
+  background: #02090c !important;
+  box-shadow: 0 28px 64px rgba(0,0,0,.4), 0 0 34px rgba(36,210,160,.12) !important;
+}
+
+.orovex-detail-page .product-main-media.orovex-final-media > img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 2 / 3 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border: 0 !important;
+  border-radius: 21px !important;
+  background: #02090c !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+.orovex-detail-page .product-hero-detail .detail-copy {
+  align-self: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: clamp(1.8rem, 3.2vw, 3rem) !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(80, 87, 217, .34) !important;
+  border-radius: 22px !important;
+  background: radial-gradient(circle at 82% 12%, rgba(47,211,165,.08), transparent 33%), linear-gradient(145deg, rgba(7,13,40,.97), rgba(4,19,45,.96)) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04), 0 22px 58px rgba(0,0,0,.28) !important;
+}
+
+.orovex-detail-page .product-hero-detail .detail-copy .card-number {
+  margin: 0 0 .45rem !important;
+  color: rgba(127, 76, 224, .3) !important;
+  font-size: clamp(2.6rem, 4vw, 4rem) !important;
+  line-height: 1 !important;
+}
+
+.orovex-detail-page .product-hero-detail .orovex-title-kicker {
+  width: fit-content !important;
+  margin: 0 auto .85rem !important;
+  padding: .42rem .78rem !important;
+  border: 1px solid rgba(68,221,181,.4) !important;
+  border-radius: 999px !important;
+  direction: ltr !important;
+  color: #8ef0d0 !important;
+  background: rgba(22,137,110,.1) !important;
+  font-family: "Sora", sans-serif !important;
+  font-size: .72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .12em !important;
+}
+
+.orovex-detail-page .product-hero-detail h1.orovex-project-title {
+  display: grid !important;
+  justify-items: center !important;
+  gap: .02em !important;
+  width: 100% !important;
+  margin: 0 auto clamp(1rem,1.5vw,1.25rem) !important;
+  direction: ltr !important;
+  font-family: "Sora", sans-serif !important;
+  font-size: clamp(2.5rem, 4vw, 4.2rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.04 !important;
+  letter-spacing: -.045em !important;
+  text-align: center !important;
+}
+
+.orovex-detail-page .product-hero-detail h1.orovex-project-title span {
+  color: #fff !important;
+}
+
+.orovex-detail-page .product-hero-detail h1.orovex-project-title strong {
+  color: transparent !important;
+  background: linear-gradient(95deg,#d887ff 0%,#9470ff 48%,#36c8ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  font: inherit !important;
+}
+
+.orovex-detail-page .product-hero-detail h1.orovex-project-title::after {
+  content: none !important;
+  display: none !important;
+}
+
+.orovex-detail-page .product-hero-detail .detail-copy > p:not(.orovex-title-kicker) {
+  max-width: 38rem !important;
+  margin: 0 auto clamp(1.1rem,1.8vw,1.5rem) !important;
+  color: rgba(236,233,247,.8) !important;
+  font-size: clamp(.94rem,1.08vw,1.02rem) !important;
+  line-height: 1.9 !important;
+  text-align: center !important;
+}
+
+.orovex-detail-page .product-hero-detail .detail-meta-grid {
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  gap: .75rem !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.orovex-detail-page .product-hero-detail .detail-meta-grid > span {
+  min-height: 5rem !important;
+  padding: .8rem !important;
+  align-content: center !important;
+  font-size: clamp(.73rem,.85vw,.84rem) !important;
+  line-height: 1.55 !important;
+}
+
+.orovex-detail-page .orovex-before-showcase {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(22rem, .92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(2.2rem, 5vw, 5.5rem);
+  min-height: clamp(34rem, 48vw, 44rem);
+  margin: clamp(2.5rem, 5vw, 4.5rem) auto;
+  padding: clamp(1.5rem, 3.5vw, 3.6rem);
+  overflow: hidden;
+  border: 1px solid rgba(58,220,170,.5);
+  border-radius: 26px;
+  background: radial-gradient(circle at 78% 34%,rgba(28,214,158,.18),transparent 32%), radial-gradient(circle at 14% 78%,rgba(41,184,255,.15),transparent 31%), linear-gradient(125deg,rgba(7,35,39,.98),rgba(5,16,46,.98));
+  box-shadow: 0 32px 90px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.04), 0 0 38px rgba(26,208,158,.09);
+}
+
+.orovex-detail-page .orovex-before-showcase::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .22;
+  background-image: linear-gradient(rgba(64,221,180,.12) 1px,transparent 1px), linear-gradient(90deg,rgba(64,221,180,.12) 1px,transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(90deg,transparent 38%,#000 100%);
+  pointer-events: none;
+}
+
+.orovex-detail-page .orovex-before-copy {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: clamp(1rem,1.8vw,1.35rem);
+  max-width: 43rem;
+  padding-inline: clamp(0rem,2vw,1.5rem);
+}
+
+.orovex-detail-page .orovex-before-copy .mini-title {
+  display: inline-flex;
+  align-items: center;
+  gap: .62rem;
+  width: fit-content;
+  min-height: 2.25rem;
+  padding: .48rem .9rem;
+  border: 1px solid rgba(66,229,178,.52);
+  border-radius: 999px;
+  color: #a9ffe2;
+  background: linear-gradient(110deg,rgba(22,194,143,.19),rgba(24,146,227,.12));
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.orovex-detail-page .orovex-before-copy .mini-title::before {
+  content: "";
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  background: #51f2bd;
+  box-shadow: 0 0 0 4px rgba(64,230,177,.12), 0 0 14px #28d9b2;
+}
+
+.orovex-detail-page .orovex-before-copy h2 {
+  max-width: 13ch;
+  margin: 0;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(2.05rem,4vw,4.15rem);
+  font-weight: 800;
+  line-height: 1.23;
+  text-wrap: balance;
+}
+
+.orovex-detail-page .orovex-before-copy h2 strong {
+  display: block;
+  color: transparent;
+  background: linear-gradient(92deg,#53f0b8 0%,#32d5ca 48%,#37baff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font: inherit;
+}
+
+.orovex-detail-page .orovex-before-copy p {
+  max-width: 37rem;
+  margin: 0;
+  padding-inline-start: 1rem;
+  border-inline-start: 3px solid #45e6af;
+  color: rgba(235,250,247,.82);
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(1rem,1.35vw,1.17rem);
+  line-height: 2;
+}
+
+.orovex-detail-page .orovex-before-media {
+  position: relative;
+  isolation: isolate;
+  justify-self: center;
+  width: min(100%, 33rem);
+  aspect-ratio: 1492 / 1500;
+  margin: 0;
+  padding: clamp(.55rem,1vw,.82rem);
+  overflow: hidden;
+  border: 1px solid rgba(67,226,180,.7);
+  border-radius: 24px;
+  background: linear-gradient(145deg,#072e2b 0%,#071b31 100%);
+  box-shadow: 0 28px 60px rgba(0,0,0,.42), inset 0 0 60px rgba(58,224,177,.1);
+}
+
+.orovex-detail-page .orovex-before-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 17px;
+  object-fit: cover;
+  object-position: center;
+  background: #f7fbfa;
+}
+
+.orovex-detail-page .orovex-before-media figcaption {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 1.35rem;
+  width: max-content;
+  max-width: calc(100% - 2.8rem);
+  padding: .58rem .9rem;
+  transform: translateX(-50%);
+  border: 1px solid rgba(69,225,181,.48);
+  border-radius: 999px;
+  color: rgba(255,255,255,.94);
+  background: rgba(4,35,36,.82);
+  font-size: .68rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (max-width: 1040px) {
+  .orovex-detail-page .product-hero-detail {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .orovex-detail-page .product-main-media.orovex-final-media,
+  .orovex-detail-page .product-hero-detail .detail-copy {
+    width: min(100%, 44rem) !important;
+    justify-self: center !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .orovex-detail-page .orovex-before-showcase {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 2.25rem;
+  }
+  .orovex-detail-page .orovex-before-copy {
+    grid-row: 1;
+    max-width: 42rem;
+    margin-inline: auto;
+    justify-items: center;
+    text-align: center;
+  }
+  .orovex-detail-page .orovex-before-copy h2,
+  .orovex-detail-page .orovex-before-copy p {
+    max-width: 100%;
+  }
+  .orovex-detail-page .orovex-before-copy p {
+    padding: 0;
+    border: 0;
+  }
+  .orovex-detail-page .orovex-before-media {
+    grid-row: 2;
+    width: min(100%,31rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .orovex-detail-page .product-hero-detail {
+    padding: .5rem !important;
+    gap: 1rem !important;
+  }
+  .orovex-detail-page .product-hero-detail .detail-copy {
+    padding: 1.2rem !important;
+    border-radius: 16px !important;
+  }
+  .orovex-detail-page .product-hero-detail h1.orovex-project-title {
+    font-size: clamp(2rem,10.5vw,2.8rem) !important;
+  }
+  .orovex-detail-page .product-hero-detail .detail-meta-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .orovex-detail-page .product-hero-detail .detail-meta-grid > span {
+    min-height: 0 !important;
+  }
+  .orovex-detail-page .orovex-before-showcase {
+    margin-block: 1.75rem;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  .orovex-detail-page .orovex-before-copy h2 {
+    font-size: clamp(1.75rem,9vw,2.45rem);
+  }
+  .orovex-detail-page .orovex-before-media {
+    width: 100%;
+    border-radius: 18px;
+  }
+  .orovex-detail-page .orovex-before-media figcaption {
+    bottom: 1rem;
+    font-size: .62rem;
+  }
+}
+/* Orovex Before AI: clearer product scale and title hierarchy. */
+.orovex-detail-page .orovex-before-showcase {
+  grid-template-columns: minmax(24rem, .96fr) minmax(0, 1.04fr) !important;
+  gap: clamp(2rem, 4vw, 4.5rem) !important;
+  min-height: 0 !important;
+  padding: clamp(1.5rem, 3vw, 2.8rem) !important;
+}
+
+.orovex-detail-page .orovex-before-copy {
+  justify-items: center !important;
+  align-content: center !important;
+  gap: clamp(.8rem, 1.35vw, 1.05rem) !important;
+  max-width: 44rem !important;
+  margin-inline: auto !important;
+  padding-inline: clamp(.25rem, 1.5vw, 1rem) !important;
+  text-align: center !important;
+}
+
+.orovex-detail-page .orovex-before-copy h2 {
+  display: grid !important;
+  justify-items: center !important;
+  gap: .04em !important;
+  width: 100% !important;
+  max-width: 17ch !important;
+  margin: 0 auto !important;
+  font-size: clamp(2.25rem, 3.35vw, 3.55rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -.025em !important;
+  text-align: center !important;
+}
+
+.orovex-detail-page .orovex-before-copy h2 > span {
+  display: block !important;
+  color: #fff !important;
+}
+
+.orovex-detail-page .orovex-before-copy h2 b[lang="en"] {
+  display: inline-block !important;
+  color: #fff !important;
+  font-family: "Sora", sans-serif !important;
+  font: inherit !important;
+  direction: ltr !important;
+  letter-spacing: -.035em !important;
+}
+
+.orovex-detail-page .orovex-before-copy h2 strong {
+  display: block !important;
+  width: fit-content !important;
+  margin: .08em auto 0 !important;
+  color: transparent !important;
+  background: linear-gradient(92deg,#5ff0bc 0%,#30d6d2 52%,#39baff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  font: inherit !important;
+  filter: none !important;
+}
+
+.orovex-detail-page .orovex-before-copy p {
+  max-width: 36rem !important;
+  margin: .2rem auto 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: clamp(.96rem,1.14vw,1.08rem) !important;
+  line-height: 1.9 !important;
+  text-align: center !important;
+}
+
+.orovex-detail-page .orovex-before-media {
+  width: min(100%, 36rem) !important;
+  padding: clamp(.45rem,.8vw,.68rem) !important;
+  border-radius: 22px !important;
+}
+
+.orovex-detail-page .orovex-before-media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 16px !important;
+  transform: scale(1.16) !important;
+  transform-origin: center !important;
+  filter: saturate(1.035) contrast(1.015) !important;
+}
+
+.orovex-detail-page .orovex-before-media figcaption {
+  inset: auto !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 1.05rem !important;
+  width: max-content !important;
+  max-width: calc(100% - 2rem) !important;
+  margin: 0 !important;
+  padding: .55rem .85rem !important;
+  transform: translateX(-50%) !important;
+  white-space: normal !important;
+  text-align: center !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .orovex-detail-page .orovex-before-showcase:hover .orovex-before-media img {
+    transform: scale(1.19) !important;
+    filter: saturate(1.07) contrast(1.025) brightness(1.025) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .orovex-detail-page .orovex-before-showcase {
+    grid-template-columns: 1fr !important;
+    padding: clamp(1rem,4vw,1.6rem) !important;
+  }
+  .orovex-detail-page .orovex-before-copy h2 {
+    max-width: 18ch !important;
+  }
+  .orovex-detail-page .orovex-before-media {
+    width: min(100%,34rem) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .orovex-detail-page .orovex-before-copy h2 {
+    max-width: 100% !important;
+    font-size: clamp(1.75rem,8.8vw,2.5rem) !important;
+    line-height: 1.28 !important;
+  }
+  .orovex-detail-page .orovex-before-media {
+    width: 100% !important;
+    padding: .38rem !important;
+    border-radius: 17px !important;
+  }
+  .orovex-detail-page .orovex-before-media img {
+    transform: scale(1.12) !important;
+    border-radius: 13px !important;
+  }
+  .orovex-detail-page .orovex-before-media figcaption {
+    bottom: .72rem !important;
+    max-width: calc(100% - 1.2rem) !important;
+    font-size: .6rem !important;
+  }
+}
+/* Remove detached green glow under Orovex hero artwork. */
+.orovex-detail-page .product-hero-detail::after {
+  content: none !important;
+  display: none !important;
+}
+
+.orovex-detail-page .product-main-media.orovex-final-media {
+  box-shadow:
+    0 24px 52px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(46, 216, 170, 0.08),
+    0 0 20px rgba(36, 210, 160, 0.07) !important;
+}
+/* Orovex original shot final presentation */
+.orovex-detail-page .orovex-before-copy h2 {
+  max-width: 15ch !important;
+  gap: .14em !important;
+  line-height: 1.16 !important;
+}
+.orovex-detail-page .orovex-before-copy h2 strong {
+  max-width: 14ch !important;
+  font-size: .92em !important;
+  line-height: 1.2 !important;
+}
+.orovex-detail-page .orovex-before-media {
+  display: grid !important;
+  grid-template-rows: minmax(0, 1fr) auto !important;
+  gap: .65rem !important;
+  width: min(100%, 37rem) !important;
+  aspect-ratio: 1 / 1.06 !important;
+  padding: clamp(.55rem, .9vw, .72rem) !important;
+  background: linear-gradient(150deg, rgba(12, 77, 67, .96), rgba(5, 28, 51, .98)) !important;
+}
+.orovex-detail-page .orovex-before-media img {
+  grid-row: 1 !important;
+  align-self: stretch !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  border-radius: 16px !important;
+  filter: saturate(1.03) contrast(1.01) !important;
+}
+.orovex-detail-page .orovex-before-media figcaption {
+  position: relative !important;
+  inset: auto !important;
+  z-index: 4 !important;
+  grid-row: 2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .8rem !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 3rem !important;
+  margin: 0 !important;
+  padding: .65rem .9rem !important;
+  transform: none !important;
+  border: 1px solid rgba(86, 229, 187, .32) !important;
+  border-radius: 13px !important;
+  color: #f5fffc !important;
+  background: linear-gradient(100deg, rgba(6, 51, 48, .95), rgba(7, 35, 59, .95)) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .07), 0 8px 20px rgba(0, 0, 0, .18) !important;
+  font-family: "Sora", sans-serif !important;
+  text-align: start !important;
+}
+.orovex-detail-page .orovex-before-media figcaption span {
+  color: #f7fffd !important;
+  font-size: clamp(.72rem, .9vw, .84rem) !important;
+  font-weight: 750 !important;
+}
+.orovex-detail-page .orovex-before-media figcaption strong {
+  color: #6ef0c2 !important;
+  font-size: clamp(.62rem, .78vw, .74rem) !important;
+  font-weight: 750 !important;
+  letter-spacing: .06em !important;
+  text-transform: uppercase !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .orovex-detail-page .orovex-before-showcase:hover .orovex-before-media img {
+    transform: scale(1.015) !important;
+    filter: saturate(1.06) contrast(1.02) !important;
+  }
+}
+@media (max-width: 560px) {
+  .orovex-detail-page .orovex-before-media {
+    aspect-ratio: auto !important;
+    min-height: 28rem !important;
+  }
+  .orovex-detail-page .orovex-before-media figcaption {
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: .25rem !important;
+    min-height: 3.3rem !important;
+    text-align: center !important;
+  }
+}

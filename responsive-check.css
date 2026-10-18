@@ -1,0 +1,20 @@
+/* Responsive safeguards for the homepage without fixed device widths. */
+html body main > section,html body .site-footer {box-sizing:border-box;min-width:0;}
+html body main :is(.hero-copy,.contact-copy,.contact-detail,.case-studies-heading,.toolbox-copy) {min-width:0;}
+html body main #contact.contact.section .contact-detail > span {overflow-wrap:anywhere !important;white-space:normal !important;}
+@media(max-width:700px) {
+ html body main #contact.contact.section > form :is(input:not([type=hidden]),textarea) {font-size:16px !important;}
+ html body .menu-toggle {min-width:44px !important;min-height:44px !important;}
+ html body .nav a,html body .footer-quick-links a {min-height:44px;display:inline-flex;align-items:center;}
+ html body .footer-quick-links {display:flex !important;flex-wrap:wrap !important;justify-content:center !important;gap:4px 16px !important;}
+ html body main #reviews .reviews-carousel {grid-template-columns:44px minmax(0,1fr) 44px !important;gap:6px !important;}
+ html body main #reviews .review-nav {width:44px !important;height:44px !important;}
+ html body main #reviews .review-card {padding:16px !important;}
+ html body main #reviews .review-text {font-size:16px !important;line-height:1.7 !important;overflow-wrap:anywhere;}
+ html body main #contact.contact.section .contact-copy h2 {font-size:clamp(26px,7vw,34px) !important;max-width:100% !important;}
+ html body main #skills.skills.section .toolbox-copy h2 {font-size:clamp(28px,7.5vw,36px) !important;max-width:100% !important;}
+ html body main > section#home.intro-screen.section .intro-portfolio-cta {max-width:100% !important;box-sizing:border-box !important;}
+}
+@media(hover:none) {
+ html body main section h2:hover {translate:none !important;filter:none !important;}
+}

@@ -1,0 +1,66 @@
+/* A personal welcome line that uses the open space above the hero message. */
+html body main section#home.intro-screen .intro-inner p.intro-welcome {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .25rem .48rem !important;
+  width: fit-content !important;
+  max-width: min(92%, 42rem) !important;
+  margin: 0 0 .35rem !important;
+  padding: .18rem .5rem !important;
+  color: #c6bfd8 !important;
+  -webkit-text-fill-color: #c6bfd8 !important;
+  font-size: clamp(1.02rem, 1.35vw, 1.24rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  letter-spacing: .005em !important;
+  text-align: center !important;
+  background: none !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  filter: none !important;
+  text-shadow: 0 3px 16px rgba(2, 3, 24, .78) !important;
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+  content: "";
+  flex: 0 0 .48rem;
+  width: .48rem;
+  height: .48rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c66cff, #35d6ff);
+  box-shadow:
+    0 0 0 4px rgba(132, 83, 255, .12),
+    0 0 16px rgba(63, 202, 255, .52);
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome strong {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-weight: 800 !important;
+  text-shadow:
+    0 2px 14px rgba(2, 3, 24, .86),
+    0 0 18px rgba(181, 111, 255, .26) !important;
+}
+
+html body main section#home.intro-screen .intro-inner p.intro-welcome span {
+  color: #bdb5d0 !important;
+  -webkit-text-fill-color: #bdb5d0 !important;
+}
+
+@media (max-width: 560px) {
+  html body main section#home.intro-screen .intro-inner p.intro-welcome {
+    gap: .18rem .38rem !important;
+    max-width: 20rem !important;
+    margin-bottom: .2rem !important;
+    padding-inline: .25rem !important;
+    font-size: clamp(.9rem, 4.15vw, 1rem) !important;
+  }
+
+  html body main section#home.intro-screen .intro-inner p.intro-welcome::before {
+    flex-basis: .4rem;
+    width: .4rem;
+    height: .4rem;
+  }
+}

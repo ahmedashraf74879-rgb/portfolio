@@ -1,0 +1,36 @@
+/* Section headings — a modest size reduction while preserving hierarchy */
+#services.services-panel.section > h2,
+#reels.reels.section > h2,
+#portfolio.portfolio.section > h2,
+#identity.identity.section .identity-copy h2,
+#case-studies.case-studies.section .case-studies-heading h2,
+#reviews.reviews.section .reviews-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 3.2rem) !important;
+}
+
+#ai-videos.ai-videos.section h2,
+#contact.contact.section .contact-copy h2 {
+  font-size: clamp(1.95rem, 4.2vw, 3.5rem) !important;
+}
+
+#skills.skills.section .toolbox-copy h2#skills-title {
+  font-size: clamp(2.15rem, 4.2vw, 3.3rem) !important;
+}
+
+@media (max-width: 620px) {
+  #services.services-panel.section > h2,
+  #reels.reels.section > h2,
+  #portfolio.portfolio.section > h2,
+  #identity.identity.section .identity-copy h2,
+  #ai-videos.ai-videos.section h2,
+  #case-studies.case-studies.section .case-studies-heading h2,
+  #reviews.reviews.section .reviews-heading h2,
+  #contact.contact.section .contact-copy h2 {
+    font-size: clamp(1.7rem, 7.2vw, 2.05rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  #skills.skills.section .toolbox-copy h2#skills-title {
+    font-size: clamp(2rem, 9.5vw, 2.65rem) !important;
+  }
+}

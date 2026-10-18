@@ -1,0 +1,54 @@
+/* Keep the opening composition self-contained in the first viewport. */
+html body main > section#home.intro-screen.section {
+  min-height: max(42rem, 100svh) !important;
+  margin-bottom: clamp(1.75rem, 3vh, 2.75rem) !important;
+  padding:
+    clamp(6.25rem, 8vh, 7.5rem)
+    clamp(1rem, 4vw, 3rem)
+    clamp(3rem, 5vh, 4.5rem) !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+}
+
+html body main > section#home.intro-screen.section .intro-inner {
+  align-self: center !important;
+  justify-self: center !important;
+  justify-content: center !important;
+  gap: clamp(0.8rem, 1.35vh, 1.18rem) !important;
+}
+
+html body main > section#home.intro-screen.section .intro-label {
+  margin-bottom: clamp(0.45rem, 1vh, 0.8rem) !important;
+}
+
+html body main > section#home.intro-screen.section .intro-subtitle {
+  margin-top: clamp(0.55rem, 1.25vh, 1rem) !important;
+}
+
+html body main > section#home.intro-screen.section .intro-actions {
+  margin-top: clamp(0.8rem, 1.8vh, 1.45rem) !important;
+}
+
+@media (max-width: 760px) {
+  html body main > section#home.intro-screen.section {
+    min-height: max(42rem, 100svh) !important;
+    margin-bottom: clamp(1.25rem, 3vh, 2rem) !important;
+    padding:
+      clamp(5.5rem, 10vh, 6.75rem)
+      1rem
+      clamp(2.25rem, 5vh, 3.25rem) !important;
+  }
+}
+
+@media (max-height: 720px) and (min-width: 761px) {
+  html body main > section#home.intro-screen.section {
+    padding-top: 5.5rem !important;
+    padding-bottom: 2.25rem !important;
+  }
+
+  html body main > section#home.intro-screen.section .intro-inner {
+    gap: 0.68rem !important;
+  }
+}

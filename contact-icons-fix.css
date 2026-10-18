@@ -1,0 +1,90 @@
+/* Contact cards use the same original artwork as the site's social links. */
+html body main #contact.contact.section > .contact-links.contact-links-bottom {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr) minmax(0, 1fr) !important;
+  gap: 20px !important;
+  align-items: stretch !important;
+  justify-items: stretch !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom > a.contact-link {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  min-height: 84px !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 14px 18px !important;
+  justify-self: stretch !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  border-radius: 18px !important;
+  box-sizing: border-box !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom > a.contact-link::before {
+  content: none !important;
+  display: none !important;
+}
+html body main #contact.contact.section .contact-link-icon {
+  display: grid !important;
+  place-items: center !important;
+  flex: 0 0 52px !important;
+  width: 52px !important;
+  height: 52px !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+html body main #contact.contact.section .contact-link-icon img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  transform: translate(var(--art-x), var(--art-y)) scale(var(--art-scale)) !important;
+}
+html body main #contact.contact.section .contact-link-whatsapp { --art-scale: 1.42; --art-x: -4%; --art-y: 21%; }
+html body main #contact.contact.section .contact-link-email { --art-scale: 2.25; --art-x: 3%; --art-y: -33%; }
+html body main #contact.contact.section .contact-link-cv { --art-scale: 1.48; --art-x: 8%; --art-y: 4%; }
+html body main #contact.contact.section .contact-link > span:last-child {
+  min-width: 0 !important;
+  line-height: 1.5 !important;
+}
+html body main #contact.contact.section .contact-link-email > span:last-child {
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+@media (max-width: 1000px) {
+  html body main #contact.contact.section > .contact-links.contact-links-bottom {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  html body main #contact.contact.section > .contact-links.contact-links-bottom > a.contact-link {
+    justify-content: flex-start !important;
+  }
+}
+/* Size contact chips to their content. */
+html body main #contact.contact.section > .contact-links.contact-links-bottom {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+html body main #contact.contact.section > .contact-links.contact-links-bottom > a.contact-link {
+  flex: 0 1 auto !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-height: 64px !important;
+  height: auto !important;
+  padding: 8px 16px !important;
+  gap: 10px !important;
+  border-radius: 16px !important;
+  justify-content: center !important;
+}
+html body main #contact.contact.section .contact-link-icon {
+  flex-basis: 44px !important;
+  width: 44px !important;
+  height: 44px !important;
+}

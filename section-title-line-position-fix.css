@@ -1,0 +1,146 @@
+/* Final underline placement: centered titles stay centered; split titles stay left-aligned. */
+#services.services-panel.section > h2,
+#reels.reels.section > h2,
+#portfolio.portfolio.section > h2,
+#identity.identity.section .identity-copy h2,
+#ai-videos.ai-videos.section h2,
+#case-studies.case-studies.section .case-studies-heading h2,
+#skills.skills.section .toolbox-copy h2,
+#reviews.reviews.section .reviews-heading h2,
+#contact.contact.section .contact-copy h2 {
+  position: relative !important;
+  overflow: visible !important;
+  padding-bottom: .9rem !important;
+}
+
+#services.services-panel.section > h2::after,
+#reels.reels.section > h2::after,
+#portfolio.portfolio.section > h2::after,
+#identity.identity.section .identity-copy h2::after,
+#ai-videos.ai-videos.section h2::after,
+#case-studies.case-studies.section .case-studies-heading h2::after,
+#skills.skills.section .toolbox-copy h2::after,
+#reviews.reviews.section .reviews-heading h2::after,
+#contact.contact.section .contact-copy h2::after,
+#services.services-panel.section > h2:hover::after,
+#reels.reels.section > h2:hover::after,
+#portfolio.portfolio.section > h2:hover::after,
+#identity.identity.section .identity-copy h2:hover::after,
+#ai-videos.ai-videos.section h2:hover::after,
+#case-studies.case-studies.section .case-studies-heading h2:hover::after,
+#skills.skills.section .toolbox-copy h2:hover::after,
+#reviews.reviews.section .reviews-heading h2:hover::after,
+#contact.contact.section .contact-copy h2:hover::after {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 0 !important;
+  width: clamp(3.8rem, 6vw, 5.2rem) !important;
+  height: 2px !important;
+  margin: 0 !important;
+  opacity: .92 !important;
+  transform: translateX(-50%) !important;
+  translate: none !important;
+  scale: 1 !important;
+  animation: none !important;
+}
+
+#identity.identity.section .identity-copy h2::after,
+#case-studies.case-studies.section .case-studies-heading h2::after,
+#skills.skills.section .toolbox-copy h2::after,
+#contact.contact.section .contact-copy h2::after,
+#identity.identity.section .identity-copy h2:hover::after,
+#case-studies.case-studies.section .case-studies-heading h2:hover::after,
+#skills.skills.section .toolbox-copy h2:hover::after,
+#contact.contact.section .contact-copy h2:hover::after {
+  left: 0 !important;
+  transform: none !important;
+}
+
+@media (max-width: 900px) {
+  #identity.identity.section .identity-copy h2::after,
+  #case-studies.case-studies.section .case-studies-heading h2::after,
+  #skills.skills.section .toolbox-copy h2::after,
+  #contact.contact.section .contact-copy h2::after,
+  #identity.identity.section .identity-copy h2:hover::after,
+  #case-studies.case-studies.section .case-studies-heading h2:hover::after,
+  #skills.skills.section .toolbox-copy h2:hover::after,
+  #contact.contact.section .contact-copy h2:hover::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+/* Unified interactive underline for every main section title. */
+html body main #services.services-panel.section > h2::after,
+html body main #reels.reels.section > h2::after,
+html body main #portfolio.portfolio.section > h2::after,
+html body main #identity.identity.section .identity-copy h2::after,
+html body main #ai-videos.ai-videos.section h2::after,
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title::after,
+html body main #skills.skills.section .toolbox-copy h2::after,
+html body main #reviews.reviews.section .reviews-heading h2::after,
+html body main #contact.contact.section .contact-copy h2::after,
+html body .site-footer h2::after {
+  content: "" !important;
+  display: block !important;
+  visibility: visible !important;
+  position: relative !important;
+  inset: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 4.4rem !important;
+  height: 3px !important;
+  margin: .9rem auto 0 !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, #b55cff 0%, #706cff 52%, #25caff 100%) !important;
+  box-shadow: 0 0 12px rgba(158, 84, 255, .5), 0 0 22px rgba(37, 202, 255, .22) !important;
+  opacity: .82 !important;
+  transform: scaleX(.72) !important;
+  transform-origin: center !important;
+  filter: none !important;
+  pointer-events: none !important;
+  transition: transform .32s cubic-bezier(.2,.8,.2,1), opacity .32s ease, filter .32s ease, box-shadow .32s ease !important;
+  animation: none !important;
+}
+html body main #identity.identity.section .identity-copy h2::after,
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title::after,
+html body main #skills.skills.section .toolbox-copy h2::after,
+html body main #contact.contact.section .contact-copy h2::after {
+  margin-inline: 0 auto !important;
+  transform-origin: left center !important;
+}
+html body main #services.services-panel.section > h2:hover::after,
+html body main #reels.reels.section > h2:hover::after,
+html body main #portfolio.portfolio.section > h2:hover::after,
+html body main #identity.identity.section .identity-copy h2:hover::after,
+html body main #ai-videos.ai-videos.section h2:hover::after,
+html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title:hover::after,
+html body main #skills.skills.section .toolbox-copy h2:hover::after,
+html body main #reviews.reviews.section .reviews-heading h2:hover::after,
+html body main #contact.contact.section .contact-copy h2:hover::after,
+html body .site-footer h2:hover::after {
+  width: 4.4rem !important;
+  opacity: 1 !important;
+  transform: scaleX(1.32) translateY(-1px) !important;
+  filter: brightness(1.25) saturate(1.18) !important;
+  box-shadow: 0 0 15px rgba(181, 92, 255, .72), 0 0 28px rgba(37, 202, 255, .4) !important;
+}
+@media (max-width: 900px) {
+  html body main #identity.identity.section .identity-copy h2::after,
+  html body main #case-studies.case-studies.section.case-study-entry-section .case-studies-heading h2#case-studies-title::after,
+  html body main #skills.skills.section .toolbox-copy h2::after,
+  html body main #contact.contact.section .contact-copy h2::after {
+    margin-inline: auto !important;
+    transform-origin: center !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body main .section h2::after,
+  html body .site-footer h2::after {
+    transition: none !important;
+  }
+}

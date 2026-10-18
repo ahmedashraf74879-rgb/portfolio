@@ -1,0 +1,86 @@
+/* Footer social icons — remove square tiles and use platform-colored rings */
+.site-footer .footer-social-link:nth-child(1) {
+  --dock-accent: #a855f7;
+  --social-accent: #b45cff;
+  --social-accent-2: #39bfff;
+}
+
+.site-footer .footer-social-link:nth-child(2) {
+  --dock-accent: #ea4335;
+  --social-accent: #ea4335;
+  --social-accent-2: #fbbc05;
+}
+
+.site-footer .footer-social-link:nth-child(3) {
+  --dock-accent: #e1306c;
+  --social-accent: #833ab4;
+  --social-accent-2: #fd1d1d;
+}
+
+.site-footer .footer-social-link:nth-child(4) {
+  --dock-accent: #1877f2;
+  --social-accent: #1877f2;
+  --social-accent-2: #4fb7ff;
+}
+
+.site-footer .footer-social-link:nth-child(5) {
+  --dock-accent: #25d366;
+  --social-accent: #25d366;
+  --social-accent-2: #19bfa0;
+}
+
+.site-footer .footer-social-icon.footer-social-image {
+  position: relative;
+  isolation: isolate;
+  overflow: visible !important;
+  width: 3.3rem !important;
+  height: 3.3rem !important;
+  border: 2px solid transparent !important;
+  border-radius: 50% !important;
+  background:
+    linear-gradient(rgba(5, 6, 24, .82), rgba(5, 6, 24, .82)) padding-box,
+    linear-gradient(135deg, var(--social-accent), var(--social-accent-2)) border-box !important;
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--social-accent) 16%, transparent),
+    0 0 17px color-mix(in srgb, var(--social-accent) 54%, transparent),
+    0 0 28px color-mix(in srgb, var(--social-accent-2) 22%, transparent) !important;
+}
+
+.site-footer .footer-social-icon.footer-social-image::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, rgba(255, 255, 255, .12), transparent 48%);
+  pointer-events: none;
+}
+
+.site-footer .footer-social-icon.footer-social-image img {
+  display: block !important;
+  width: 82% !important;
+  height: 82% !important;
+  margin: auto !important;
+  object-fit: contain !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 0 7px color-mix(in srgb, var(--social-accent) 56%, transparent));
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-footer .footer-social-link:hover .footer-social-icon.footer-social-image {
+    transform: translateY(-2px) scale(1.08) rotate(-2deg);
+    box-shadow:
+      0 0 0 4px color-mix(in srgb, var(--social-accent) 20%, transparent),
+      0 0 22px color-mix(in srgb, var(--social-accent) 68%, transparent),
+      0 0 34px color-mix(in srgb, var(--social-accent-2) 30%, transparent) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-footer .footer-social-icon.footer-social-image {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+}

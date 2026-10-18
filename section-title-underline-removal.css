@@ -1,0 +1,16 @@
+/* Remove the small decorative line below every main section heading. */
+html body main :is(
+  #services > h2,
+  #reels > h2,
+  #portfolio > h2,
+  #identity .identity-copy h2,
+  #ai-videos h2,
+  #case-studies .case-studies-heading h2,
+  #skills .toolbox-copy h2,
+  #reviews .reviews-heading h2,
+  #contact .contact-copy h2
+)::after,
+html body .site-footer h2::after {
+  content: none !important;
+  display: none !important;
+}

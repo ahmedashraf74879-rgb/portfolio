@@ -1,0 +1,43 @@
+/* Give the Identity headline enough breathing room for complete glyphs. */
+html body main #identity.identity.section.identity-split-clean .identity-split-copy,
+html body main #identity.identity.section.identity-split-clean .identity-copy.identity-split-copy,
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2,
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 strong {
+  overflow: visible !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 {
+  width: max-content !important;
+  max-width: 100% !important;
+  padding-inline-end: 0.18em !important;
+  box-sizing: content-box !important;
+}
+
+html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 strong {
+  width: max-content !important;
+  max-width: none !important;
+  padding-inline-end: 0.14em !important;
+  box-sizing: content-box !important;
+}
+
+@media (min-width: 981px) {
+  html body main #identity.identity.section.identity-split-clean {
+    grid-template-columns: minmax(22rem, 0.78fr) minmax(0, 1.38fr) !important;
+  }
+
+  html body main #identity.identity.section.identity-split-clean .identity-split-copy,
+  html body main #identity.identity.section.identity-split-clean .identity-copy.identity-split-copy {
+    max-width: 34rem !important;
+  }
+}
+
+@media (max-width: 980px) {
+  html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 {
+    width: fit-content !important;
+    max-width: calc(100% - 0.2em) !important;
+  }
+
+  html body main #identity.identity.section.identity-split-clean .identity-split-copy h2 strong {
+    max-width: 100% !important;
+  }
+}
